@@ -1,5 +1,12 @@
 // !$*UTF8*$!
 {
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {539, 365}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 7D246E4C0F155C6000D6C68B /* Palourde */;
@@ -34,8 +41,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 253058144;
-			PBXWorkspaceStateSaveDate = 253058144;
+			PBXPerProjectTemplateStateSaveDate = 253101562;
+			PBXWorkspaceStateSaveDate = 253101562;
 		};
 		sourceControlManager = 7D246E520F155C7B00D6C68B /* Source Control */;
 		userBuildSettings = {
@@ -81,5 +88,12 @@
 		executables = (
 			7D246E4C0F155C6000D6C68B /* Palourde */,
 		);
+	};
+	8D1107310486CEB800E47090 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {632, 434}}";
+			sepNavSelRange = "{870, 0}";
+			sepNavVisRect = "{{0, 69}, {553, 365}}";
+		};
 	};
 }
