@@ -61,6 +61,13 @@
 	[paItem setImage: paImageActive];//(guessIsConfident ? sbImageActive : sbImageInactive)];
 	[paItem setMenu:paMenu];
 }
+
+- (IBAction)runWebPage:(id)sender
+{
+	NSURL *url = [NSURL URLWithString:@"https://admin.garambrogne.net/projets/palourde"];//[[[NSBundle mainBundle] infoDictionary] valueForKey:@"MPWebPageURL"]];
+	[[NSWorkspace sharedWorkspace] openURL:url];
+}
+
 - (void)dealloc
 {
 	

@@ -17,5 +17,6 @@
 
 - (void)showInStatusBar:(id)sender;
 -(void) mediaMounted: (NSNotification *)notification;
+- (IBAction)runWebPage:(id)sender;
 
 @end
