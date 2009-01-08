@@ -16,5 +16,6 @@
 }
 
 - (void)showInStatusBar:(id)sender;
+-(void) mediaMounted: (NSNotification *)notification;
 
 @end

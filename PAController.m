@@ -35,9 +35,18 @@
 	// Set up status bar.
 	[self showInStatusBar:self];
 	
+	[[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self
+														   selector:@selector(mediaMounted:)
+															   name:@"NSWorkspaceDidMountNotification"
+															 object:nil];
+	
 	[NSApp unhide];
 }
 
+-(void) mediaMounted: (NSNotification *)notification{
+	NSLog(@"mount : %@", notification);
+
+}
 - (void)showInStatusBar:(id)sender
 {
 	if (paItem) {
