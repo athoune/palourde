@@ -16,7 +16,7 @@
 {
 	NSImage *img = [NSImage imageNamed:name];
 	[img setScalesWhenResized:YES];
-	[img setSize:NSMakeSize(18, 18)];
+	[img setSize:NSMakeSize(22, 22)];
 	
 	return img;
 }
@@ -24,7 +24,7 @@
 - (id) init {
 	if (!(self = [super init]))
 		return nil;
-	paImageActive = [self prepareImageForMenubar:@"lapalourde"];
+	paImageActive = [self prepareImageForMenubar:@"bombe__s01"];
 	paImageInactive = nil;
 	paItem = nil;
 	return self;

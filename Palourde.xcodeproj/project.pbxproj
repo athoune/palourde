@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		7D1BD26A0F166EEF000BD5C2 /* spray.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2690F166EEF000BD5C2 /* spray.png */; };
+		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
+		7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2730F167B67000BD5C2 /* bombe__s01.png */; };
+		7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2740F167B67000BD5C2 /* bombe__s02.png */; };
+		7D1BD2790F167B67000BD5C2 /* bombe__s03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2750F167B67000BD5C2 /* bombe__s03.png */; };
+		7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2760F167B67000BD5C2 /* bombe__s04.png */; };
 		7D246E5E0F155C9900D6C68B /* UKFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E560F155C9900D6C68B /* UKFileWatcher.m */; };
 		7D246E5F0F155C9900D6C68B /* UKFNSubscribeFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E580F155C9900D6C68B /* UKFNSubscribeFileWatcher.m */; };
 		7D246E600F155C9900D6C68B /* UKKQueue Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */; };
@@ -30,6 +36,12 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
+		7D1BD2690F166EEF000BD5C2 /* spray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spray.png; sourceTree = "<group>"; };
+		7D1BD26C0F167285000BD5C2 /* bombe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe.png; sourceTree = "<group>"; };
+		7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s01.png; sourceTree = "<group>"; };
+		7D1BD2740F167B67000BD5C2 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s02.png; sourceTree = "<group>"; };
+		7D1BD2750F167B67000BD5C2 /* bombe__s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s03.png; sourceTree = "<group>"; };
+		7D1BD2760F167B67000BD5C2 /* bombe__s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s04.png; sourceTree = "<group>"; };
 		7D246E550F155C9900D6C68B /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKFileWatcher.h; path = UKKQueue/UKFileWatcher.h; sourceTree = SOURCE_ROOT; };
 		7D246E560F155C9900D6C68B /* UKFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKFileWatcher.m; path = UKKQueue/UKFileWatcher.m; sourceTree = SOURCE_ROOT; };
 		7D246E570F155C9900D6C68B /* UKFNSubscribeFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKFNSubscribeFileWatcher.h; path = UKKQueue/UKFNSubscribeFileWatcher.h; sourceTree = SOURCE_ROOT; };
@@ -122,8 +134,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D1BD2730F167B67000BD5C2 /* bombe__s01.png */,
+				7D1BD2740F167B67000BD5C2 /* bombe__s02.png */,
+				7D1BD2750F167B67000BD5C2 /* bombe__s03.png */,
+				7D1BD2760F167B67000BD5C2 /* bombe__s04.png */,
 				7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				7D1BD26C0F167285000BD5C2 /* bombe.png */,
+				7D1BD2690F166EEF000BD5C2 /* spray.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -202,6 +220,12 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				7D246E600F155C9900D6C68B /* UKKQueue Readme.txt in Resources */,
 				7D6E996E0F1619F6001A98E2 /* lapalourde.jpg in Resources */,
+				7D1BD26A0F166EEF000BD5C2 /* spray.png in Resources */,
+				7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */,
+				7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */,
+				7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */,
+				7D1BD2790F167B67000BD5C2 /* bombe__s03.png in Resources */,
+				7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
