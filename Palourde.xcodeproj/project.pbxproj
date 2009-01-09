@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		7D1BD26A0F166EEF000BD5C2 /* spray.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2690F166EEF000BD5C2 /* spray.png */; };
 		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
 		7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2730F167B67000BD5C2 /* bombe__s01.png */; };
 		7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2740F167B67000BD5C2 /* bombe__s02.png */; };
@@ -36,7 +35,6 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
-		7D1BD2690F166EEF000BD5C2 /* spray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spray.png; sourceTree = "<group>"; };
 		7D1BD26C0F167285000BD5C2 /* bombe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe.png; sourceTree = "<group>"; };
 		7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s01.png; sourceTree = "<group>"; };
 		7D1BD2740F167B67000BD5C2 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s02.png; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				7D1BD26C0F167285000BD5C2 /* bombe.png */,
-				7D1BD2690F166EEF000BD5C2 /* spray.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -220,7 +217,6 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				7D246E600F155C9900D6C68B /* UKKQueue Readme.txt in Resources */,
 				7D6E996E0F1619F6001A98E2 /* lapalourde.jpg in Resources */,
-				7D1BD26A0F166EEF000BD5C2 /* spray.png in Resources */,
 				7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */,
 				7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */,
 				7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */,

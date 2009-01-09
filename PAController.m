@@ -68,6 +68,10 @@
 	[[NSWorkspace sharedWorkspace] openURL:url];
 }
 
+- (IBAction)scanHome:(id)sender {
+
+}
+
 - (void)dealloc
 {
 	

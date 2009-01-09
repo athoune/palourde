@@ -16,7 +16,8 @@
 }
 
 - (void)showInStatusBar:(id)sender;
--(void) mediaMounted: (NSNotification *)notification;
+- (void) mediaMounted: (NSNotification *)notification;
 - (IBAction)runWebPage:(id)sender;
+- (IBAction)scanHome:(id)sender;
 
 @end
