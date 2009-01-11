@@ -21,10 +21,25 @@
 		7D246E670F155D1F00D6C68B /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E660F155D1F00D6C68B /* Client.m */; };
 		7D6E996E0F1619F6001A98E2 /* lapalourde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */; };
 		7D6E99710F161A28001A98E2 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E99700F161A28001A98E2 /* PAController.m */; };
+		7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
+		7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DF1BCD60F195B7400D807B1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -54,6 +69,8 @@
 		7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lapalourde.jpg; sourceTree = "<group>"; };
 		7D6E996F0F161A28001A98E2 /* PAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAController.h; sourceTree = "<group>"; };
 		7D6E99700F161A28001A98E2 /* PAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAController.m; sourceTree = "<group>"; };
+		7DF1BC670F194D4900D807B1 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		7DF1BCCF0F195B5C00D807B1 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +129,7 @@
 		29B97314FDCFA39411CA2CEA /* Palourde */ = {
 			isa = PBXGroup;
 			children = (
+				7DF1BCCF0F195B5C00D807B1 /* Growl.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -141,6 +160,7 @@
 				7D1BD26C0F167285000BD5C2 /* bombe.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				7DF1BC670F194D4900D807B1 /* Growl Registration Ticket.growlRegDict */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -180,6 +200,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				7DF1BCD60F195B7400D807B1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -269,6 +290,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -286,6 +311,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Palourde_Prefix.pch;

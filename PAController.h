@@ -10,9 +10,10 @@
 
 
 @interface PAController : NSObject {
-	IBOutlet NSMenu *paMenu;
-	NSStatusItem *paItem;
-	NSImage *paImageActive, *paImageInactive;
+    IBOutlet NSMenu *paMenu;
+    NSStatusItem *paItem;
+    NSImage *paImageActive, *paImageInactive;
+    int virus;
 }
 
 - (void)showInStatusBar:(id)sender;
