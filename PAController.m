@@ -68,7 +68,7 @@
 - (void) mediaMounted: (NSNotification *)notification{
     NSLog(@"I'm going to scan %@", [[notification userInfo] objectForKey:@"NSDevicePath"]);
     Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
-    [client asyncScan:[[notification userInfo] objectForKey:@"NSDevicePath"]];
+    [self asyncScan:[[notification userInfo] objectForKey:@"NSDevicePath"]];
     
 }
 - (void) showInStatusBar:(id)sender {
@@ -84,8 +84,9 @@
 - (IBAction)scanHome:(id)sender {
 	[self 
 		performSelectorOnMainThread:@selector(asyncScan:)
-		withObject:@"/tmp/"
+		withObject:[@"~/" stringByExpandingTildeInPath]
 		waitUntilDone:false];
+	//@"/tmp/"
     //[client asyncScan:[@"~/" stringByExpandingTildeInPath]];
 }
 
