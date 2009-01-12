@@ -82,12 +82,31 @@
 }
 
 - (IBAction)scanHome:(id)sender {
-    Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
-    [client autorelease];
-    [client asyncScan:@"/tmp/"];
-    NSLog(@"async done");
+	[self 
+		performSelectorOnMainThread:@selector(asyncScan:)
+		withObject:@"/tmp/"
+		waitUntilDone:false];
     //[client asyncScan:[@"~/" stringByExpandingTildeInPath]];
 }
+
+-(void) asyncScan:(NSString*)thePath {
+	[self retain];
+	[NSThread detachNewThreadSelector:@selector(processAsyncScan:)
+							 toTarget:self
+						   withObject:[thePath retain]];
+}
+
+-(void) processAsyncScan:(NSString*)thePath {
+	[thePath retain];
+	NSAutoreleasePool *myAutoreleasePool =[[NSAutoreleasePool alloc] init];
+	NSLog(@"Async scan started");
+    Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
+	[client contscan:thePath];
+	//[client release];
+	//[NSAutoreleasePool showPools];
+	[myAutoreleasePool drain];
+    NSLog(@"async scan is done");
+} 
 
 - (void)dealloc
 {
