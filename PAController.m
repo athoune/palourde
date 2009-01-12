@@ -71,7 +71,7 @@
 
 - (void) scanFinished: (NSNotification *)notification{
     scanWorking --;
-    NSLog(@"The scan is done : %d ms",  [notification userInfo]);
+    NSLog(@"The scan is done : %f ms",  [notification userInfo]);
     NSLog(@"%i scan is still alive", scanWorking);
 }
 
