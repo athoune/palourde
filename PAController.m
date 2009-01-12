@@ -27,6 +27,14 @@
     paImageActive = [self prepareImageForMenubar:@"bombe__s01"];
     paImageInactive = nil;
     virus = 0;
+    scanWorking = 0;
+    frame = 0;
+    animSpraying = [[NSArray arrayWithObjects:
+		    [self prepareImageForMenubar:@"bombe__s01"],
+		    [self prepareImageForMenubar:@"bombe__s02"],
+		    [self prepareImageForMenubar:@"bombe__s03"],
+		    [self prepareImageForMenubar:@"bombe__s04"],
+		    nil]retain];
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     NSNotificationCenter *globalCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
     [globalCenter addObserver:self
@@ -62,17 +70,36 @@
 }
 
 - (void) scanFinished: (NSNotification *)notification{
+    scanWorking --;
     NSLog(@"The scan is done : %d ms",  [notification userInfo]);
+    NSLog(@"%i scan is still alive", scanWorking);
 }
 
 - (void) mediaMounted: (NSNotification *)notification{
     NSLog(@"I'm going to scan %@", [[notification userInfo] objectForKey:@"NSDevicePath"]);
-    Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
     [self asyncScan:[[notification userInfo] objectForKey:@"NSDevicePath"]];
-    
 }
+
 - (void) showInStatusBar:(id)sender {
     
+}
+
+- (void) nextFrameSpraying {
+    if(scanWorking == 0) {
+	frame = 0;
+    }
+    [paItem setImage:[animSpraying objectAtIndex:frame]];
+    if(scanWorking > 0) {
+	frame ++;
+	if(frame > 3) {
+	    frame = 0;
+	}
+	[NSTimer scheduledTimerWithTimeInterval:0.1
+		target:self
+		selector:@selector(nextFrameSpraying)
+		userInfo:nil
+		repeats:NO];
+    }
 }
 
 - (IBAction)runWebPage:(id)sender
@@ -92,6 +119,8 @@
 
 -(void) asyncScan:(NSString*)thePath {
 	[self retain];
+	scanWorking ++;
+    [self nextFrameSpraying];
 	[NSThread detachNewThreadSelector:@selector(processAsyncScan:)
 							 toTarget:self
 						   withObject:[thePath retain]];
@@ -101,7 +130,7 @@
 	[thePath retain];
 	NSAutoreleasePool *myAutoreleasePool =[[NSAutoreleasePool alloc] init];
 	NSLog(@"Async scan started");
-    Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
+	Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
 	[client contscan:thePath];
 	//[client release];
 	//[NSAutoreleasePool showPools];
@@ -115,6 +144,7 @@
     [paItem release];
     [paImageActive release];
     [paImageInactive release];
+    [animSpraying release];
     [[NSNotificationCenter defaultCenter] removeObserver: self];
     [[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver: self];
     [super dealloc];

@@ -208,17 +208,18 @@
 		<dict>
 			<key>ChosenToolbarItems</key>
 			<array>
-				<string>active-combo-popup</string>
+				<string>active-target-popup</string>
+				<string>active-buildstyle-popup</string>
 				<string>action</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
-				<string>clean-target</string>
-				<string>build-and-go</string>
-				<string>build</string>
+				<string>servicesModuleRefactoring</string>
+				<string>buildOrClean</string>
+				<string>build-and-goOrGo</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
-				<string>debugger-fix-and-continue</string>
-				<string>go-debug</string>
-				<string>show-inspector</string>
+				<string>takeSnapshot</string>
 				<string>get-info</string>
+				<string>show-inspector</string>
+				<string>toggle-editor</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
@@ -338,15 +339,15 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D3F1F7D0F1BA56E0024D5F5</string>
+										<string>7D332F4C0F1BCB5E00C3E3F4</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
-											<string>7D5DE77B0F1A72A200FD827D</string>
 											<string>7DCC71110F1A7C7A00CAB1F3</string>
-											<string>7DBB0C900F1B526E00A6B956</string>
-											<string>7D3F1F740F1BA3CF0024D5F5</string>
-											<string>7D3F1F750F1BA3CF0024D5F5</string>
+											<string>7D332F090F1BC5D500C3E3F4</string>
+											<string>7D332F0A0F1BC5D500C3E3F4</string>
+											<string>7D332F380F1BCA3000C3E3F4</string>
+											<string>7D332F390F1BCA3000C3E3F4</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -356,9 +357,27 @@
 											<string>7DEA0FDD0F177E6100B3906A</string>
 											<string>7DEA0FE10F177E6100B3906A</string>
 											<string>7DCC71160F1A7C7A00CAB1F3</string>
-											<string>7D3F1F3C0F1B9EBF0024D5F5</string>
-											<string>7D3F1F530F1BA1AB0024D5F5</string>
-											<string>7D3F1F760F1BA3CF0024D5F5</string>
+											<string>7D332EF00F1BB32500C3E3F4</string>
+											<string>7D332EF10F1BB32500C3E3F4</string>
+											<string>7D332EF20F1BB32500C3E3F4</string>
+											<string>7D332EF30F1BB32500C3E3F4</string>
+											<string>7D332EF40F1BB32500C3E3F4</string>
+											<string>7D332EF50F1BB32500C3E3F4</string>
+											<string>7D332EF60F1BB32500C3E3F4</string>
+											<string>7D332EF70F1BB32500C3E3F4</string>
+											<string>7D332EF80F1BB32500C3E3F4</string>
+											<string>7D332EF90F1BB32500C3E3F4</string>
+											<string>7D332F000F1BC03600C3E3F4</string>
+											<string>7D332F010F1BC03600C3E3F4</string>
+											<string>7D332F020F1BC03600C3E3F4</string>
+											<string>7D332F0D0F1BC5D500C3E3F4</string>
+											<string>7D332F0E0F1BC5D500C3E3F4</string>
+											<string>7D332F0F0F1BC5D500C3E3F4</string>
+											<string>7D332F100F1BC5D500C3E3F4</string>
+											<string>7D332F110F1BC5D500C3E3F4</string>
+											<string>7D332F120F1BC5D500C3E3F4</string>
+											<string>7D332F3A0F1BCA3000C3E3F4</string>
+											<string>7D332F3B0F1BCA3000C3E3F4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -416,9 +435,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7D3F1F000F1B9BE30024D5F5</string>
+				<string>7D332ECC0F1BAC6C00C3E3F4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7D3F1F010F1B9BE30024D5F5</string>
+				<string>7D332ECD0F1BAC6C00C3E3F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -539,7 +558,7 @@
 	<key>TimeStamp</key>
 	<real>0.0</real>
 	<key>ToolbarDisplayMode</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>ToolbarIsVisible</key>
 	<true/>
 	<key>ToolbarSizeMode</key>
@@ -552,12 +571,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7D3F1F140F1B9C3A0024D5F5</string>
-		<string>7D3F1F150F1B9C3A0024D5F5</string>
+		<string>7D332F180F1BC68400C3E3F4</string>
+		<string>7D332F190F1BC68400C3E3F4</string>
 		<string>7D246E890F155D8A00D6C68B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/mlecarme/Documents/workspace/palourde/agent/Palourde/Palourde.xcodeproj</string>
+		<string>/Users/mlecarme/Developpement/Cocoa/palourde/agent/Palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>449 332 1382 831 0 0 1920 1178 </string>
@@ -637,7 +656,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>7D246E890F155D8A00D6C68B</string>
-				<string>7D3F1F020F1B9BE30024D5F5</string>
+				<string>7D332ECE0F1BAC6C00C3E3F4</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -722,21 +741,19 @@
 									<key>DebugVariablesTableConfiguration</key>
 									<array>
 										<string>Name</string>
-										<real>120</real>
+										<real>149</real>
 										<string>Value</string>
-										<real>85</real>
+										<real>114</real>
 										<string>Summary</string>
-										<real>373</real>
-										<string>Type</string>
-										<real>84</real>
+										<real>402</real>
 									</array>
 									<key>Frame</key>
 									<string>{{573, 0}, {690, 427}}</string>
 									<key>RubberWindowFrame</key>
-									<string>32 215 1263 841 0 0 1920 1178 </string>
+									<string>65 251 1263 841 0 0 1920 1178 </string>
 								</dict>
 								<key>RubberWindowFrame</key>
-								<string>32 215 1263 841 0 0 1920 1178 </string>
+								<string>65 251 1263 841 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugSessionModule</string>
@@ -759,22 +776,22 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>7D3F1F030F1B9BE30024D5F5</string>
+				<string>7D332ECF0F1BAC6C00C3E3F4</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>7D3F1F040F1B9BE30024D5F5</string>
-				<string>7D3F1F050F1B9BE30024D5F5</string>
-				<string>7D3F1F060F1B9BE30024D5F5</string>
-				<string>7D3F1F070F1B9BE30024D5F5</string>
-				<string>7D3F1F080F1B9BE30024D5F5</string>
+				<string>7D332ED00F1BAC6C00C3E3F4</string>
+				<string>7D332ED10F1BAC6C00C3E3F4</string>
+				<string>7D332ED20F1BAC6C00C3E3F4</string>
+				<string>7D332ED30F1BAC6C00C3E3F4</string>
+				<string>7D332ED40F1BAC6C00C3E3F4</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
 			<key>WindowString</key>
-			<string>32 215 1263 841 0 0 1920 1178 </string>
+			<string>65 251 1263 841 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -929,7 +946,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>7D3F1F090F1B9BE30024D5F5</string>
+				<string>7D332ED50F1BAC6C00C3E3F4</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

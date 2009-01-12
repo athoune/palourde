@@ -7,18 +7,22 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#define NOTHING 1
+#define SPRAYING 2
 
 @interface PAController : NSObject {
     IBOutlet NSMenu *paMenu;
     NSStatusItem *paItem;
     NSImage *paImageActive, *paImageInactive;
-    int virus;
+    int virus, scanWorking, frame;
+    NSArray *animSpraying;
 }
 
 - (void)showInStatusBar:(id)sender;
 - (void) mediaMounted: (NSNotification *)notification;
 - (IBAction)runWebPage:(id)sender;
 - (IBAction)scanHome:(id)sender;
+-(void) asyncScan:(NSString*)thePath;
+
 
 @end
