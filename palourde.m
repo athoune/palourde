@@ -9,12 +9,12 @@
 
 
 #import <Foundation/Foundation.h>
-#import "Client.h"
+#import "ClamavClient.h"
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     
-    Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
+    ClamavClient *client = [[ClamavClient alloc] initWithPath:@"/tmp/clamd.socket"];
 	//NSLog(@"Ping: %@", [client ping]);
 	//NSLog(@"Version: %@", [client version]);
 	[client contscan:@"/tmp/"];

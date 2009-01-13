@@ -6,6 +6,21 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7D7139CF0F1CF4BB00B7C34B /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7D7139DC0F1CF4ED00B7C34B /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				7D7139D30F1CF4CA00B7C34B /* PBXTargetDependency */,
+				7D7139D50F1CF4CE00B7C34B /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
@@ -18,18 +33,35 @@
 		7D246E600F155C9900D6C68B /* UKKQueue Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */; };
 		7D246E610F155C9900D6C68B /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E5B0F155C9900D6C68B /* UKKQueue.m */; };
 		7D246E620F155C9900D6C68B /* UKMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */; };
-		7D246E670F155D1F00D6C68B /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E660F155D1F00D6C68B /* Client.m */; };
 		7D6E996E0F1619F6001A98E2 /* lapalourde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */; };
 		7D6E99710F161A28001A98E2 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E99700F161A28001A98E2 /* PAController.m */; };
 		7D71399C0F1CF08800B7C34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D71399B0F1CF08800B7C34B /* Foundation.framework */; };
 		7D7139A60F1CF13800B7C34B /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7139A50F1CF13800B7C34B /* palourde.m */; };
-		7D7139A80F1CF17700B7C34B /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E660F155D1F00D6C68B /* Client.m */; };
+		7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
+		7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
 		7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D7139D20F1CF4CA00B7C34B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* Palourde */;
+			remoteInfo = Palourde;
+		};
+		7D7139D40F1CF4CE00B7C34B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D7139850F1CF00400B7C34B /* palourde */;
+			remoteInfo = palourde;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7DF1BCD60F195B7400D807B1 /* CopyFiles */ = {
@@ -67,14 +99,14 @@
 		7D246E5B0F155C9900D6C68B /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKKQueue.m; path = UKKQueue/UKKQueue.m; sourceTree = SOURCE_ROOT; };
 		7D246E5C0F155C9900D6C68B /* UKMainThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKMainThreadProxy.h; path = UKKQueue/UKMainThreadProxy.h; sourceTree = SOURCE_ROOT; };
 		7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKMainThreadProxy.m; path = UKKQueue/UKMainThreadProxy.m; sourceTree = SOURCE_ROOT; };
-		7D246E650F155D1F00D6C68B /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Client.h; path = ../../framework/ClamAV/Client.h; sourceTree = SOURCE_ROOT; };
-		7D246E660F155D1F00D6C68B /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Client.m; path = ../../framework/ClamAV/Client.m; sourceTree = SOURCE_ROOT; };
 		7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lapalourde.jpg; sourceTree = "<group>"; };
 		7D6E996F0F161A28001A98E2 /* PAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAController.h; sourceTree = "<group>"; };
 		7D6E99700F161A28001A98E2 /* PAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAController.m; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = palourde; path = build/Release/palourde; sourceTree = "<group>"; };
 		7D71399B0F1CF08800B7C34B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D7139A50F1CF13800B7C34B /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = palourde.m; sourceTree = "<group>"; };
+		7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClamavClient.h; sourceTree = "<group>"; };
+		7D713A600F1CF6F300B7C34B /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClamavClient.m; sourceTree = "<group>"; };
 		7DF1BC670F194D4900D807B1 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		7DF1BCCF0F195B5C00D807B1 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,8 +137,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7D246E650F155D1F00D6C68B /* Client.h */,
-				7D246E660F155D1F00D6C68B /* Client.m */,
+				7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */,
+				7D713A600F1CF6F300B7C34B /* ClamavClient.m */,
 				7D246E540F155C9900D6C68B /* UKKQueue */,
 				7D6E996F0F161A28001A98E2 /* PAController.h */,
 				7D6E99700F161A28001A98E2 /* PAController.m */,
@@ -125,6 +157,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7DF1BCCF0F195B5C00D807B1 /* Growl.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -145,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				7D7139A40F1CF11200B7C34B /* cli */,
-				7DF1BCCF0F195B5C00D807B1 /* Growl.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -267,6 +299,7 @@
 			targets = (
 				8D1107260486CEB800E47090 /* Palourde */,
 				7D7139850F1CF00400B7C34B /* palourde */,
+				7D7139CF0F1CF4BB00B7C34B /* All */,
 			);
 		};
 /* End PBXProject section */
@@ -295,8 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D7139A80F1CF17700B7C34B /* Client.m in Sources */,
 				7D7139A60F1CF13800B7C34B /* palourde.m in Sources */,
+				7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +342,25 @@
 				7D246E5F0F155C9900D6C68B /* UKFNSubscribeFileWatcher.m in Sources */,
 				7D246E610F155C9900D6C68B /* UKKQueue.m in Sources */,
 				7D246E620F155C9900D6C68B /* UKMainThreadProxy.m in Sources */,
-				7D246E670F155D1F00D6C68B /* Client.m in Sources */,
 				7D6E99710F161A28001A98E2 /* PAController.m in Sources */,
+				7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D7139D30F1CF4CA00B7C34B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* Palourde */;
+			targetProxy = 7D7139D20F1CF4CA00B7C34B /* PBXContainerItemProxy */;
+		};
+		7D7139D50F1CF4CE00B7C34B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D7139850F1CF00400B7C34B /* palourde */;
+			targetProxy = 7D7139D40F1CF4CE00B7C34B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -378,6 +424,27 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = palourde;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		7D7139D00F1CF4BB00B7C34B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		7D7139D10F1CF4BB00B7C34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = All;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -455,6 +522,15 @@
 			buildConfigurations = (
 				7D7139880F1CF00500B7C34B /* Debug */,
 				7D7139890F1CF00500B7C34B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D7139DC0F1CF4ED00B7C34B /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7139D00F1CF4BB00B7C34B /* Debug */,
+				7D7139D10F1CF4BB00B7C34B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

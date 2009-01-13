@@ -7,7 +7,7 @@
 //
 
 #import "PAController.h"
-#import "Client.h"
+#import "ClamavClient.h"
 
 @implementation PAController
 
@@ -130,7 +130,7 @@
 	[thePath retain];
 	NSAutoreleasePool *myAutoreleasePool =[[NSAutoreleasePool alloc] init];
 	NSLog(@"Async scan started");
-	Client *client = [[Client alloc] initWithPath:@"/tmp/clamd.socket"];
+	ClamavClient *client = [[ClamavClient alloc] initWithPath:@"/tmp/clamd.socket"];
 	[client contscan:thePath];
 	//[client release];
 	//[NSAutoreleasePool showPools];

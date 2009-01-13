@@ -233,8 +233,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -275,26 +273,25 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>089C165CFE840E0CC02AAC07</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A0FEA54F0111CA2CBB</string>
 								<string>1058C7A2FEA54F0111CA2CBB</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>7D7139AC0F1CF18500B7C34B</string>
-								<string>7D7139C60F1CF2D200B7C34B</string>
+								<string>7D713A5B0F1CF50900B7C34B</string>
+								<string>7D713A5C0F1CF50900B7C34B</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>37</integer>
-									<integer>36</integer>
+									<integer>41</integer>
+									<integer>35</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 12}, {186, 772}}</string>
+							<string>{{0, 0}, {186, 772}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,12 +321,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>palourde.m</string>
+								<string>PAController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -337,19 +336,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>palourde.m</string>
+										<string>PAController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D7139C90F1CF2D200B7C34B</string>
+										<string>7D713A6E0F1CF76700B7C34B</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
 											<string>7DCC71110F1A7C7A00CAB1F3</string>
 											<string>7D332F0A0F1BC5D500C3E3F4</string>
 											<string>7D332F380F1BCA3000C3E3F4</string>
-											<string>7D7139AE0F1CF18500B7C34B</string>
-											<string>7D7139C70F1CF2D200B7C34B</string>
+											<string>7D713A660F1CF76700B7C34B</string>
+											<string>7D713A670F1CF76700B7C34B</string>
+											<string>7D713A680F1CF76700B7C34B</string>
+											<string>7D713A690F1CF76700B7C34B</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -361,6 +362,10 @@
 											<string>7D7139B10F1CF18500B7C34B</string>
 											<string>7D7139B20F1CF18500B7C34B</string>
 											<string>7D7139C80F1CF2D200B7C34B</string>
+											<string>7D713A6A0F1CF76700B7C34B</string>
+											<string>7D713A6B0F1CF76700B7C34B</string>
+											<string>7D713A6C0F1CF76700B7C34B</string>
+											<string>7D713A6D0F1CF76700B7C34B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -554,9 +559,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7D246E890F155D8A00D6C68B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>7D246E890F155D8A00D6C68B</string>
 		<string>/Users/mlecarme/Documents/workspace/palourde/agent/Palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -576,12 +581,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>PAController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -648,7 +655,7 @@
 			<key>WindowToolGUID</key>
 			<string>7D246E890F155D8A00D6C68B</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
