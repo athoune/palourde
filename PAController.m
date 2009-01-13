@@ -8,6 +8,7 @@
 
 #import "PAController.h"
 #import "ClamavClient.h"
+#import "UKKQueue.h"
 
 @implementation PAController
 
@@ -49,6 +50,14 @@
 	       selector:@selector(scanFinished:)
 		   name:PAScanFinished
 		 object:nil];
+    UKKQueue* kqueue = [UKKQueue sharedFileWatcher];
+    [kqueue addPathToQueue:[@"~/Downloads/" stringByExpandingTildeInPath]];
+    [kqueue addPathToQueue:[@"~/Library/Mail Downloads/" stringByExpandingTildeInPath]];
+    [globalCenter addObserver:self
+		     selector:@selector(somethingNewInFolder:)
+			 name:UKFileWatcherWriteNotification
+		       object:nil];
+    
     return self;
 }
 
@@ -78,6 +87,10 @@
 - (void) mediaMounted: (NSNotification *)notification{
     NSLog(@"I'm going to scan %@", [[notification userInfo] objectForKey:@"NSDevicePath"]);
     [self asyncScan:[[notification userInfo] objectForKey:@"NSDevicePath"]];
+}
+
+- (void) somethingNewInFolder: (NSNotification *)notification{
+    NSLog(@"A new folder is going to be scanned: %@", [[notification userInfo] objectForKey:@"path"]);
 }
 
 - (void) showInStatusBar:(id)sender {

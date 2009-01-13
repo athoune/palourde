@@ -35,7 +35,6 @@
 		7D246E620F155C9900D6C68B /* UKMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */; };
 		7D6E996E0F1619F6001A98E2 /* lapalourde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */; };
 		7D6E99710F161A28001A98E2 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E99700F161A28001A98E2 /* PAController.m */; };
-		7D71399C0F1CF08800B7C34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D71399B0F1CF08800B7C34B /* Foundation.framework */; };
 		7D7139A60F1CF13800B7C34B /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7139A50F1CF13800B7C34B /* palourde.m */; };
 		7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
 		7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
@@ -51,14 +50,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D1107260486CEB800E47090 /* Palourde */;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
 			remoteInfo = Palourde;
 		};
 		7D7139D40F1CF4CE00B7C34B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7D7139850F1CF00400B7C34B /* palourde */;
+			remoteGlobalIDString = 7D7139850F1CF00400B7C34B;
 			remoteInfo = palourde;
 		};
 /* End PBXContainerItemProxy section */
@@ -102,8 +101,7 @@
 		7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lapalourde.jpg; sourceTree = "<group>"; };
 		7D6E996F0F161A28001A98E2 /* PAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAController.h; sourceTree = "<group>"; };
 		7D6E99700F161A28001A98E2 /* PAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAController.m; sourceTree = "<group>"; };
-		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = palourde; path = build/Release/palourde; sourceTree = "<group>"; };
-		7D71399B0F1CF08800B7C34B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7139A50F1CF13800B7C34B /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = palourde.m; sourceTree = "<group>"; };
 		7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClamavClient.h; sourceTree = "<group>"; };
 		7D713A600F1CF6F300B7C34B /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClamavClient.m; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D71399C0F1CF08800B7C34B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +136,6 @@
 			children = (
 				7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */,
 				7D713A600F1CF6F300B7C34B /* ClamavClient.m */,
-				7D246E540F155C9900D6C68B /* UKKQueue */,
-				7D6E996F0F161A28001A98E2 /* PAController.h */,
-				7D6E99700F161A28001A98E2 /* PAController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -177,13 +171,14 @@
 		29B97314FDCFA39411CA2CEA /* Palourde */ = {
 			isa = PBXGroup;
 			children = (
+				7DB23AA00F1D02F5006C2ACF /* preferencePane */,
+				7DB23A9F0F1D02CD006C2ACF /* external */,
+				7DB23A9D0F1D027B006C2ACF /* agent */,
+				7DB23A9C0F1D0272006C2ACF /* common */,
 				7D7139A40F1CF11200B7C34B /* cli */,
-				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				7D71399B0F1CF08800B7C34B /* Foundation.framework */,
 			);
 			name = Palourde;
 			sourceTree = "<group>";
@@ -192,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -237,7 +231,7 @@
 				7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */,
 			);
 			path = UKKQueue;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		7D7139A40F1CF11200B7C34B /* cli */ = {
 			isa = PBXGroup;
@@ -245,6 +239,48 @@
 				7D7139A50F1CF13800B7C34B /* palourde.m */,
 			);
 			name = cli;
+			sourceTree = "<group>";
+		};
+		7DB23A9C0F1D0272006C2ACF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		7DB23A9D0F1D027B006C2ACF /* agent */ = {
+			isa = PBXGroup;
+			children = (
+				7DB23B290F1D0449006C2ACF /* Classes */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			name = agent;
+			sourceTree = "<group>";
+		};
+		7DB23A9F0F1D02CD006C2ACF /* external */ = {
+			isa = PBXGroup;
+			children = (
+				7D246E540F155C9900D6C68B /* UKKQueue */,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		7DB23AA00F1D02F5006C2ACF /* preferencePane */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = preferencePane;
+			sourceTree = "<group>";
+		};
+		7DB23B290F1D0449006C2ACF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7D6E996F0F161A28001A98E2 /* PAController.h */,
+				7D6E99700F161A28001A98E2 /* PAController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
