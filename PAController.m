@@ -9,12 +9,12 @@
 #import "PAController.h"
 #import "ClamavClient.h"
 #import "UKKQueue.h"
+#import "Growl/GrowlApplicationBridge.h"
 
 @implementation PAController
 
 // Helper: Load a named image, and scale it to be suitable for menu bar use.
-- (NSImage *)prepareImageForMenubar:(NSString *)name
-{
+- (NSImage *)prepareImageForMenubar:(NSString *)name {
     NSImage *img = [NSImage imageNamed:name];
     [img setScalesWhenResized:YES];
     [img setSize:NSMakeSize(22, 22)];
@@ -25,6 +25,9 @@
 - (id) init {
     if (!(self = [super init]))
 	return nil;
+    
+    [GrowlApplicationBridge setGrowlDelegate:self];
+    
     paImageActive = [self prepareImageForMenubar:@"bombe__s01"];
     paImageInactive = nil;
     virus = 0;
@@ -57,6 +60,8 @@
 		     selector:@selector(somethingNewInFolder:)
 			 name:UKFileWatcherWriteNotification
 		       object:nil];
+    folderDownloads = [[NSMutableSet alloc] initWithCapacity:16];
+    folderMailDownloads = [[NSMutableSet alloc] initWithCapacity:16];
     
     return self;
 }
@@ -72,10 +77,14 @@
     [NSApp unhide];
 }
 
-- (void) oneVirus: (NSNotification *)notification{
+- (void) oneVirus: (NSNotification *)notification {
     virus ++;
     [paItem setTitle: [NSString stringWithFormat: @"%i", virus]]; 
     NSLog(@"Virus token n°%i : %@", virus, [notification userInfo]);
+    [self doGrowl:@"Un virus!" withMessage:
+     [[NSString alloc] initWithFormat:@"Le virus %@ a été trouvé dans le fichier %@", 
+      [[notification userInfo] objectForKey:@"virus"],
+      [[notification userInfo] objectForKey:@"file"]]];
 }
 
 - (void) scanFinished: (NSNotification *)notification{
@@ -84,12 +93,12 @@
     NSLog(@"%i scan is still alive", scanWorking);
 }
 
-- (void) mediaMounted: (NSNotification *)notification{
+- (void) mediaMounted: (NSNotification *)notification {
     NSLog(@"I'm going to scan %@", [[notification userInfo] objectForKey:@"NSDevicePath"]);
     [self asyncScan:[[notification userInfo] objectForKey:@"NSDevicePath"]];
 }
 
-- (void) somethingNewInFolder: (NSNotification *)notification{
+- (void) somethingNewInFolder: (NSNotification *)notification {
     NSLog(@"A new folder is going to be scanned: %@", [[notification userInfo] objectForKey:@"path"]);
 }
 
@@ -115,8 +124,7 @@
     }
 }
 
-- (IBAction)runWebPage:(id)sender
-{
+- (IBAction)runWebPage:(id)sender {
     NSURL *url = [NSURL URLWithString:@"https://admin.garambrogne.net/projets/palourde"];//[[[NSBundle mainBundle] infoDictionary] valueForKey:@"MPWebPageURL"]];
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
@@ -151,8 +159,38 @@
     NSLog(@"async scan is done");
 } 
 
-- (void)dealloc
+- (void)doGrowl:(NSString *)title withMessage:(NSString *)message {
+    float pri = 0;
+    
+    if ([title isEqualToString:@"Failure"])
+	pri = 1;
+    
+    [GrowlApplicationBridge notifyWithTitle:title
+				description:message
+			   notificationName:title
+				   iconData:nil
+				   priority:pri
+				   isSticky:NO
+			       clickContext:nil];
+}
+
+- (NSDictionary *) registrationDictionaryForGrowl
 {
+    NSArray *notifications = [NSArray arrayWithObjects:
+			      @"Un virus!",
+			      nil];
+    
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+	    notifications, GROWL_NOTIFICATIONS_ALL,
+	    notifications, GROWL_NOTIFICATIONS_ALL,
+	    nil];
+}
+- (NSString *) applicationNameForGrowl {
+    return @"Palourde";
+}
+
+
+- (void)dealloc {
     [paMenu release];
     [paItem release];
     [paImageActive release];
@@ -160,6 +198,8 @@
     [animSpraying release];
     [[NSNotificationCenter defaultCenter] removeObserver: self];
     [[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver: self];
+    [folderDownloads release];
+    [folderMailDownloads release];
     [super dealloc];
 }
 @end

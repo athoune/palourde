@@ -7,15 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Growl/GrowlApplicationBridge.h"
+
 #define NOTHING 1
 #define SPRAYING 2
 
-@interface PAController : NSObject {
+@interface PAController : NSObject <GrowlApplicationBridgeDelegate> {
     IBOutlet NSMenu *paMenu;
     NSStatusItem *paItem;
     NSImage *paImageActive, *paImageInactive;
     int virus, scanWorking, frame;
     NSArray *animSpraying;
+    NSSet *folderDownloads;
+    NSSet *folderMailDownloads;
 }
 
 - (void)showInStatusBar:(id)sender;
@@ -24,6 +28,8 @@
 - (IBAction)runWebPage:(id)sender;
 - (IBAction)scanHome:(id)sender;
 - (void) asyncScan:(NSString*)thePath;
+- (void)doGrowl:(NSString *)title withMessage:(NSString *)message;
+
 
 
 @end

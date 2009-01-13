@@ -258,7 +258,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>186</real>
+								<real>245</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -280,6 +280,9 @@
 								<string>7D7139A40F1CF11200B7C34B</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>1058C7A2FEA54F0111CA2CBB</string>
+								<string>7DF1BCCF0F195B5C00D807B1</string>
+								<string>7DB23A930F1D026D006C2ACF</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -295,7 +298,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 932}}</string>
+							<string>{{0, 0}, {245, 932}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -307,11 +310,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 950}}</string>
+						<string>{{0, 0}, {262, 950}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>186</real>
+							<real>245</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>319 171 1445 991 0 0 1920 1178 </string>
@@ -319,7 +322,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>203pt</string>
+					<string>262pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -344,17 +347,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7DB23B430F1D07CF006C2ACF</string>
+										<string>7DB23BBF0F1D263C006C2ACF</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
 											<string>7D713A660F1CF76700B7C34B</string>
-											<string>7D713A670F1CF76700B7C34B</string>
 											<string>7D713A680F1CF76700B7C34B</string>
 											<string>7DB23B2F0F1D0757006C2ACF</string>
 											<string>7DB23B310F1D0757006C2ACF</string>
-											<string>7DB23B3F0F1D07CF006C2ACF</string>
-											<string>7DB23B400F1D07CF006C2ACF</string>
+											<string>7DB23BAB0F1D2515006C2ACF</string>
+											<string>7DB23BAD0F1D2515006C2ACF</string>
+											<string>7DB23BAE0F1D2515006C2ACF</string>
+											<string>7DB23BAF0F1D2515006C2ACF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -375,6 +379,21 @@
 											<string>7DB23B3A0F1D0757006C2ACF</string>
 											<string>7DB23B410F1D07CF006C2ACF</string>
 											<string>7DB23B420F1D07CF006C2ACF</string>
+											<string>7DB23B460F1D0927006C2ACF</string>
+											<string>7DB23B470F1D0927006C2ACF</string>
+											<string>7DB23B480F1D0927006C2ACF</string>
+											<string>7DB23B490F1D0927006C2ACF</string>
+											<string>7DB23BA10F1D237F006C2ACF</string>
+											<string>7DB23BA20F1D237F006C2ACF</string>
+											<string>7DB23BA30F1D237F006C2ACF</string>
+											<string>7DB23BB00F1D2515006C2ACF</string>
+											<string>7DB23BB10F1D2515006C2ACF</string>
+											<string>7DB23BB30F1D2515006C2ACF</string>
+											<string>7DB23BB40F1D2515006C2ACF</string>
+											<string>7DB23BB50F1D2515006C2ACF</string>
+											<string>7DB23BB60F1D2515006C2ACF</string>
+											<string>7DB23BB70F1D2515006C2ACF</string>
+											<string>7DB23BB80F1D2515006C2ACF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -386,7 +405,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1237, 772}}</string>
+								<string>{{0, 0}, {1178, 772}}</string>
 								<key>RubberWindowFrame</key>
 								<string>319 171 1445 991 0 0 1920 1178 </string>
 							</dict>
@@ -406,7 +425,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 777}, {1237, 173}}</string>
+								<string>{{0, 777}, {1178, 173}}</string>
 								<key>RubberWindowFrame</key>
 								<string>319 171 1445 991 0 0 1920 1178 </string>
 							</dict>
@@ -417,7 +436,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1237pt</string>
+					<string>1178pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
