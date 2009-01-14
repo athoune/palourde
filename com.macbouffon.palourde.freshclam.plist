@@ -13,8 +13,8 @@
 	</dict>
 	<key>ProgramArguments</key>
 	<array>
-		<string>//Library/Palourde/bin/freshclam</string>
-		<string>--config-file=/Library/Palourde/etc/clamd.conf</string>
+		<string>//Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam</string>
+		<string>--config-file=/Library/Preferences/clamd.conf</string>
 		<string>--daemon-notify</string>
 	</array>
 	<key>RunAtLoad</key>
