@@ -19,18 +19,6 @@
 			name = All;
 			productName = All;
 		};
-		7D76E0540F1E167800A8B7CC /* Install */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 7D76E05C0F1E16C400A8B7CC /* Build configuration list for PBXAggregateTarget "Install" */;
-			buildPhases = (
-				7D76E0530F1E167800A8B7CC /* CopyFiles */,
-			);
-			dependencies = (
-				7D76E0580F1E167F00A8B7CC /* PBXTargetDependency */,
-			);
-			name = Install;
-			productName = Install;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -50,7 +38,6 @@
 		7D7139A60F1CF13800B7C34B /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7139A50F1CF13800B7C34B /* palourde.m */; };
 		7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
 		7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
-		7D76E0590F1E168F00A8B7CC /* Palourde.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* Palourde.app */; };
 		7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -73,26 +60,9 @@
 			remoteGlobalIDString = 7D7139850F1CF00400B7C34B;
 			remoteInfo = palourde;
 		};
-		7D76E0570F1E167F00A8B7CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D1107260486CEB800E47090;
-			remoteInfo = Palourde;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7D76E0530F1E167800A8B7CC /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /Library/Palourde/;
-			dstSubfolderSpec = 0;
-			files = (
-				7D76E0590F1E168F00A8B7CC /* Palourde.app in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7DF1BCD60F195B7400D807B1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,7 +105,6 @@
 		7D7139A50F1CF13800B7C34B /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = palourde.m; sourceTree = "<group>"; };
 		7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClamavClient.h; sourceTree = "<group>"; };
 		7D713A600F1CF6F300B7C34B /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClamavClient.m; sourceTree = "<group>"; };
-		7DF1BC670F194D4900D807B1 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		7DF1BCCF0F195B5C00D807B1 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,7 +202,6 @@
 				7D1BD26C0F167285000BD5C2 /* bombe.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
-				7DF1BC670F194D4900D807B1 /* Growl Registration Ticket.growlRegDict */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -366,7 +334,6 @@
 				8D1107260486CEB800E47090 /* Palourde */,
 				7D7139850F1CF00400B7C34B /* palourde */,
 				7D7139CF0F1CF4BB00B7C34B /* All */,
-				7D76E0540F1E167800A8B7CC /* Install */,
 			);
 		};
 /* End PBXProject section */
@@ -426,11 +393,6 @@
 			isa = PBXTargetDependency;
 			target = 7D7139850F1CF00400B7C34B /* palourde */;
 			targetProxy = 7D7139D40F1CF4CE00B7C34B /* PBXContainerItemProxy */;
-		};
-		7D76E0580F1E167F00A8B7CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8D1107260486CEB800E47090 /* Palourde */;
-			targetProxy = 7D76E0570F1E167F00A8B7CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -521,27 +483,6 @@
 			};
 			name = Release;
 		};
-		7D76E0550F1E167800A8B7CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = Install;
-			};
-			name = Debug;
-		};
-		7D76E0560F1E167800A8B7CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PRODUCT_NAME = Install;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -624,15 +565,6 @@
 			buildConfigurations = (
 				7D7139D00F1CF4BB00B7C34B /* Debug */,
 				7D7139D10F1CF4BB00B7C34B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D76E05C0F1E16C400A8B7CC /* Build configuration list for PBXAggregateTarget "Install" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D76E0550F1E167800A8B7CC /* Debug */,
-				7D76E0560F1E167800A8B7CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
