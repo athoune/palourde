@@ -38,6 +38,7 @@
 		7D7139A60F1CF13800B7C34B /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7139A50F1CF13800B7C34B /* palourde.m */; };
 		7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
 		7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
+		7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D9D00B80F1F5058005873CF /* Sneeze.wav */; };
 		7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -105,6 +106,7 @@
 		7D7139A50F1CF13800B7C34B /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = palourde.m; sourceTree = "<group>"; };
 		7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClamavClient.h; sourceTree = "<group>"; };
 		7D713A600F1CF6F300B7C34B /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClamavClient.m; sourceTree = "<group>"; };
+		7D9D00B80F1F5058005873CF /* Sneeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sneeze.wav; sourceTree = "<group>"; };
 		7DF1BCCF0F195B5C00D807B1 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 				7D1BD2750F167B67000BD5C2 /* bombe__s03.png */,
 				7D1BD2760F167B67000BD5C2 /* bombe__s04.png */,
 				7D6E996D0F1619F6001A98E2 /* lapalourde.jpg */,
+				7D9D00B80F1F5058005873CF /* Sneeze.wav */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				7D1BD26C0F167285000BD5C2 /* bombe.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -352,6 +355,7 @@
 				7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */,
 				7D1BD2790F167B67000BD5C2 /* bombe__s03.png in Resources */,
 				7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */,
+				7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

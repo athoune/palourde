@@ -81,10 +81,13 @@
     virus ++;
     [paItem setTitle: [NSString stringWithFormat: @"%i", virus]]; 
     NSLog(@"Virus token n°%i : %@", virus, [notification userInfo]);
+	NSSound *sneeze = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sneeze" ofType:@"wav"] byReference:NO];
+	[sneeze play];
     [self doGrowl:@"Un virus!" withMessage:
      [[NSString alloc] initWithFormat:@"Le virus %@ a été trouvé dans le fichier %@", 
       [[notification userInfo] objectForKey:@"virus"],
       [[notification userInfo] objectForKey:@"file"]]];
+	[sneeze release];
 }
 
 - (void) scanFinished: (NSNotification *)notification{
