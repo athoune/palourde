@@ -22,9 +22,9 @@ BUILD='build/Release/Palourde.app/Contents/Resources'
 PWD=`pwd`
 cd clamav-src && ./configure --enable-static --with-zlib=/opt/local --with-libbz2-prefix=/opt/local  --with-iconv --with-libgmp-prefix=/opt/local --prefix=/Library/Palourde/Palourde.app/Contents/Resources --disable-clamav --disable-dependency-tracking --sysconfdir=/Library/Preferences/ --with-dbdir=/Library/Palourde/Definitions/ && make clean && make all && sudo make install
 cd ..
-echo `pwd`
+mkdir -p $BUILD
 cp -rv $RESOURCES/bin $BUILD/
 cp -rv $RESOURCES/include $BUILD/
 cp -rv $RESOURCES/lib $BUILD/
 cp -rv $RESOURCES/sbin $BUILD/
-
+cp -rv /Library/Palourde/Definitions build/Release/

@@ -233,6 +233,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -283,18 +285,20 @@
 								<string>7DF1BCCF0F195B5C00D807B1</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>7D9D00C50F1F6B33005873CF</string>
+								<string>7D9D02310F1F7190005873CF</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>40</integer>
 									<integer>39</integer>
+									<integer>38</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {245, 932}}</string>
+							<string>{{0, 37}, {245, 932}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,14 +328,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PAController.m</string>
+								<string>UKKQueue Readme.txt</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -339,11 +341,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PAController.m</string>
+										<string>UKKQueue Readme.txt</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D9D00C30F1F52D5005873CF</string>
+										<string>7D9D02370F1F7190005873CF</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
@@ -353,7 +355,9 @@
 											<string>7DB23B310F1D0757006C2ACF</string>
 											<string>7DB23BAD0F1D2515006C2ACF</string>
 											<string>7DB23BAE0F1D2515006C2ACF</string>
-											<string>7DCE41940F1EA4160005E1E7</string>
+											<string>7D9D02320F1F7190005873CF</string>
+											<string>7D9D02330F1F7190005873CF</string>
+											<string>7D9D02340F1F7190005873CF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -365,6 +369,8 @@
 											<string>7D713A6B0F1CF76700B7C34B</string>
 											<string>7D713A6C0F1CF76700B7C34B</string>
 											<string>7DB23B370F1D0757006C2ACF</string>
+											<string>7D9D02350F1F7190005873CF</string>
+											<string>7D9D02360F1F7190005873CF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -559,8 +565,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>7D246E890F155D8A00D6C68B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>7D246E890F155D8A00D6C68B</string>
 		<string>/Users/mlecarme/Documents/workspace/palourde/Palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -602,6 +608,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -652,7 +660,7 @@
 			<key>WindowToolGUID</key>
 			<string>7D246E890F155D8A00D6C68B</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

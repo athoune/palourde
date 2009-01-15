@@ -73,7 +73,7 @@
     [paItem setHighlightMode:YES];
     [paItem setImage: paImageActive];//(guessIsConfident ? sbImageActive : sbImageInactive)];
     [paItem setMenu:paMenu];
-    [paItem setToolTip:@"Palourde AntiVirus"];
+    [paItem setToolTip:NSLocalizedString(@"Palourde AntiVirus", @"Application name")];
     [NSApp unhide];
 }
 
@@ -83,8 +83,8 @@
     NSLog(@"Virus token n°%i : %@", virus, [notification userInfo]);
 	NSSound *sneeze = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sneeze" ofType:@"wav"] byReference:NO];
 	[sneeze play];
-    [self doGrowl:@"Un virus!" withMessage:
-     [[NSString alloc] initWithFormat:@"Le virus %@ a été trouvé dans le fichier %@", 
+    [self doGrowl:NSLocalizedString(@"Un virus!", @"Popup title") withMessage:
+     [[NSString alloc] initWithFormat:NSLocalizedString(@"Le virus %@ a été trouvé dans le fichier %@",""), 
       [[notification userInfo] objectForKey:@"virus"],
       [[notification userInfo] objectForKey:@"file"]]];
 	[sneeze release];
@@ -128,7 +128,7 @@
 }
 
 - (IBAction)runWebPage:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"https://admin.garambrogne.net/projets/palourde"];//[[[NSBundle mainBundle] infoDictionary] valueForKey:@"MPWebPageURL"]];
+    NSURL *url = [NSURL URLWithString:@"http://code.google.com/p/palourde/"];//[[[NSBundle mainBundle] infoDictionary] valueForKey:@"MPWebPageURL"]];
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
