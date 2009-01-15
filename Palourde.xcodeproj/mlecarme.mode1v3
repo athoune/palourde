@@ -208,17 +208,18 @@
 		<dict>
 			<key>ChosenToolbarItems</key>
 			<array>
-				<string>active-combo-popup</string>
+				<string>active-target-popup</string>
+				<string>active-buildstyle-popup</string>
 				<string>action</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
-				<string>clean-target</string>
-				<string>build-and-go</string>
-				<string>build</string>
+				<string>servicesModuleRefactoring</string>
+				<string>buildOrClean</string>
+				<string>build-and-goOrGo</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
-				<string>debugger-fix-and-continue</string>
-				<string>go-debug</string>
-				<string>show-inspector</string>
+				<string>takeSnapshot</string>
 				<string>get-info</string>
+				<string>show-inspector</string>
+				<string>toggle-editor</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>com.apple.pbx.toolbar.searchfield</string>
 			</array>
@@ -285,8 +286,6 @@
 								<string>7DF1BCCF0F195B5C00D807B1</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>7D9D00C50F1F6B33005873CF</string>
-								<string>7D9D02310F1F7190005873CF</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
@@ -294,11 +293,10 @@
 							<array>
 								<array>
 									<integer>39</integer>
-									<integer>38</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 37}, {245, 932}}</string>
+							<string>{{0, 0}, {245, 932}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -345,7 +343,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D9D02370F1F7190005873CF</string>
+										<string>7D2D85E80F1FA60400745906</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
@@ -357,7 +355,7 @@
 											<string>7DB23BAE0F1D2515006C2ACF</string>
 											<string>7D9D02320F1F7190005873CF</string>
 											<string>7D9D02330F1F7190005873CF</string>
-											<string>7D9D02340F1F7190005873CF</string>
+											<string>7D9D02370F1F7190005873CF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -369,7 +367,6 @@
 											<string>7D713A6B0F1CF76700B7C34B</string>
 											<string>7D713A6C0F1CF76700B7C34B</string>
 											<string>7DB23B370F1D0757006C2ACF</string>
-											<string>7D9D02350F1F7190005873CF</string>
 											<string>7D9D02360F1F7190005873CF</string>
 										</array>
 									</dict>
@@ -428,9 +425,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7D9D00B00F1F5034005873CF</string>
+				<string>7D2D85E90F1FA60400745906</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7D9D00B10F1F5034005873CF</string>
+				<string>7D2D85EA0F1FA60400745906</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -551,7 +548,7 @@
 	<key>TimeStamp</key>
 	<real>0.0</real>
 	<key>ToolbarDisplayMode</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>ToolbarIsVisible</key>
 	<true/>
 	<key>ToolbarSizeMode</key>
@@ -564,10 +561,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>7D246E890F155D8A00D6C68B</string>
-		<string>/Users/mlecarme/Documents/workspace/palourde/Palourde/Palourde.xcodeproj</string>
+		<string>/Users/mlecarme/Developpement/Cocoa/palourde/Palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>378 142 1445 991 0 0 1920 1178 </string>
@@ -769,13 +764,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>7D9D00B20F1F5034005873CF</string>
+				<string>7D2D85EB0F1FA60400745906</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>7D9D00B30F1F5034005873CF</string>
-				<string>7D9D00B40F1F5034005873CF</string>
-				<string>7D9D00B50F1F5034005873CF</string>
-				<string>7D9D00B60F1F5034005873CF</string>
-				<string>7D9D00B70F1F5034005873CF</string>
+				<string>7D2D85EC0F1FA60400745906</string>
+				<string>7D2D85ED0F1FA60400745906</string>
+				<string>7D2D85EE0F1FA60400745906</string>
+				<string>7D2D85EF0F1FA60400745906</string>
+				<string>7D2D85F00F1FA60400745906</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

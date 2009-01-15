@@ -8,9 +8,6 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="463"/>
-			<integer value="472"/>
-			<integer value="57"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1124,7 +1121,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="NSMenuItem" id="186045620">
 						<reference key="NSMenu" ref="1066900528"/>
-						<string key="NSTitle">Help</string>
+						<string key="NSTitle">Aide</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
@@ -1132,7 +1129,7 @@
 					</object>
 					<object class="NSMenuItem" id="447951460">
 						<reference key="NSMenu" ref="1066900528"/>
-						<string key="NSTitle">About</string>
+						<string key="NSTitle">A propos</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
@@ -1140,7 +1137,7 @@
 					</object>
 					<object class="NSMenuItem" id="609354994">
 						<reference key="NSMenu" ref="1066900528"/>
-						<string key="NSTitle">Web page</string>
+						<string key="NSTitle">Site web</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
@@ -1158,7 +1155,7 @@
 					</object>
 					<object class="NSMenuItem" id="270879735">
 						<reference key="NSMenu" ref="1066900528"/>
-						<string key="NSTitle">Scan ...</string>
+						<string type="base64-UTF8" key="NSTitle">VsOpcmlmaWVyIC4uLg</string>
 						<string key="NSKeyEquiv">S</string>
 						<int key="NSKeyEquivModMask">1572864</int>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -1167,7 +1164,7 @@
 					</object>
 					<object class="NSMenuItem" id="444403891">
 						<reference key="NSMenu" ref="1066900528"/>
-						<string key="NSTitle">Scan Home</string>
+						<string type="base64-UTF8" key="NSTitle">VsOpcmlmaWVyIHNvbiBkb3NzaWVyIHBlcnNvbm5lbA</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
@@ -1175,7 +1172,7 @@
 					</object>
 					<object class="NSMenuItem" id="103123249">
 						<reference key="NSMenu" ref="1066900528"/>
-						<string key="NSTitle">Quit</string>
+						<string key="NSTitle">Quitter</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="35465992"/>
@@ -1185,10 +1182,9 @@
 			</object>
 			<object class="NSCollectionViewItem" id="110744368"/>
 			<object class="NSView" id="807780184">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">256</int>
 				<string key="NSFrameSize">{100, 100}</string>
-				<reference key="NSSuperview"/>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -2913,7 +2909,9 @@
 					<string>460.IBPluginDependency</string>
 					<string>461.IBPluginDependency</string>
 					<string>463.IBPluginDependency</string>
+					<string>471.IBPluginDependency</string>
 					<string>472.IBEditorWindowLastContentRect</string>
+					<string>472.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
 					<string>56.IBPluginDependency</string>
@@ -3142,7 +3140,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{21, 1022}, {100, 100}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
