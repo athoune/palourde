@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		7D1AE5990F2098F500444F92 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1AE5980F2098F500444F92 /* HMBlkAppKit.framework */; };
 		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
 		7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2730F167B67000BD5C2 /* bombe__s01.png */; };
 		7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2740F167B67000BD5C2 /* bombe__s02.png */; };
@@ -84,6 +85,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
+		7D1AE5980F2098F500444F92 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMBlkAppKit.framework; sourceTree = "<group>"; };
 		7D1BD26C0F167285000BD5C2 /* bombe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe.png; sourceTree = "<group>"; };
 		7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s01.png; sourceTree = "<group>"; };
 		7D1BD2740F167B67000BD5C2 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s02.png; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */,
+				7D1AE5990F2098F500444F92 /* HMBlkAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +158,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D1AE5980F2098F500444F92 /* HMBlkAppKit.framework */,
 				7DF1BCCF0F195B5C00D807B1 /* Growl.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
