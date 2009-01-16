@@ -34,15 +34,14 @@
 		7D1AE5E60F209C1C00444F92 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5E50F209C1C00444F92 /* PAController.m */; };
 		7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
 		7D1AE5EC0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
-		7D1AE5F10F209D3800444F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5F00F209D3800444F92 /* main.m */; };
 		7D1AE5F70F209D5300444F92 /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5F60F209D5300444F92 /* palourde.m */; };
-		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
-		7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2730F167B67000BD5C2 /* bombe__s01.png */; };
-		7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2740F167B67000BD5C2 /* bombe__s02.png */; };
-		7D1BD2790F167B67000BD5C2 /* bombe__s03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2750F167B67000BD5C2 /* bombe__s03.png */; };
-		7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2760F167B67000BD5C2 /* bombe__s04.png */; };
-		7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D9D00B80F1F5058005873CF /* Sneeze.wav */; };
 		7DA3EAE10F209E7C008496B9 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
+		7DA3EAF00F209F9F008496B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3EAEF0F209F9F008496B9 /* main.m */; };
+		7DA3EAF50F209FC3008496B9 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF10F209FC3008496B9 /* bombe__s04.png */; };
+		7DA3EAF60F209FC3008496B9 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF20F209FC3008496B9 /* bombe__s01.png */; };
+		7DA3EAF70F209FC3008496B9 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF30F209FC3008496B9 /* bombe__s02.png */; };
+		7DA3EAF80F209FC3008496B9 /* bombe__s03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF40F209FC3008496B9 /* bombe__s03.png */; };
+		7DA3EB040F20A05F008496B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EB030F20A05F008496B9 /* Info.plist */; };
 		7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD3BBA0F1F920800983762 /* Localizable.strings */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -102,21 +101,19 @@
 		7D1AE5E50F209C1C00444F92 /* PAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAController.m; path = source/PAController.m; sourceTree = "<group>"; };
 		7D1AE5E90F209C4100444F92 /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClamavClient.h; path = source/ClamavClient.h; sourceTree = "<group>"; };
 		7D1AE5EA0F209C4100444F92 /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClamavClient.m; path = source/ClamavClient.m; sourceTree = "<group>"; };
-		7D1AE5F00F209D3800444F92 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7D1AE5F60F209D5300444F92 /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = palourde.m; path = source/palourde.m; sourceTree = "<group>"; };
-		7D1BD26C0F167285000BD5C2 /* bombe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe.png; sourceTree = "<group>"; };
-		7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s01.png; sourceTree = "<group>"; };
-		7D1BD2740F167B67000BD5C2 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s02.png; sourceTree = "<group>"; };
-		7D1BD2750F167B67000BD5C2 /* bombe__s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s03.png; sourceTree = "<group>"; };
-		7D1BD2760F167B67000BD5C2 /* bombe__s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s04.png; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D9D00B80F1F5058005873CF /* Sneeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sneeze.wav; sourceTree = "<group>"; };
+		7DA3EAEF0F209F9F008496B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DA3EAF10F209FC3008496B9 /* bombe__s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s04.png; path = resource/bombe__s04.png; sourceTree = "<group>"; };
+		7DA3EAF20F209FC3008496B9 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s01.png; path = resource/bombe__s01.png; sourceTree = "<group>"; };
+		7DA3EAF30F209FC3008496B9 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s02.png; path = resource/bombe__s02.png; sourceTree = "<group>"; };
+		7DA3EAF40F209FC3008496B9 /* bombe__s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s03.png; path = resource/bombe__s03.png; sourceTree = "<group>"; };
+		7DA3EB030F20A05F008496B9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DAD3BAC0F1F8E3E00983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BAD0F1F8E5600983762 /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BAE0F1F8E5E00983762 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BB60F1F91D600983762 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7DAD3BBC0F1F921200983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,14 +202,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7DA3EB030F20A05F008496B9 /* Info.plist */,
+				7DA3EAF10F209FC3008496B9 /* bombe__s04.png */,
+				7DA3EAF20F209FC3008496B9 /* bombe__s01.png */,
+				7DA3EAF30F209FC3008496B9 /* bombe__s02.png */,
+				7DA3EAF40F209FC3008496B9 /* bombe__s03.png */,
 				7DAD3BBA0F1F920800983762 /* Localizable.strings */,
-				7D1BD2730F167B67000BD5C2 /* bombe__s01.png */,
-				7D1BD2740F167B67000BD5C2 /* bombe__s02.png */,
-				7D1BD2750F167B67000BD5C2 /* bombe__s03.png */,
-				7D1BD2760F167B67000BD5C2 /* bombe__s04.png */,
-				7D9D00B80F1F5058005873CF /* Sneeze.wav */,
-				8D1107310486CEB800E47090 /* Info.plist */,
-				7D1BD26C0F167285000BD5C2 /* bombe.png */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -264,7 +259,7 @@
 		7DB23A9D0F1D027B006C2ACF /* agent */ = {
 			isa = PBXGroup;
 			children = (
-				7D1AE5F00F209D3800444F92 /* main.m */,
+				7DA3EAEF0F209F9F008496B9 /* main.m */,
 				7DB23B290F1D0449006C2ACF /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 			);
@@ -367,14 +362,13 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */,
-				7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */,
-				7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */,
-				7D1BD2790F167B67000BD5C2 /* bombe__s03.png in Resources */,
-				7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */,
-				7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */,
 				7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */,
 				7D1AE5E10F209BF900444F92 /* UKKQueue Readme.txt in Resources */,
+				7DA3EAF50F209FC3008496B9 /* bombe__s04.png in Resources */,
+				7DA3EAF60F209FC3008496B9 /* bombe__s01.png in Resources */,
+				7DA3EAF70F209FC3008496B9 /* bombe__s02.png in Resources */,
+				7DA3EAF80F209FC3008496B9 /* bombe__s03.png in Resources */,
+				7DA3EB040F20A05F008496B9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +394,7 @@
 				7D1AE5E30F209BF900444F92 /* UKMainThreadProxy.m in Sources */,
 				7D1AE5E60F209C1C00444F92 /* PAController.m in Sources */,
 				7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */,
-				7D1AE5F10F209D3800444F92 /* main.m in Sources */,
+				7DA3EAF00F209F9F008496B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

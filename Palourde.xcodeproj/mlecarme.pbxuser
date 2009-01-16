@@ -135,6 +135,10 @@
 			7D1BD27F0F169919000BD5C2 = 7D1BD27F0F169919000BD5C2 /* PBXBookmark */;
 			7D1BD2830F169919000BD5C2 = 7D1BD2830F169919000BD5C2 /* PBXBookmark */;
 			7DA3EAE40F209E81008496B9 /* PBXTextBookmark */ = 7DA3EAE40F209E81008496B9 /* PBXTextBookmark */;
+			7DA3EAFF0F20A034008496B9 /* PBXTextBookmark */ = 7DA3EAFF0F20A034008496B9 /* PBXTextBookmark */;
+			7DA3EB000F20A034008496B9 /* PBXBookmark */ = 7DA3EB000F20A034008496B9 /* PBXBookmark */;
+			7DA3EB010F20A034008496B9 /* PBXTextBookmark */ = 7DA3EB010F20A034008496B9 /* PBXTextBookmark */;
+			7DA3EB020F20A034008496B9 /* PlistBookmark */ = 7DA3EB020F20A034008496B9 /* PlistBookmark */;
 		};
 		sourceControlManager = 7D246E520F155C7B00D6C68B /* Source Control */;
 		userBuildSettings = {
@@ -152,12 +156,18 @@
 	};
 	7D1AE5EA0F209C4100444F92 /* ClamavClient.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1117, 2562}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1117, 2632}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1182, 1395}";
+			sepNavVisRange = "{1182, 1489}";
 		};
 	};
 	7D1AE5F00F209D3800444F92 /* main.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = main.m;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/main.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1117, 717}}";
 			sepNavSelRange = "{0, 0}";
@@ -228,6 +238,20 @@
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 0;
+	};
+	7D1BD26C0F167285000BD5C2 /* bombe.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = bombe.png;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/bombe.png;
+		sourceTree = "<absolute>";
+	};
+	7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = bombe__s01.png;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/bombe__s01.png;
+		sourceTree = "<absolute>";
 	};
 	7D1BD27F0F169919000BD5C2 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -365,17 +389,60 @@
 		vrLen = 1395;
 		vrLoc = 1182;
 	};
+	7DA3EAEF0F209F9F008496B9 /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1117, 740}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 248}";
+		};
+	};
+	7DA3EAF90F209FD4008496B9 /* Info.plist */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text.plist.xml;
+		name = Info.plist;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/resource/Info.plist;
+		sourceTree = "<absolute>";
+	};
+	7DA3EAFF0F20A034008496B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */;
+		name = "ClamavClient.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 1182;
+	};
+	7DA3EB000F20A034008496B9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7DA3EAF90F209FD4008496B9 /* Info.plist */;
+	};
+	7DA3EB010F20A034008496B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */;
+		name = "ClamavClient.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 1182;
+	};
+	7DA3EB020F20A034008496B9 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 7DA3EAF90F209FD4008496B9 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/mlecarme/Documents/workspace/palourde/Palourde/resource/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
 	8D1107260486CEB800E47090 /* Palourde */ = {
 		activeExec = 0;
 		executables = (
 			7D246E4C0F155C6000D6C68B /* Palourde */,
 		);
-	};
-	8D1107310486CEB800E47090 /* Info.plist */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {632, 434}}";
-			sepNavSelRange = "{870, 0}";
-			sepNavVisRect = "{{0, 69}, {553, 365}}";
-		};
 	};
 }

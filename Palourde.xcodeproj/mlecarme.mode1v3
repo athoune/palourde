@@ -286,7 +286,7 @@
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>7DA3EACA0F209E50008496B9</string>
-								<string>7DA3EAE30F209E81008496B9</string>
+								<string>7DA3EAFE0F20A034008496B9</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C08E77C0454961000C914BD</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -296,10 +296,12 @@
 								<array>
 									<integer>49</integer>
 									<integer>48</integer>
+									<integer>47</integer>
+									<integer>46</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 115}, {245, 932}}</string>
+							<string>{{0, 86}, {245, 932}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -334,7 +336,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ClamavClient.m</string>
+								<string>Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -342,25 +344,25 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ClamavClient.m</string>
+										<string>Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7DA3EAE40F209E81008496B9</string>
+										<string>7DA3EB020F20A034008496B9</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
 											<string>7D1AE5F20F209D4900444F92</string>
-											<string>7D1AE60C0F209DDA00444F92</string>
 											<string>7D1AE60D0F209DDA00444F92</string>
-											<string>7D00AD830F209E4500F53434</string>
+											<string>7DA3EAFF0F20A034008496B9</string>
+											<string>7DA3EB000F20A034008496B9</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>7D1BD2830F169919000BD5C2</string>
 											<string>7D1AE5F40F209D4900444F92</string>
-											<string>7D1AE60F0F209DDA00444F92</string>
 											<string>7D1AE6100F209DDA00444F92</string>
+											<string>7DA3EB010F20A034008496B9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -598,6 +600,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
