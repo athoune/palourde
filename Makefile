@@ -1,2 +1,6 @@
 i18n:
-	genstrings PAController.m
+	genstrings source/PAController.m
+agent:
+	xcodebuild -target Palourde -configuration Release
+clean:
+	xcodebuild clean
