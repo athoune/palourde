@@ -12,7 +12,7 @@
 		activeExecutable = 7D246E4C0F155C6000D6C68B /* Palourde */;
 		activeTarget = 8D1107260486CEB800E47090 /* Palourde */;
 		addToTargets = (
-			8D1107260486CEB800E47090 /* Palourde */,
+			7D7139850F1CF00400B7C34B /* palourde */,
 		);
 		breakpoints = (
 		);
@@ -126,6 +126,7 @@
 		perUserProjectItems = {
 			7D1AE58F0F2098D900444F92 /* PBXTextBookmark */ = 7D1AE58F0F2098D900444F92 /* PBXTextBookmark */;
 			7D1AE5D10F209AE800444F92 /* PBXTextBookmark */ = 7D1AE5D10F209AE800444F92 /* PBXTextBookmark */;
+			7D1AE5D40F209BBD00444F92 /* PBXBookmark */ = 7D1AE5D40F209BBD00444F92 /* PBXBookmark */;
 			7D1BD27F0F169919000BD5C2 = 7D1BD27F0F169919000BD5C2 /* PBXBookmark */;
 			7D1BD2820F169919000BD5C2 = 7D1BD2820F169919000BD5C2 /* PBXTextBookmark */;
 			7D1BD2830F169919000BD5C2 = 7D1BD2830F169919000BD5C2 /* PBXBookmark */;
@@ -152,6 +153,12 @@
 		};
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = main.m;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/main.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 732}}";
 			sepNavSelRange = "{0, 0}";
@@ -177,6 +184,24 @@
 		rType = 0;
 		vrLen = 1920;
 		vrLoc = 0;
+	};
+	7D1AE5D40F209BBD00444F92 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */;
+	};
+	7D1AE5E70F209C2900444F92 /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1117, 717}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 248}";
+		};
+	};
+	7D1AE5ED0F209C5200444F92 /* palourde.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1117, 717}}";
+			sepNavSelRange = "{345, 0}";
+			sepNavVisRange = "{0, 572}";
+		};
 	};
 	7D1BD27F0F169919000BD5C2 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -283,6 +308,12 @@
 		indexTemplatePath = "";
 	};
 	7D246E550F155C9900D6C68B /* UKFileWatcher.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = UKFileWatcher.h;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/UKKQueue/UKFileWatcher.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1176, 882}}";
 			sepNavSelRange = "{1875, 30}";
@@ -290,6 +321,12 @@
 		};
 	};
 	7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text;
+		name = "UKKQueue Readme.txt";
+		path = "/Users/mlecarme/Documents/workspace/palourde/Palourde/UKKQueue/UKKQueue Readme.txt";
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1746, 717}}";
 			sepNavSelRange = "{0, 0}";
@@ -307,6 +344,12 @@
 		vrLoc = 0;
 	};
 	7D6E996F0F161A28001A98E2 /* PAController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = PAController.h;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/PAController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {439, 504}}";
 			sepNavSelRange = "{686, 0}";
@@ -314,6 +357,12 @@
 		};
 	};
 	7D6E99700F161A28001A98E2 /* PAController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = PAController.m;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/PAController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1117, 2870}}";
 			sepNavSelRange = "{4334, 0}";
@@ -350,6 +399,12 @@
 		);
 	};
 	7D7139A50F1CF13800B7C34B /* palourde.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = palourde.m;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/palourde.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1113, 580}}";
 			sepNavSelRange = "{345, 0}";
@@ -370,6 +425,12 @@
 		activeExec = 0;
 	};
 	7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ClamavClient.h;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/ClamavClient.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1113, 580}}";
 			sepNavSelRange = "{237, 12}";
@@ -377,6 +438,12 @@
 		};
 	};
 	7D713A600F1CF6F300B7C34B /* ClamavClient.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ClamavClient.m;
+		path = /Users/mlecarme/Documents/workspace/palourde/Palourde/ClamavClient.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1117, 2436}}";
 			sepNavSelRange = "{145, 0}";

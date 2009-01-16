@@ -27,23 +27,24 @@
 		7D1AE5B70F209ABE00444F92 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */; };
 		7D1AE5CB0F209AD000444F92 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1AE5AD0F209AB200444F92 /* Growl.framework */; };
 		7D1AE5CC0F209AD700444F92 /* HMBlkAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */; };
+		7D1AE5DF0F209BF900444F92 /* UKFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5D70F209BF900444F92 /* UKFileWatcher.m */; };
+		7D1AE5E00F209BF900444F92 /* UKFNSubscribeFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5D90F209BF900444F92 /* UKFNSubscribeFileWatcher.m */; };
+		7D1AE5E10F209BF900444F92 /* UKKQueue Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D1AE5DA0F209BF900444F92 /* UKKQueue Readme.txt */; };
+		7D1AE5E20F209BF900444F92 /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5DC0F209BF900444F92 /* UKKQueue.m */; };
+		7D1AE5E30F209BF900444F92 /* UKMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5DE0F209BF900444F92 /* UKMainThreadProxy.m */; };
+		7D1AE5E60F209C1C00444F92 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5E50F209C1C00444F92 /* PAController.m */; };
+		7D1AE5E80F209C2900444F92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5E70F209C2900444F92 /* main.m */; };
+		7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
+		7D1AE5EC0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
+		7D1AE5EE0F209C5200444F92 /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5ED0F209C5200444F92 /* palourde.m */; };
 		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
 		7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2730F167B67000BD5C2 /* bombe__s01.png */; };
 		7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2740F167B67000BD5C2 /* bombe__s02.png */; };
 		7D1BD2790F167B67000BD5C2 /* bombe__s03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2750F167B67000BD5C2 /* bombe__s03.png */; };
 		7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2760F167B67000BD5C2 /* bombe__s04.png */; };
-		7D246E5E0F155C9900D6C68B /* UKFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E560F155C9900D6C68B /* UKFileWatcher.m */; };
-		7D246E5F0F155C9900D6C68B /* UKFNSubscribeFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E580F155C9900D6C68B /* UKFNSubscribeFileWatcher.m */; };
-		7D246E610F155C9900D6C68B /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E5B0F155C9900D6C68B /* UKKQueue.m */; };
-		7D246E620F155C9900D6C68B /* UKMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */; };
-		7D7139A60F1CF13800B7C34B /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7139A50F1CF13800B7C34B /* palourde.m */; };
-		7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
-		7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D713A600F1CF6F300B7C34B /* ClamavClient.m */; };
 		7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D9D00B80F1F5058005873CF /* Sneeze.wav */; };
-		7DAD3BB50F1F919C00983762 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E99700F161A28001A98E2 /* PAController.m */; };
 		7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD3BBA0F1F920800983762 /* Localizable.strings */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,32 +84,32 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
 		7D1AE5AD0F209AB200444F92 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMBlkAppKit.framework; path = frameworks/HMBlkAppKit.framework; sourceTree = "<group>"; };
+		7D1AE5D60F209BF900444F92 /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFileWatcher.h; sourceTree = "<group>"; };
+		7D1AE5D70F209BF900444F92 /* UKFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKFileWatcher.m; sourceTree = "<group>"; };
+		7D1AE5D80F209BF900444F92 /* UKFNSubscribeFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFNSubscribeFileWatcher.h; sourceTree = "<group>"; };
+		7D1AE5D90F209BF900444F92 /* UKFNSubscribeFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKFNSubscribeFileWatcher.m; sourceTree = "<group>"; };
+		7D1AE5DA0F209BF900444F92 /* UKKQueue Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UKKQueue Readme.txt"; sourceTree = "<group>"; };
+		7D1AE5DB0F209BF900444F92 /* UKKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKKQueue.h; sourceTree = "<group>"; };
+		7D1AE5DC0F209BF900444F92 /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKKQueue.m; sourceTree = "<group>"; };
+		7D1AE5DD0F209BF900444F92 /* UKMainThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKMainThreadProxy.h; sourceTree = "<group>"; };
+		7D1AE5DE0F209BF900444F92 /* UKMainThreadProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKMainThreadProxy.m; sourceTree = "<group>"; };
+		7D1AE5E40F209C1C00444F92 /* PAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAController.h; path = source/PAController.h; sourceTree = "<group>"; };
+		7D1AE5E50F209C1C00444F92 /* PAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAController.m; path = source/PAController.m; sourceTree = "<group>"; };
+		7D1AE5E70F209C2900444F92 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D1AE5E90F209C4100444F92 /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClamavClient.h; path = source/ClamavClient.h; sourceTree = "<group>"; };
+		7D1AE5EA0F209C4100444F92 /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClamavClient.m; path = source/ClamavClient.m; sourceTree = "<group>"; };
+		7D1AE5ED0F209C5200444F92 /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = palourde.m; sourceTree = "<group>"; };
 		7D1BD26C0F167285000BD5C2 /* bombe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe.png; sourceTree = "<group>"; };
 		7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s01.png; sourceTree = "<group>"; };
 		7D1BD2740F167B67000BD5C2 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s02.png; sourceTree = "<group>"; };
 		7D1BD2750F167B67000BD5C2 /* bombe__s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s03.png; sourceTree = "<group>"; };
 		7D1BD2760F167B67000BD5C2 /* bombe__s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s04.png; sourceTree = "<group>"; };
-		7D246E550F155C9900D6C68B /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKFileWatcher.h; path = UKKQueue/UKFileWatcher.h; sourceTree = SOURCE_ROOT; };
-		7D246E560F155C9900D6C68B /* UKFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKFileWatcher.m; path = UKKQueue/UKFileWatcher.m; sourceTree = SOURCE_ROOT; };
-		7D246E570F155C9900D6C68B /* UKFNSubscribeFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKFNSubscribeFileWatcher.h; path = UKKQueue/UKFNSubscribeFileWatcher.h; sourceTree = SOURCE_ROOT; };
-		7D246E580F155C9900D6C68B /* UKFNSubscribeFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKFNSubscribeFileWatcher.m; path = UKKQueue/UKFNSubscribeFileWatcher.m; sourceTree = SOURCE_ROOT; };
-		7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "UKKQueue Readme.txt"; path = "UKKQueue/UKKQueue Readme.txt"; sourceTree = SOURCE_ROOT; };
-		7D246E5A0F155C9900D6C68B /* UKKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKKQueue.h; path = UKKQueue/UKKQueue.h; sourceTree = SOURCE_ROOT; };
-		7D246E5B0F155C9900D6C68B /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKKQueue.m; path = UKKQueue/UKKQueue.m; sourceTree = SOURCE_ROOT; };
-		7D246E5C0F155C9900D6C68B /* UKMainThreadProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UKMainThreadProxy.h; path = UKKQueue/UKMainThreadProxy.h; sourceTree = SOURCE_ROOT; };
-		7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UKMainThreadProxy.m; path = UKKQueue/UKMainThreadProxy.m; sourceTree = SOURCE_ROOT; };
-		7D6E996F0F161A28001A98E2 /* PAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAController.h; sourceTree = "<group>"; };
-		7D6E99700F161A28001A98E2 /* PAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAController.m; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D7139A50F1CF13800B7C34B /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = palourde.m; sourceTree = "<group>"; };
-		7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClamavClient.h; sourceTree = "<group>"; };
-		7D713A600F1CF6F300B7C34B /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClamavClient.m; sourceTree = "<group>"; };
 		7D9D00B80F1F5058005873CF /* Sneeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sneeze.wav; sourceTree = "<group>"; };
 		7DAD3BAC0F1F8E3E00983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BAD0F1F8E5600983762 /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -143,8 +144,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7D713A5F0F1CF6F300B7C34B /* ClamavClient.h */,
-				7D713A600F1CF6F300B7C34B /* ClamavClient.m */,
+				7D1AE5E90F209C4100444F92 /* ClamavClient.h */,
+				7D1AE5EA0F209C4100444F92 /* ClamavClient.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -227,26 +228,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7D246E540F155C9900D6C68B /* UKKQueue */ = {
+		7D1AE5D50F209BF900444F92 /* UKKQueue */ = {
 			isa = PBXGroup;
 			children = (
-				7D246E550F155C9900D6C68B /* UKFileWatcher.h */,
-				7D246E560F155C9900D6C68B /* UKFileWatcher.m */,
-				7D246E570F155C9900D6C68B /* UKFNSubscribeFileWatcher.h */,
-				7D246E580F155C9900D6C68B /* UKFNSubscribeFileWatcher.m */,
-				7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */,
-				7D246E5A0F155C9900D6C68B /* UKKQueue.h */,
-				7D246E5B0F155C9900D6C68B /* UKKQueue.m */,
-				7D246E5C0F155C9900D6C68B /* UKMainThreadProxy.h */,
-				7D246E5D0F155C9900D6C68B /* UKMainThreadProxy.m */,
+				7D1AE5D60F209BF900444F92 /* UKFileWatcher.h */,
+				7D1AE5D70F209BF900444F92 /* UKFileWatcher.m */,
+				7D1AE5D80F209BF900444F92 /* UKFNSubscribeFileWatcher.h */,
+				7D1AE5D90F209BF900444F92 /* UKFNSubscribeFileWatcher.m */,
+				7D1AE5DA0F209BF900444F92 /* UKKQueue Readme.txt */,
+				7D1AE5DB0F209BF900444F92 /* UKKQueue.h */,
+				7D1AE5DC0F209BF900444F92 /* UKKQueue.m */,
+				7D1AE5DD0F209BF900444F92 /* UKMainThreadProxy.h */,
+				7D1AE5DE0F209BF900444F92 /* UKMainThreadProxy.m */,
 			);
-			path = UKKQueue;
+			name = UKKQueue;
+			path = other_sources/UKKQueue;
 			sourceTree = "<group>";
 		};
 		7D7139A40F1CF11200B7C34B /* cli */ = {
 			isa = PBXGroup;
 			children = (
-				7D7139A50F1CF13800B7C34B /* palourde.m */,
+				7D1AE5ED0F209C5200444F92 /* palourde.m */,
 			);
 			name = cli;
 			sourceTree = "<group>";
@@ -263,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				7DB23B290F1D0449006C2ACF /* Classes */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				7D1AE5E70F209C2900444F92 /* main.m */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 			);
 			name = agent;
@@ -272,7 +274,7 @@
 		7DB23A9F0F1D02CD006C2ACF /* external */ = {
 			isa = PBXGroup;
 			children = (
-				7D246E540F155C9900D6C68B /* UKKQueue */,
+				7D1AE5D50F209BF900444F92 /* UKKQueue */,
 			);
 			name = external;
 			sourceTree = "<group>";
@@ -287,8 +289,8 @@
 		7DB23B290F1D0449006C2ACF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7D6E996F0F161A28001A98E2 /* PAController.h */,
-				7D6E99700F161A28001A98E2 /* PAController.m */,
+				7D1AE5E40F209C1C00444F92 /* PAController.h */,
+				7D1AE5E50F209C1C00444F92 /* PAController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -372,6 +374,7 @@
 				7D1BD27A0F167B67000BD5C2 /* bombe__s04.png in Resources */,
 				7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */,
 				7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */,
+				7D1AE5E10F209BF900444F92 /* UKKQueue Readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D7139A60F1CF13800B7C34B /* palourde.m in Sources */,
-				7D713A610F1CF6F300B7C34B /* ClamavClient.m in Sources */,
+				7D1AE5EC0F209C4100444F92 /* ClamavClient.m in Sources */,
+				7D1AE5EE0F209C5200444F92 /* palourde.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,13 +394,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				7D246E5E0F155C9900D6C68B /* UKFileWatcher.m in Sources */,
-				7D246E5F0F155C9900D6C68B /* UKFNSubscribeFileWatcher.m in Sources */,
-				7D246E610F155C9900D6C68B /* UKKQueue.m in Sources */,
-				7D246E620F155C9900D6C68B /* UKMainThreadProxy.m in Sources */,
-				7DAD3BB50F1F919C00983762 /* PAController.m in Sources */,
-				7D713A620F1CF6F300B7C34B /* ClamavClient.m in Sources */,
+				7D1AE5DF0F209BF900444F92 /* UKFileWatcher.m in Sources */,
+				7D1AE5E00F209BF900444F92 /* UKFNSubscribeFileWatcher.m in Sources */,
+				7D1AE5E20F209BF900444F92 /* UKKQueue.m in Sources */,
+				7D1AE5E30F209BF900444F92 /* UKMainThreadProxy.m in Sources */,
+				7D1AE5E60F209C1C00444F92 /* PAController.m in Sources */,
+				7D1AE5E80F209C2900444F92 /* main.m in Sources */,
+				7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

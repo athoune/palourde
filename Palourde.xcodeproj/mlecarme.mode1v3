@@ -281,7 +281,6 @@
 								<string>7D7139A40F1CF11200B7C34B</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
-								<string>1058C7A2FEA54F0111CA2CBB</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>7D1AE5CE0F209AE800444F92</string>
@@ -293,8 +292,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>40</integer>
-									<integer>39</integer>
+									<integer>35</integer>
+									<integer>34</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -333,7 +332,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>UKKQueue Readme.txt</string>
+								<string>bombe.png</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -341,11 +340,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>UKKQueue Readme.txt</string>
+										<string>bombe.png</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D1AE5D10F209AE800444F92</string>
+										<string>7D1AE5D40F209BBD00444F92</string>
 										<key>history</key>
 										<array>
 											<string>7D1BD27F0F169919000BD5C2</string>
@@ -356,8 +355,7 @@
 											<string>7DB23BAD0F1D2515006C2ACF</string>
 											<string>7DB23BAE0F1D2515006C2ACF</string>
 											<string>7D9D02320F1F7190005873CF</string>
-											<string>7D9D02330F1F7190005873CF</string>
-											<string>7D2D85F30F1FDCF300745906</string>
+											<string>7D9D02360F1F7190005873CF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -369,7 +367,6 @@
 											<string>7D713A6B0F1CF76700B7C34B</string>
 											<string>7D713A6C0F1CF76700B7C34B</string>
 											<string>7DB23B370F1D0757006C2ACF</string>
-											<string>7D9D02360F1F7190005873CF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
