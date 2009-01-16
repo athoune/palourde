@@ -125,6 +125,7 @@
 		};
 		perUserProjectItems = {
 			7D1AE58F0F2098D900444F92 /* PBXTextBookmark */ = 7D1AE58F0F2098D900444F92 /* PBXTextBookmark */;
+			7D1AE5D10F209AE800444F92 /* PBXTextBookmark */ = 7D1AE5D10F209AE800444F92 /* PBXTextBookmark */;
 			7D1BD27F0F169919000BD5C2 = 7D1BD27F0F169919000BD5C2 /* PBXBookmark */;
 			7D1BD2820F169919000BD5C2 = 7D1BD2820F169919000BD5C2 /* PBXTextBookmark */;
 			7D1BD2830F169919000BD5C2 = 7D1BD2830F169919000BD5C2 /* PBXBookmark */;
@@ -158,6 +159,16 @@
 		};
 	};
 	7D1AE58F0F2098D900444F92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */;
+		name = "UKKQueue Readme.txt: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1920;
+		vrLoc = 0;
+	};
+	7D1AE5D10F209AE800444F92 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */;
 		name = "UKKQueue Readme.txt: 1";
@@ -280,7 +291,7 @@
 	};
 	7D246E590F155C9900D6C68B /* UKKQueue Readme.txt */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1746, 740}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1746, 717}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1920}";
 		};

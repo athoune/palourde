@@ -23,7 +23,10 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		7D1AE5990F2098F500444F92 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1AE5980F2098F500444F92 /* HMBlkAppKit.framework */; };
+		7D1AE5AE0F209AB200444F92 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1AE5AD0F209AB200444F92 /* Growl.framework */; };
+		7D1AE5B70F209ABE00444F92 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */; };
+		7D1AE5CB0F209AD000444F92 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1AE5AD0F209AB200444F92 /* Growl.framework */; };
+		7D1AE5CC0F209AD700444F92 /* HMBlkAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */; };
 		7D1BD26D0F167285000BD5C2 /* bombe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD26C0F167285000BD5C2 /* bombe.png */; };
 		7D1BD2770F167B67000BD5C2 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2730F167B67000BD5C2 /* bombe__s01.png */; };
 		7D1BD2780F167B67000BD5C2 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1BD2740F167B67000BD5C2 /* bombe__s02.png */; };
@@ -39,8 +42,6 @@
 		7D9D00B90F1F5058005873CF /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D9D00B80F1F5058005873CF /* Sneeze.wav */; };
 		7DAD3BB50F1F919C00983762 /* PAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6E99700F161A28001A98E2 /* PAController.m */; };
 		7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD3BBA0F1F920800983762 /* Localizable.strings */; };
-		7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
-		7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DF1BCCF0F195B5C00D807B1 /* Growl.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -70,7 +71,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7DF1BCDC0F195B9500D807B1 /* Growl.framework in CopyFiles */,
+				7D1AE5CC0F209AD700444F92 /* HMBlkAppKit.framework in CopyFiles */,
+				7D1AE5CB0F209AD000444F92 /* Growl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +87,8 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
-		7D1AE5980F2098F500444F92 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMBlkAppKit.framework; sourceTree = "<group>"; };
+		7D1AE5AD0F209AB200444F92 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMBlkAppKit.framework; path = frameworks/HMBlkAppKit.framework; sourceTree = "<group>"; };
 		7D1BD26C0F167285000BD5C2 /* bombe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe.png; sourceTree = "<group>"; };
 		7D1BD2730F167B67000BD5C2 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s01.png; sourceTree = "<group>"; };
 		7D1BD2740F167B67000BD5C2 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombe__s02.png; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 		7DAD3BAE0F1F8E5E00983762 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BB60F1F91D600983762 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7DAD3BBC0F1F921200983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7DF1BCCF0F195B5C00D807B1 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,8 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				7DF1BCD00F195B5C00D807B1 /* Growl.framework in Frameworks */,
-				7D1AE5990F2098F500444F92 /* HMBlkAppKit.framework in Frameworks */,
+				7D1AE5AE0F209AB200444F92 /* Growl.framework in Frameworks */,
+				7D1AE5B70F209ABE00444F92 /* HMBlkAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +160,8 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D1AE5980F2098F500444F92 /* HMBlkAppKit.framework */,
-				7DF1BCCF0F195B5C00D807B1 /* Growl.framework */,
+				7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */,
+				7D1AE5AD0F209AB200444F92 /* Growl.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -521,6 +523,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -542,6 +545,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
