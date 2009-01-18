@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Growl/GrowlApplicationBridge.h"
+#import <Growl/GrowlApplicationBridge.h>
 
 #define NOTHING 1
 #define SPRAYING 2
+@class ActionController;
 
 @interface PAController : NSObject <GrowlApplicationBridgeDelegate> {
     IBOutlet NSMenu *paMenu;
@@ -20,16 +21,16 @@
     NSArray *animSpraying;
     NSSet *folderDownloads;
     NSSet *folderMailDownloads;
+    ActionController *actionController;
 }
 
-- (void)showInStatusBar:(id)sender;
+- (void)showInStatusBar: (id)sender;
 - (void) mediaMounted: (NSNotification *)notification;
 - (void) somethingNewInFolder: (NSNotification *)notification;
-- (IBAction)runWebPage:(id)sender;
-- (IBAction)scanHome:(id)sender;
-- (void) asyncScan:(NSString*)thePath;
-- (void)doGrowl:(NSString *)title withMessage:(NSString *)message;
-
-
+- (IBAction)runWebPage: (id)sender;
+- (IBAction)scanHome: (id)sender;
+- (IBAction)showActionPanel: (id)sender;
+- (void) asyncScan: (NSString*)thePath;
+- (void)doGrowl: (NSString *)title withMessage: (NSString *)message;
 
 @end

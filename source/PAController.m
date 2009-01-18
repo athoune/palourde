@@ -9,7 +9,8 @@
 #import "PAController.h"
 #import "ClamavClient.h"
 #import "UKKQueue.h"
-#import "Growl/GrowlApplicationBridge.h"
+#import <Growl/GrowlApplicationBridge.h>
+#import "ActionController.h"
 
 @implementation PAController
 
@@ -75,6 +76,14 @@
     [paItem setMenu:paMenu];
     [paItem setToolTip:NSLocalizedString(@"Palourde AntiVirus", @"Application name")];
     [NSApp unhide];
+}
+
+- (IBAction)showActionPanel: (id)sender {
+    if(! actionController) {
+	actionController = [[ActionController alloc] init];
+    }
+    NSLog(@"affichage de %@", actionController);
+    [actionController showWindow:self];
 }
 
 - (void) oneVirus: (NSNotification *)notification {

@@ -24,6 +24,8 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		7D00AD730F209E1F00F53434 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
+		7D18960E0F225E6300148E33 /* aero.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D18960D0F225E6300148E33 /* aero.icns */; };
+		7D1896260F2275AA00148E33 /* aero3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1896250F2275AA00148E33 /* aero3.icns */; };
 		7D1AE5B70F209ABE00444F92 /* HMBlkAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */; };
 		7D1AE5CC0F209AD700444F92 /* HMBlkAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */; };
 		7D1AE5DF0F209BF900444F92 /* UKFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5D70F209BF900444F92 /* UKFileWatcher.m */; };
@@ -35,6 +37,8 @@
 		7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
 		7D1AE5EC0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
 		7D1AE5F70F209D5300444F92 /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5F60F209D5300444F92 /* palourde.m */; };
+		7D8FC7710F2132AE0046069E /* ActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC7700F2132AE0046069E /* ActionController.m */; };
+		7D8FC7C30F214C350046069E /* ActionPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FC7C20F214C350046069E /* ActionPanel.xib */; };
 		7DA3EAE10F209E7C008496B9 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
 		7DA3EAF50F209FC3008496B9 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF10F209FC3008496B9 /* bombe__s04.png */; };
 		7DA3EAF60F209FC3008496B9 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF20F209FC3008496B9 /* bombe__s01.png */; };
@@ -87,6 +91,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
 		7D00AD720F209E1F00F53434 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = frameworks/Growl.framework; sourceTree = "<group>"; };
+		7D18960D0F225E6300148E33 /* aero.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero.icns; path = resource/aero.icns; sourceTree = "<group>"; };
+		7D1896250F2275AA00148E33 /* aero3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero3.icns; path = resource/aero3.icns; sourceTree = "<group>"; };
 		7D1AE5B60F209ABE00444F92 /* HMBlkAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMBlkAppKit.framework; path = frameworks/HMBlkAppKit.framework; sourceTree = "<group>"; };
 		7D1AE5D60F209BF900444F92 /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFileWatcher.h; sourceTree = "<group>"; };
 		7D1AE5D70F209BF900444F92 /* UKFileWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKFileWatcher.m; sourceTree = "<group>"; };
@@ -103,13 +109,15 @@
 		7D1AE5EA0F209C4100444F92 /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClamavClient.m; path = source/ClamavClient.m; sourceTree = "<group>"; };
 		7D1AE5F60F209D5300444F92 /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = palourde.m; path = source/palourde.m; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D8FC76F0F2132AE0046069E /* ActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionController.h; path = source/ActionController.h; sourceTree = "<group>"; };
+		7D8FC7700F2132AE0046069E /* ActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionController.m; path = source/ActionController.m; sourceTree = "<group>"; };
+		7D8FC7720F2133320046069E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ActionPanel.xib; sourceTree = "<group>"; };
 		7DA3EAF10F209FC3008496B9 /* bombe__s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s04.png; path = resource/bombe__s04.png; sourceTree = "<group>"; };
 		7DA3EAF20F209FC3008496B9 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s01.png; path = resource/bombe__s01.png; sourceTree = "<group>"; };
 		7DA3EAF30F209FC3008496B9 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s02.png; path = resource/bombe__s02.png; sourceTree = "<group>"; };
 		7DA3EAF40F209FC3008496B9 /* bombe__s03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s03.png; path = resource/bombe__s03.png; sourceTree = "<group>"; };
 		7DA3EB030F20A05F008496B9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DA3EB060F20A08E008496B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
-		7DAD3BAC0F1F8E3E00983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BAD0F1F8E5600983762 /* pl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pl; path = pl.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BAE0F1F8E5E00983762 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BB60F1F91D600983762 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -202,6 +210,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D18960D0F225E6300148E33 /* aero.icns */,
+				7D1896250F2275AA00148E33 /* aero3.icns */,
 				7DA3EB030F20A05F008496B9 /* Info.plist */,
 				7DA3EAF10F209FC3008496B9 /* bombe__s04.png */,
 				7DA3EAF20F209FC3008496B9 /* bombe__s01.png */,
@@ -210,6 +220,7 @@
 				7DAD3BBA0F1F920800983762 /* Localizable.strings */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				7D8FC7C20F214C350046069E /* ActionPanel.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -286,6 +297,8 @@
 			children = (
 				7D1AE5E40F209C1C00444F92 /* PAController.h */,
 				7D1AE5E50F209C1C00444F92 /* PAController.m */,
+				7D8FC76F0F2132AE0046069E /* ActionController.h */,
+				7D8FC7700F2132AE0046069E /* ActionController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -369,6 +382,9 @@
 				7DA3EAF70F209FC3008496B9 /* bombe__s02.png in Resources */,
 				7DA3EAF80F209FC3008496B9 /* bombe__s03.png in Resources */,
 				7DA3EB040F20A05F008496B9 /* Info.plist in Resources */,
+				7D8FC7C30F214C350046069E /* ActionPanel.xib in Resources */,
+				7D18960E0F225E6300148E33 /* aero.icns in Resources */,
+				7D1896260F2275AA00148E33 /* aero3.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +411,7 @@
 				7D1AE5E60F209C1C00444F92 /* PAController.m in Sources */,
 				7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */,
 				7DA3EB070F20A08E008496B9 /* main.m in Sources */,
+				7D8FC7710F2132AE0046069E /* ActionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +443,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				1DDD58150DA1D0A300B32029 /* English */,
-				7DAD3BAC0F1F8E3E00983762 /* French */,
 				7DAD3BAD0F1F8E5600983762 /* pl */,
 				7DAD3BAE0F1F8E5E00983762 /* es */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7D8FC7C20F214C350046069E /* ActionPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D8FC7720F2133320046069E /* English */,
+			);
+			name = ActionPanel.xib;
 			sourceTree = "<group>";
 		};
 		7DAD3BBA0F1F920800983762 /* Localizable.strings */ = {
