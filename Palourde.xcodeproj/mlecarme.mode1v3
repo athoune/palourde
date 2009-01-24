@@ -294,12 +294,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>57</integer>
 									<integer>56</integer>
-									<integer>55</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 103}, {245, 932}}</string>
+							<string>{{0, 205}, {245, 932}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -334,7 +334,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>aero3.icns</string>
+								<string>aero2.icns</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -342,11 +342,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>aero3.icns</string>
+										<string>aero2.icns</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D18962C0F228E5E00148E33</string>
+										<string>7DD489FE0F2BC23C001B6D4A</string>
 										<key>history</key>
 										<array>
 											<string>7D1AE60D0F209DDA00444F92</string>
@@ -358,7 +358,8 @@
 											<string>7D8FC7C80F214DA30046069E</string>
 											<string>7D1896160F225EAC00148E33</string>
 											<string>7D1896280F2275BC00148E33</string>
-											<string>7D1896290F2275BC00148E33</string>
+											<string>7DD489FB0F2BC23C001B6D4A</string>
+											<string>7DD489FC0F2BC23C001B6D4A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -370,8 +371,8 @@
 											<string>7D8FC77B0F2134540046069E</string>
 											<string>7D8FC77F0F2134540046069E</string>
 											<string>7D8FC7830F2134540046069E</string>
-											<string>7D1896180F225EAC00148E33</string>
 											<string>7D18962A0F2275BC00148E33</string>
+											<string>7DD489FD0F2BC23C001B6D4A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -429,9 +430,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7D18961A0F225EAC00148E33</string>
+				<string>7DD489F00F2BC209001B6D4A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7D18961B0F225EAC00148E33</string>
+				<string>7DD489F10F2BC209001B6D4A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -565,7 +566,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>7D246E890F155D8A00D6C68B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/mlecarme/Developpement/Cocoa/palourde/Palourde/Palourde.xcodeproj</string>
@@ -648,7 +648,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>7D246E890F155D8A00D6C68B</string>
-				<string>7D18961C0F225EAC00148E33</string>
+				<string>7DD489FF0F2BC23C001B6D4A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -768,13 +768,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>7D18961D0F225EAC00148E33</string>
+				<string>7DD489F20F2BC209001B6D4A</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>7D18961E0F225EAC00148E33</string>
-				<string>7D18961F0F225EAC00148E33</string>
-				<string>7D1896200F225EAC00148E33</string>
-				<string>7D1896210F225EAC00148E33</string>
-				<string>7D1896220F225EAC00148E33</string>
+				<string>7DD489F30F2BC209001B6D4A</string>
+				<string>7DD489F40F2BC209001B6D4A</string>
+				<string>7DD489F50F2BC209001B6D4A</string>
+				<string>7DD489F60F2BC209001B6D4A</string>
+				<string>7DD489F70F2BC209001B6D4A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

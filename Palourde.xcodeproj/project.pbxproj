@@ -47,6 +47,7 @@
 		7DA3EB040F20A05F008496B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EB030F20A05F008496B9 /* Info.plist */; };
 		7DA3EB070F20A08E008496B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3EB060F20A08E008496B9 /* main.m */; };
 		7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD3BBA0F1F920800983762 /* Localizable.strings */; };
+		7DD489F90F2BC220001B6D4A /* aero2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7DD489F80F2BC220001B6D4A /* aero2.icns */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,7 @@
 		7DAD3BAE0F1F8E5E00983762 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BB60F1F91D600983762 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7DAD3BBC0F1F921200983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7DD489F80F2BC220001B6D4A /* aero2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero2.icns; path = resource/aero2.icns; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				7D18960D0F225E6300148E33 /* aero.icns */,
+				7DD489F80F2BC220001B6D4A /* aero2.icns */,
 				7D1896250F2275AA00148E33 /* aero3.icns */,
 				7DA3EB030F20A05F008496B9 /* Info.plist */,
 				7DA3EAF10F209FC3008496B9 /* bombe__s04.png */,
@@ -385,6 +388,7 @@
 				7D8FC7C30F214C350046069E /* ActionPanel.xib in Resources */,
 				7D18960E0F225E6300148E33 /* aero.icns in Resources */,
 				7D1896260F2275AA00148E33 /* aero3.icns in Resources */,
+				7DD489F90F2BC220001B6D4A /* aero2.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
