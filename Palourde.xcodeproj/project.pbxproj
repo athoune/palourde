@@ -37,6 +37,7 @@
 		7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
 		7D1AE5EC0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
 		7D1AE5F70F209D5300444F92 /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5F60F209D5300444F92 /* palourde.m */; };
+		7D1B40CD0F2CECF80009759E /* pshit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B40CC0F2CECF80009759E /* pshit.icns */; };
 		7D8FC7710F2132AE0046069E /* ActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC7700F2132AE0046069E /* ActionController.m */; };
 		7D8FC7C30F214C350046069E /* ActionPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FC7C20F214C350046069E /* ActionPanel.xib */; };
 		7DA3EAE10F209E7C008496B9 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
@@ -109,6 +110,7 @@
 		7D1AE5E90F209C4100444F92 /* ClamavClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClamavClient.h; path = source/ClamavClient.h; sourceTree = "<group>"; };
 		7D1AE5EA0F209C4100444F92 /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClamavClient.m; path = source/ClamavClient.m; sourceTree = "<group>"; };
 		7D1AE5F60F209D5300444F92 /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = palourde.m; path = source/palourde.m; sourceTree = "<group>"; };
+		7D1B40CC0F2CECF80009759E /* pshit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = pshit.icns; path = resource/pshit.icns; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8FC76F0F2132AE0046069E /* ActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionController.h; path = source/ActionController.h; sourceTree = "<group>"; };
 		7D8FC7700F2132AE0046069E /* ActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionController.m; path = source/ActionController.m; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				7D18960D0F225E6300148E33 /* aero.icns */,
 				7DD489F80F2BC220001B6D4A /* aero2.icns */,
 				7D1896250F2275AA00148E33 /* aero3.icns */,
+				7D1B40CC0F2CECF80009759E /* pshit.icns */,
 				7DA3EB030F20A05F008496B9 /* Info.plist */,
 				7DA3EAF10F209FC3008496B9 /* bombe__s04.png */,
 				7DA3EAF20F209FC3008496B9 /* bombe__s01.png */,
@@ -389,6 +392,7 @@
 				7D18960E0F225E6300148E33 /* aero.icns in Resources */,
 				7D1896260F2275AA00148E33 /* aero3.icns in Resources */,
 				7DD489F90F2BC220001B6D4A /* aero2.icns in Resources */,
+				7D1B40CD0F2CECF80009759E /* pshit.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
