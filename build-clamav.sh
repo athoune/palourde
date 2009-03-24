@@ -20,7 +20,7 @@ export CC='/usr/bin/gcc-4.0'
 RESOURCES='/Library/Palourde/Palourde.app/Contents/Resources'
 BUILD='build/Release/Palourde.app/Contents/Resources'
 PWD=`pwd`
-cd clamav-src && ./configure --enable-static --with-zlib=/opt/local --with-libbz2-prefix=/opt/local  --with-iconv --with-libgmp-prefix=/opt/local --prefix=/Library/Palourde/Palourde.app/Contents/Resources --disable-clamav --disable-dependency-tracking --sysconfdir=/Library/Preferences/ --with-dbdir=/Library/Palourde/Definitions/ && make clean && make all && sudo make install
+cd clamav-src && ./configure --enable-static --with-zlib=/opt/local --with-libbz2-prefix=/opt/local  --with-iconv --prefix=/Library/Palourde/Palourde.app/Contents/Resources --disable-clamav --disable-dependency-tracking --sysconfdir=/Library/Preferences/ --with-dbdir=/Library/Palourde/Definitions/ && make clean && make all && sudo make install
 cd ..
 mkdir -p $BUILD
 cp -rv $RESOURCES/bin $BUILD/
