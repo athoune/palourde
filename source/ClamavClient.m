@@ -101,13 +101,13 @@ NSString * const PAScanFinished = @"PAScanDone";
 }
 
 -(void) contscan:(NSString *) thePath {
-	[thePath retain];
+    [thePath retain];
     NSDate *debut = [NSDate date];
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     int cpt = 0;
     int sock = [self connect];
-	NSString *cmd = [[NSString alloc] initWithFormat:@"CONTSCAN %@/", thePath];
-    if (write(sock, [cmd cStringUsingEncoding:NSUTF8StringEncoding], 9 + [thePath lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
+	NSString *cmd = [[NSString alloc] initWithFormat:@"MULTISCAN %@/", thePath];
+    if (write(sock, [cmd cStringUsingEncoding:NSUTF8StringEncoding], 11 + [thePath lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
 		close(sock);
 		perror("send");
 		exit(1);

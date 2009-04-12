@@ -14,7 +14,7 @@
 	<key>ProgramArguments</key>
 	<array>
 		<string>//Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam</string>
-		<string>--config-file=/Library/Preferences/clamd.conf</string>
+		<string>--config-file=/Library/Preferences/freshclam.conf</string>
 		<string>--daemon-notify</string>
 	</array>
 	<key>RunAtLoad</key>
