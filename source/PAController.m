@@ -144,7 +144,7 @@
 - (IBAction)scanHome:(id)sender {
 	[self 
 		performSelectorOnMainThread:@selector(asyncScan:)
-		withObject:[@"~/" stringByExpandingTildeInPath]
+		withObject:[@"~/Developpement/Cocoa/palourde/" stringByExpandingTildeInPath]
 		waitUntilDone:false];
 	//@"/tmp/"
     //[client asyncScan:[@"~/" stringByExpandingTildeInPath]];

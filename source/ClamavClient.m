@@ -107,22 +107,24 @@ NSString * const PAScanFinished = @"PAScanDone";
     int cpt = 0;
     int sock = [self connect];
 	NSString *cmd = [[NSString alloc] initWithFormat:@"MULTISCAN %@/", thePath];
-    if (write(sock, [cmd cStringUsingEncoding:NSUTF8StringEncoding], 11 + [thePath lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
+    if (write(sock, [cmd cStringUsingEncoding:NSUTF8StringEncoding], [cmd lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
 		close(sock);
 		perror("send");
 		exit(1);
     }
-	//[cmd release];
-	cmd = nil;
+    //[cmd release];
+    cmd = nil;
     NSLog(@"scan started");
     char buff[2048];
     int bread;
+    //[FIXME] problèmes pour lire le résultat
     while((bread = read(sock, buff, sizeof(buff)-1)) > 0) {
 		buff[bread] = '\0';
 		//printf("%s", buff);
 		NSString *line = [NSString stringWithFormat:@"%s", buff];
 		NSString *file = [[line componentsSeparatedByString:@": "] objectAtIndex:0];
 		NSString *virus = nil;
+		NSLog(line);
 		if([[line substringFromIndex:[line length] - 7 ] isEqualToString:@" FOUND\n"]) {
 			cpt ++;
 			virus = [line substringWithRange:NSMakeRange([file length] + 2, [line length] - [file length] -9)];

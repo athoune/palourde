@@ -336,7 +336,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ClamavClient.m</string>
+								<string>clamdtop.c</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -344,11 +344,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ClamavClient.m</string>
+										<string>clamdtop.c</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D3AF5920F9278E6009DF240</string>
+										<string>7D460C2A0F93B205003A867D</string>
 										<key>history</key>
 										<array>
 											<string>7DA3EB0A0F20A09E008496B9</string>
@@ -362,7 +362,8 @@
 											<string>7DC037DD0F7D8A330057EF14</string>
 											<string>7D3AF5840F927833009DF240</string>
 											<string>7D3AF5850F927833009DF240</string>
-											<string>7D3AF5860F927833009DF240</string>
+											<string>7D460C1F0F93B1F3003A867D</string>
+											<string>7D460C230F93B1F3003A867D</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -378,9 +379,6 @@
 											<string>7DD489FD0F2BC23C001B6D4A</string>
 											<string>7D1B40D10F2CED120009759E</string>
 											<string>7D3B25D10F7A289B00D2F98F</string>
-											<string>7D3AF5870F927833009DF240</string>
-											<string>7D3AF5880F927833009DF240</string>
-											<string>7D3AF5890F927833009DF240</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -438,9 +436,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7D3AF57A0F925ABE009DF240</string>
+				<string>7D460C2B0F93B205003A867D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7D3AF57B0F925ABE009DF240</string>
+				<string>7D460C2C0F93B205003A867D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -574,9 +572,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>7D246E890F155D8A00D6C68B</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/mlecarme/Developpement/Cocoa/palourde/Palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -777,13 +772,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>7D3AF57C0F925ABE009DF240</string>
+				<string>7D460C190F934F4C003A867D</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>7D3AF57D0F925ABE009DF240</string>
-				<string>7D3AF57E0F925ABE009DF240</string>
-				<string>7D3AF57F0F925ABE009DF240</string>
-				<string>7D3AF5800F925ABE009DF240</string>
-				<string>7D3AF5810F925ABE009DF240</string>
+				<string>7D460C1A0F934F4C003A867D</string>
+				<string>7D460C1B0F934F4C003A867D</string>
+				<string>7D460C1C0F934F4C003A867D</string>
+				<string>7D460C1D0F934F4C003A867D</string>
+				<string>7D460C1E0F934F4C003A867D</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
