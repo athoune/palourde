@@ -35,17 +35,17 @@
     scanWorking = 0;
     frame = 0;
     animSpraying = [[NSArray arrayWithObjects:
-		    [self prepareImageForMenubar:@"bombe__s01"],
-		    [self prepareImageForMenubar:@"bombe__s02"],
-		    [self prepareImageForMenubar:@"bombe__s03"],
-		    [self prepareImageForMenubar:@"bombe__s04"],
-		    nil]retain];
+		     [self prepareImageForMenubar:@"bombe__s01"],
+		     [self prepareImageForMenubar:@"bombe__s02"],
+		     [self prepareImageForMenubar:@"bombe__s03"],
+		     [self prepareImageForMenubar:@"bombe__s04"],
+		     nil]retain];
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     NSNotificationCenter *globalCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
     [globalCenter addObserver:self
-	       selector:@selector(mediaMounted:)
-		   name:@"NSWorkspaceDidMountNotification"
-		 object:nil];
+		     selector:@selector(mediaMounted:)
+			 name:@"NSWorkspaceDidMountNotification"
+		       object:nil];
     [center addObserver:self
 	       selector:@selector(oneVirus:)
 		   name:PAOneVirus
@@ -90,13 +90,13 @@
     virus ++;
     [paItem setTitle: [NSString stringWithFormat: @"%i", virus]]; 
     NSLog(@"Virus token n°%i : %@", virus, [notification userInfo]);
-	NSSound *sneeze = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sneeze" ofType:@"wav"] byReference:NO];
-	[sneeze play];
+    NSSound *sneeze = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sneeze" ofType:@"wav"] byReference:NO];
+    [sneeze play];
     [self doGrowl:NSLocalizedString(@"Un virus!", @"Popup title") withMessage:
      [[NSString alloc] initWithFormat:NSLocalizedString(@"Le virus %@ a été trouvé dans le fichier %@",""), 
       [[notification userInfo] objectForKey:@"virus"],
       [[notification userInfo] objectForKey:@"file"]]];
-	[sneeze release];
+    [sneeze release];
 }
 
 - (void) scanFinished: (NSNotification *)notification{
@@ -129,10 +129,10 @@
 	    frame = 0;
 	}
 	[NSTimer scheduledTimerWithTimeInterval:0.1
-		target:self
-		selector:@selector(nextFrameSpraying)
-		userInfo:nil
-		repeats:NO];
+					 target:self
+				       selector:@selector(nextFrameSpraying)
+				       userInfo:nil
+					repeats:NO];
     }
 }
 
@@ -142,32 +142,32 @@
 }
 
 - (IBAction)scanHome:(id)sender {
-	[self 
-		performSelectorOnMainThread:@selector(asyncScan:)
-		withObject:[@"~/Developpement/Cocoa/palourde/" stringByExpandingTildeInPath]
-		waitUntilDone:false];
-	//@"/tmp/"
+    [self 
+     performSelectorOnMainThread:@selector(asyncScan:)
+     withObject:[@"~/" stringByExpandingTildeInPath]
+     waitUntilDone:false];
+    //@"/tmp/"
     //[client asyncScan:[@"~/" stringByExpandingTildeInPath]];
 }
 
 -(void) asyncScan:(NSString*)thePath {
-	[self retain];
-	scanWorking ++;
+    [self retain];
+    scanWorking ++;
     [self nextFrameSpraying];
-	[NSThread detachNewThreadSelector:@selector(processAsyncScan:)
-							 toTarget:self
-						   withObject:[thePath retain]];
+    [NSThread detachNewThreadSelector:@selector(processAsyncScan:)
+			     toTarget:self
+			   withObject:[thePath retain]];
 }
 
 -(void) processAsyncScan:(NSString*)thePath {
-	[thePath retain];
-	NSAutoreleasePool *myAutoreleasePool =[[NSAutoreleasePool alloc] init];
-	NSLog(@"Async scan started");
-	ClamavClient *client = [[ClamavClient alloc] initWithPath:@"/tmp/clamd.socket"];
-	[client contscan:thePath];
-	//[client release];
-	//[NSAutoreleasePool showPools];
-	[myAutoreleasePool drain];
+    [thePath retain];
+    NSAutoreleasePool *myAutoreleasePool =[[NSAutoreleasePool alloc] init];
+    NSLog(@"Async scan started");
+    ClamavClient *client = [[ClamavClient alloc] initWithPath:@"/tmp/clamd.socket"];
+    [client contscan:thePath];
+    //[client release];
+    //[NSAutoreleasePool showPools];
+    [myAutoreleasePool drain];
     NSLog(@"async scan is done");
 } 
 
