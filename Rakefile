@@ -6,7 +6,6 @@ def sudo_rm(path)
 	end
 end
 
-
 namespace :palourde do
 	task :i18n do
 		sh 'genstrings source/PAController.m'
@@ -88,8 +87,10 @@ def launchctl(action, file)
 	end
 end
 
+desc "Install applications and conf files"
 task :install => ['palourde:install', 'clamav:install', :conf]
 
+desc "Remove installed stuff"
 task :uninstall do
 	stop 'com.macbouffon.palourde.agent.plist'
 	stop 'com.macbouffon.palourde.freshclam.plist'
@@ -104,6 +105,7 @@ end
 
 task :clean => ['palourde:clean', 'clamav:clean', :uninstall]
 
+desc "compile applications"
 task :build => ['palourde:build', 'clamav:build']
 
 def chown(file)
@@ -126,6 +128,7 @@ end
 
 task :default => [:install]
 
+desc "Build a cute package"
 task :pkg => :install do
 	rm 'palourde.pkg' if File.exist? 'palourde.pkg'
 	sudo_rm 'build/Palourde.app'
