@@ -294,14 +294,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>51</integer>
-									<integer>50</integer>
-									<integer>48</integer>
+									<integer>20</integer>
+									<integer>13</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 172}, {245, 932}}</string>
+							<string>{{0, 0}, {245, 932}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -345,10 +344,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>start.sh</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>7D9D69560F953FDD00F43BCC</string>
 										<key>history</key>
 										<array>
 											<string>7DA3EB0A0F20A09E008496B9</string>
@@ -358,14 +353,12 @@
 											<string>7DD489FB0F2BC23C001B6D4A</string>
 											<string>7D3B25D00F7A289B00D2F98F</string>
 											<string>7DC037DD0F7D8A330057EF14</string>
-											<string>7D460C3B0F93E41A003A867D</string>
 											<string>7D460C3C0F93E41A003A867D</string>
 											<string>7D460C3D0F93E41A003A867D</string>
 											<string>7D460C3E0F93E41A003A867D</string>
 											<string>7D460C3F0F93E41A003A867D</string>
 											<string>7D460C400F93E41A003A867D</string>
 											<string>7D9D69530F953FDD00F43BCC</string>
-											<string>7D9D69540F953FDD00F43BCC</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -381,9 +374,7 @@
 											<string>7DD489FD0F2BC23C001B6D4A</string>
 											<string>7D1B40D10F2CED120009759E</string>
 											<string>7D3B25D10F7A289B00D2F98F</string>
-											<string>7D460C420F93E41A003A867D</string>
 											<string>7D460C430F93E41A003A867D</string>
-											<string>7D9D69550F953FDD00F43BCC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -441,9 +432,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7D9D69360F9507F200F43BCC</string>
+				<string>7DEA99650F967311005AA97B</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7D9D69370F9507F200F43BCC</string>
+				<string>7DEA99660F967311005AA97B</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -577,8 +568,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/mlecarme/Developpement/Cocoa/palourde/Palourde/Palourde.xcodeproj</string>
+		<string>/Users/mlecarme/Developpement/Cocoa/palourde/palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>297 131 1445 991 0 0 1920 1178 </string>
@@ -778,13 +768,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>7D9D69380F9507F200F43BCC</string>
+				<string>7DEAD3CB0F966FC300E792C0</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>7D9D69390F9507F200F43BCC</string>
-				<string>7D9D693A0F9507F200F43BCC</string>
-				<string>7D9D693B0F9507F200F43BCC</string>
-				<string>7D9D693C0F9507F200F43BCC</string>
-				<string>7D9D693D0F9507F200F43BCC</string>
+				<string>7DEAD3CC0F966FC300E792C0</string>
+				<string>7DEAD3CD0F966FC300E792C0</string>
+				<string>7DEAD3CE0F966FC300E792C0</string>
+				<string>7DEAD3CF0F966FC300E792C0</string>
+				<string>7DEAD3D00F966FC300E792C0</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

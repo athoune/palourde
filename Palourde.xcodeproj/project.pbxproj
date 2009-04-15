@@ -41,7 +41,6 @@
 		7D460C330F93BF36003A867D /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D460C320F93BF36003A867D /* Sneeze.wav */; };
 		7D8FC7710F2132AE0046069E /* ActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC7700F2132AE0046069E /* ActionController.m */; };
 		7D8FC7C30F214C350046069E /* ActionPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FC7C20F214C350046069E /* ActionPanel.xib */; };
-		7D9D69410F950FF000F43BCC /* start.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7D9D69400F950FF000F43BCC /* start.sh */; };
 		7DA3EAE10F209E7C008496B9 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
 		7DA3EAF50F209FC3008496B9 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF10F209FC3008496B9 /* bombe__s04.png */; };
 		7DA3EAF60F209FC3008496B9 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF20F209FC3008496B9 /* bombe__s01.png */; };
@@ -118,7 +117,6 @@
 		7D8FC76F0F2132AE0046069E /* ActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionController.h; path = source/ActionController.h; sourceTree = "<group>"; };
 		7D8FC7700F2132AE0046069E /* ActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionController.m; path = source/ActionController.m; sourceTree = "<group>"; };
 		7D8FC7720F2133320046069E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ActionPanel.xib; sourceTree = "<group>"; };
-		7D9D69400F950FF000F43BCC /* start.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = start.sh; path = pkg_scripts/start.sh; sourceTree = "<group>"; };
 		7DA3EAF10F209FC3008496B9 /* bombe__s04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s04.png; path = resource/bombe__s04.png; sourceTree = "<group>"; };
 		7DA3EAF20F209FC3008496B9 /* bombe__s01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s01.png; path = resource/bombe__s01.png; sourceTree = "<group>"; };
 		7DA3EAF30F209FC3008496B9 /* bombe__s02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombe__s02.png; path = resource/bombe__s02.png; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7D9D69400F950FF000F43BCC /* start.sh */,
 				7D460C320F93BF36003A867D /* Sneeze.wav */,
 				7D18960D0F225E6300148E33 /* aero.icns */,
 				7DD489F80F2BC220001B6D4A /* aero2.icns */,
@@ -400,7 +397,6 @@
 				7DD489F90F2BC220001B6D4A /* aero2.icns in Resources */,
 				7D1B40CD0F2CECF80009759E /* pshit.icns in Resources */,
 				7D460C330F93BF36003A867D /* Sneeze.wav in Resources */,
-				7D9D69410F950FF000F43BCC /* start.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
