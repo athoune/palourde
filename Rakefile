@@ -1,3 +1,11 @@
+packagemaker = '/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker'
+
+def sudo_rm(path)
+	if File.exist? path
+		sh "sudo rm -r #{path}"
+	end
+end
+
 
 namespace :palourde do
 	task :i18n do
@@ -14,10 +22,10 @@ namespace :palourde do
 
 	task :install => :build do
 		sh 'sudo mkdir -p /Library/Palourde/'
-		sh 'sudo rm -r /Library/Palourde/Palourde.app'
+		sudo_rm '/Library/Palourde/Palourde.app'
 		sh 'sudo cp -r build/Release/Palourde.app /Library/Palourde/'
 	end
-
+	
 end
 
 namespace :clamav do
@@ -67,22 +75,66 @@ namespace :clamav do
 	end
 end
 
-task :clean => ['palourde:clean', 'clamav:clean']
+
+def stop(name)
+	if `launchctl list`.include? name
+		sh "sudo launchctl stop #{name}"
+	end
+end
+
+def launchctl(action, file)
+	if File.exist? file
+		sh "sudo launchctl #{action} #{file}"
+	end
+end
+
+task :install => ['palourde:install', 'clamav:install', :conf]
+
+task :uninstall do
+	stop 'com.macbouffon.palourde.agent.plist'
+	stop 'com.macbouffon.palourde.freshclam.plist'
+	stop 'com.macbouffon.palourde.clamd.plist'
+	sudo_rm '/Library/Palourde'
+	sudo_rm '/Library/Preferences/clamd.conf'
+	sudo_rm '/Library/Preferences/freshclam.conf'
+	sudo_rm '/Library/LaunchAgents/com.macbouffon.palourde.agent.plist'
+	sudo_rm '/Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist'
+	sudo_rm '/Library/LaunchDaemons/com.macbouffon.palourde.freshclam.plist'
+end
+
+task :clean => ['palourde:clean', 'clamav:clean', :uninstall]
 
 task :build => ['palourde:build', 'clamav:build']
 
-task :install => ['palourde:install', 'clamav:install']
+def chown(file)
+	sh "sudo chown root:admin #{file}"
+end
+
+def copy_chown(file, to)
+	sh "sudo cp etc/#{file} #{to}"
+	chown "#{to}#{file}"
+end
 
 desc "Spread conf files"
 task :conf do
-	sh 'sudo cp etc/clamd.conf /Library/Preferences/'
-	sh 'sudo cp etc/freshclam.conf /Library/Preferences/'
-	sh 'sudo cp etc/com.macbouffon.palourde.agent.plist /Library/LaunchAgents/'
-	sh 'sudo cp etc/com.macbouffon.palourde.clamd.plist /Library/LaunchDaemons/'
-	sh 'sudo cp etc/com.macbouffon.palourde.freshclam.plist /Library/LaunchDaemons/'
+	copy_chown 'clamd.conf', '/Library/Preferences/'
+	copy_chown 'freshclam.conf', '/Library/Preferences/'
+	copy_chown 'com.macbouffon.palourde.agent.plist', '/Library/LaunchAgents/'
+	copy_chown 'com.macbouffon.palourde.clamd.plist', '/Library/LaunchDaemons/'
+	copy_chown 'com.macbouffon.palourde.freshclam.plist', '/Library/LaunchDaemons/'
 end
 
-task :default => [:install, :conf]
+task :default => [:install]
+
+task :pkg => :install do
+	rm 'palourde.pkg' if File.exist? 'palourde.pkg'
+	sudo_rm 'build/Palourde.app'
+	sh 'sudo cp -r /Library/Palourde/Palourde.app build/'
+	sh 'sudo chmod 775 build/Palourde.app'
+	chown 'build/Palourde.app'
+	sh "#{packagemaker} --doc Palourde.pmdoc "
+end
+
 task :start do
 	sh "sudo launchctl load -w /Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist"
 	
