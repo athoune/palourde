@@ -7,6 +7,13 @@ Ingredients
  * Palourde is a Cocoa application with a small C part for handling unix socket communication.
  * Build is done with a _Rakefile_
 
+Frameworks
+----------
+
+ * [Growl](http://growl.info/) for unintrusive warnings
+ * [HMBlkAppKit](http://shiira.jp/hmblkappkit/en.html) for nice HUD infos
+ * [Sparkle](http://sparkle.andymatuschak.org/) for update
+
 Install
 =======
 
