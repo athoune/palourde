@@ -26,3 +26,13 @@ Build palourde
 	rake build
 Install it
 	sudo rake install
+Gives it ammo
+	sudo rake freshclam
+Lauchctl notices that new agent and daemons is here to be launched. A red insecticid bottle appears on the top of your screen.
+
+Testing it
+==========
+
+*eicar_com.zip* is a fake virus for test purpose. You can put it in an USB key and plug it, or the classical but slower *Scan home*.
+
+Debug can be saw in the _Console_
