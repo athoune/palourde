@@ -54,6 +54,10 @@
 	       selector:@selector(scanFinished:)
 		   name:PAScanFinished
 		 object:nil];
+	[center addObserver:self
+		selector:@selector(error:)
+		name:PAError
+		object:nil];
     UKKQueue* kqueue = [UKKQueue sharedFileWatcher];
     [kqueue addPathToQueue:[@"~/Downloads/" stringByExpandingTildeInPath]];
     [kqueue addPathToQueue:[@"~/Library/Mail Downloads/" stringByExpandingTildeInPath]];
@@ -84,6 +88,10 @@
     }
     NSLog(@"affichage de %@", actionController);
     [actionController showWindow:self];
+}
+
+- (void) error: (NSNotification *)notification {
+	[self doGrowl:NSLocalizedString(@"Error", @"Popup title") withMessage: [notification userInfo]];
 }
 
 - (void) oneVirus: (NSNotification *)notification {
@@ -137,7 +145,7 @@
 }
 
 - (IBAction)runWebPage:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"http://code.google.com/p/palourde/"];//[[[NSBundle mainBundle] infoDictionary] valueForKey:@"MPWebPageURL"]];
+    NSURL *url = [NSURL URLWithString:@"http://palourde.net/"];//[[[NSBundle mainBundle] infoDictionary] valueForKey:@"MPWebPageURL"]];
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 

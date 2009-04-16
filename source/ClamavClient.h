@@ -10,6 +10,7 @@
 
 extern NSString * const PAOneVirus;
 extern NSString * const PAScanFinished;
+extern NSString * const PAError;
 
 @interface ClamavClient : NSObject {
 	NSString *path;

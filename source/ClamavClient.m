@@ -15,6 +15,7 @@
 
 NSString * const PAOneVirus = @"PAOneVirusToken";
 NSString * const PAScanFinished = @"PAScanDone";
+NSString * const PAError = @"PAError";
 
 /*
  http://www.ecst.csuchico.edu/~beej/guide/ipc/usock.html
@@ -40,12 +41,13 @@ NSString * const PAScanFinished = @"PAScanDone";
 + (NSOperationQueue*) sharedOperationQueue {
     static NSOperationQueue *operationQueue = nil;
     if(operationQueue == nil)
-	operationQueue = [NSOperationQueue new];
+		operationQueue = [NSOperationQueue new];
     return operationQueue;
 }
 
 -(int) connect {
-    int len;
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+	int len;
     int sock = -1;
     struct sockaddr_un remote;
     
@@ -62,7 +64,9 @@ NSString * const PAScanFinished = @"PAScanDone";
     
     len = strlen(remote.sun_path) + sizeof(remote.sun_family);
     if (connect(sock, (struct sockaddr *)&remote, sizeof(struct sockaddr_un)) == -1) {
-		NSLog(@"Connection problem with %@", path);
+		NSString *msg = [NSString stringWithFormat:@"Connection trouble with %@", path];
+		[nc postNotificationName:PAError object:self userInfo:[NSDictionary dictionaryWithObject:msg forKey:@"message"]];
+		NSLog(msg);
 		perror("connect");
 		exit(1);
     }
@@ -74,17 +78,17 @@ NSString * const PAScanFinished = @"PAScanDone";
     
     int sock = [self connect];
     if (write(sock, [command cStringUsingEncoding:NSUTF8StringEncoding], [command lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
-	close(sock);
-	perror("send");
-	exit(1);
+		close(sock);
+		perror("send");
+		exit(1);
     }
     char buff[64];
     int bread;
     NSMutableString *rep = [NSMutableString stringWithCapacity:64];
     while((bread = read(sock, buff, sizeof(buff)-1)) > 0) {
-	buff[bread] = '\0';
-	[rep appendFormat:@"%s", buff]; 
-	//printf("%s\n", buff);
+		buff[bread] = '\0';
+		[rep appendFormat:@"%s", buff]; 
+		//printf("%s\n", buff);
     }
     [nc postNotificationName:PAScanFinished object:self];
     NSLog(@"%@", rep);
@@ -136,15 +140,15 @@ NSString * const PAScanFinished = @"PAScanDone";
 			file = nil;
 			[nc postNotificationName:PAOneVirus object:self userInfo: userInfo];
 		}
-	line = nil;
+		line = nil;
     }
     close(sock);
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithCapacity:1];
     [userInfo setObject:[NSNumber numberWithFloat:[debut timeIntervalSinceNow] ] forKey:@"duration"];
     [userInfo setObject:[NSNumber numberWithInteger:cpt] forKey:@"count"];
     [nc postNotificationName:PAScanFinished 
-			object:self 
-		    userInfo:userInfo];
+					  object:self 
+					userInfo:userInfo];
     NSLog(@"scan ended");
 }
 
@@ -153,13 +157,13 @@ NSString * const PAScanFinished = @"PAScanDone";
     //[thePath retain];
     [NSThread detachNewThreadSelector:@selector(contscan:)
 							 toTarget:self
-							withObject:thePath];
+						   withObject:thePath];
     /*NSInvocationOperation* theOp = [[NSInvocationOperation alloc] initWithTarget:self
-									selector:@selector(contscan:)
-									object:thePath];
-    [theOp autorelease];
-    // Add the operation to the internal operation queue managed by the application delegate.
-    [[Client sharedOperationQueue] addOperation:theOp];*/
+	 selector:@selector(contscan:)
+	 object:thePath];
+	 [theOp autorelease];
+	 // Add the operation to the internal operation queue managed by the application delegate.
+	 [[Client sharedOperationQueue] addOperation:theOp];*/
     //[pool drain];
     //pool = nil;
 }

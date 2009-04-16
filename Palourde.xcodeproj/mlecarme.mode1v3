@@ -300,7 +300,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {245, 932}}</string>
+							<string>{{0, 0}, {245, 720}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -312,14 +312,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {262, 950}}</string>
+						<string>{{0, 0}, {262, 738}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>245</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>297 131 1445 991 0 0 1920 1178 </string>
+						<string>-3 99 1445 779 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -386,14 +386,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1178, 661}}</string>
+								<string>{{0, 0}, {1178, 513}}</string>
 								<key>RubberWindowFrame</key>
-								<string>297 131 1445 991 0 0 1920 1178 </string>
+								<string>-3 99 1445 779 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>661pt</string>
+							<string>513pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -406,14 +406,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 666}, {1178, 284}}</string>
+								<string>{{0, 518}, {1178, 220}}</string>
 								<key>RubberWindowFrame</key>
-								<string>297 131 1445 991 0 0 1920 1178 </string>
+								<string>-3 99 1445 779 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>284pt</string>
+							<string>220pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -432,9 +432,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7DEA99650F967311005AA97B</string>
+				<string>7D65C4500F973ACA005DE88A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7DEA99660F967311005AA97B</string>
+				<string>7D65C4510F973ACA005DE88A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -568,10 +568,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/mlecarme/Developpement/Cocoa/palourde/palourde/Palourde.xcodeproj</string>
+		<string>/Users/mlecarme/Developpement/palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>297 131 1445 991 0 0 1920 1178 </string>
+	<string>-3 99 1445 779 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
