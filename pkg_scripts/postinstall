@@ -1,8 +1,9 @@
 #!/bin/sh
 
-/Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam
+mkdir -p /Library/Palourde/Definitions
+cd /tmp && /Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam
 launchctl load -w /Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist
+launchctl load -w /Library/LaunchDaemons/com.macbouffon.palourde.freshclam.plist
 launchctl load -w /Library/LaunchAgents/com.macbouffon.palourde.agent.plist
-launchctl start com.macbouffon.palourde.clamd
-launchctl start com.macbouffon.palourde.agent
-mkdir /Library/Palourde/Definitions
+#launchctl start com.macbouffon.palourde.clamd
+#launchctl start com.macbouffon.palourde.agent

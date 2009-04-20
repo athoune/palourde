@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>pshit.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.macbouffon.palourde.${PRODUCT_NAME:identifier}</string>
+	<string>net.palourde.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,12 +19,16 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>0.1</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>http://palourde.net/appcast</string>
 </dict>
 </plist>

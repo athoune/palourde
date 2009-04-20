@@ -72,6 +72,14 @@
 						<reference key="NSOnImage" ref="285456427"/>
 						<reference key="NSMixedImage" ref="707591481"/>
 					</object>
+					<object class="NSMenuItem" id="555044865">
+						<reference key="NSMenu" ref="1066900528"/>
+						<string type="base64-UTF8" key="NSTitle">Q2hlY2sgZm9yIFVwZGF0ZXPigKY</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="285456427"/>
+						<reference key="NSMixedImage" ref="707591481"/>
+					</object>
 					<object class="NSMenuItem" id="632650344">
 						<reference key="NSMenu" ref="1066900528"/>
 						<bool key="NSIsDisabled">YES</bool>
@@ -116,6 +124,9 @@
 						<reference key="NSMixedImage" ref="707591481"/>
 					</object>
 				</object>
+			</object>
+			<object class="NSCustomObject" id="757391086">
+				<string key="NSClassName">SUUpdater</string>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -163,11 +174,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">showActionPanel:</string>
-						<reference key="source" ref="104039360"/>
-						<reference key="destination" ref="810897134"/>
+						<string key="label">checkForUpdates:</string>
+						<reference key="source" ref="757391086"/>
+						<reference key="destination" ref="555044865"/>
 					</object>
-					<int key="connectionID">501</int>
+					<int key="connectionID">504</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -217,6 +228,7 @@
 							<reference ref="609354994"/>
 							<reference ref="444403891"/>
 							<reference ref="810897134"/>
+							<reference ref="555044865"/>
 						</object>
 						<reference key="parent" ref="1049"/>
 					</object>
@@ -260,6 +272,16 @@
 						<reference key="object" ref="810897134"/>
 						<reference key="parent" ref="1066900528"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">502</int>
+						<reference key="object" ref="757391086"/>
+						<reference key="parent" ref="1049"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">503</int>
+						<reference key="object" ref="555044865"/>
+						<reference key="parent" ref="1066900528"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -280,6 +302,8 @@
 					<string>461.IBPluginDependency</string>
 					<string>463.IBPluginDependency</string>
 					<string>497.IBPluginDependency</string>
+					<string>502.IBPluginDependency</string>
+					<string>503.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -287,7 +311,9 @@
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{1004, 702}, {225, 153}}</string>
+					<string>{{1004, 682}, {243, 173}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -319,7 +345,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">501</int>
+			<int key="maxID">504</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -373,6 +399,36 @@
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">source/PAController.h</string>
 					</object>
+				</object>
+			</object>
+			<object class="NSMutableArray" key="referencedPartialClassDescriptionsV3.1+">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/Sparkle.framework/Versions/A/Headers/SUAppcast.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="619785294">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/Sparkle.framework/Versions/A/Headers/SUUpdater.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">SUUpdater</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">checkForUpdates:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">delegate</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<reference key="sourceIdentifier" ref="619785294"/>
 				</object>
 			</object>
 		</object>
