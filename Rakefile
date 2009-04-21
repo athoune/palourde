@@ -98,6 +98,9 @@ task :uninstall do
 	sudo_rm '/Library/Palourde'
 	sudo_rm '/Library/Preferences/clamd.conf'
 	sudo_rm '/Library/Preferences/freshclam.conf'
+	sudo_rm '/Library/LaunchAgents/net.palourde.agent.plist'
+	sudo_rm '/Library/LaunchDaemons/net.palourde.clamd.plist'
+	sudo_rm '/Library/LaunchDaemons/net.palourde.freshclam.plist'
 	sudo_rm '/Library/LaunchAgents/com.macbouffon.palourde.agent.plist'
 	sudo_rm '/Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist'
 	sudo_rm '/Library/LaunchDaemons/com.macbouffon.palourde.freshclam.plist'
@@ -109,7 +112,7 @@ desc "compile applications"
 task :build => ['palourde:build', 'clamav:build']
 
 def chown(file)
-	sh "sudo chown root:admin #{file}"
+	sh "sudo chown -R root:admin #{file}"
 end
 
 def copy_chown(file, to)
@@ -121,9 +124,9 @@ desc "Spread conf files"
 task :conf do
 	copy_chown 'clamd.conf', '/Library/Preferences/'
 	copy_chown 'freshclam.conf', '/Library/Preferences/'
-	copy_chown 'com.macbouffon.palourde.agent.plist', '/Library/LaunchAgents/'
-	copy_chown 'com.macbouffon.palourde.clamd.plist', '/Library/LaunchDaemons/'
-	copy_chown 'com.macbouffon.palourde.freshclam.plist', '/Library/LaunchDaemons/'
+	copy_chown 'net.palourde.agent.plist', '/Library/LaunchAgents/'
+	copy_chown 'net.palourde.clamd.plist', '/Library/LaunchDaemons/'
+	copy_chown 'net.palourde.freshclam.plist', '/Library/LaunchDaemons/'
 end
 
 task :default => [:install]
@@ -131,11 +134,22 @@ task :default => [:install]
 desc "Build a cute package"
 task :pkg => :install do
 	rm 'palourde.pkg' if File.exist? 'palourde.pkg'
-	sudo_rm 'build/Palourde.app'
-	sh 'sudo cp -r /Library/Palourde/Palourde.app build/'
-	sh 'sudo chmod 775 build/Palourde.app'
-	chown 'build/Palourde.app'
-	sh "#{packagemaker} --doc Palourde.pmdoc "
+	sudo_rm 'package' if File.exist? 'package'
+	mkdir_p 'package/Library/Palourde'
+	mkdir_p 'package/Library/Preferences'
+	mkdir_p 'package/Library/LaunchAgents'
+	mkdir_p 'package/Library/LaunchDaemons'
+	sh 'sudo cp -r /Library/Palourde/Palourde.app package/Library/Palourde'
+	#sh 'sudo chmod 775 package/Palourde.app'
+	#chown 'package'
+	sh 'cp -p /Library/Preferences/clamd.conf package/Library/Preferences/'
+	sh 'cp -p /Library/Preferences/freshclam.conf package/Library/Preferences/'
+	sh 'cp -p /Library/LaunchAgents/net.palourde.agent.plist package/Library/LaunchAgents/'
+	sh 'cp -p /Library/LaunchDaemons/net.palourde.clamd.plist package/Library/LaunchDaemons/'
+	sh 'cp -p /Library/LaunchDaemons/net.palourde.freshclam.plist package/Library/LaunchDaemons/'
+	#sh "#{packagemaker} --root ./package --id net.palourde --out Palourde.pkg --version 0.1 --title Palourde --domain system --root-volume-only --verbose --discard-forks --scripts pkg_scripts --install-to /"
+	#--scripts pkg_scripts
+	#--target 10.5
 end
 
 task :start do
