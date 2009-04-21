@@ -141,12 +141,13 @@ task :pkg => :install do
 	mkdir_p 'package/Library/LaunchDaemons'
 	sh 'sudo cp -r /Library/Palourde/Palourde.app package/Library/Palourde'
 	#sh 'sudo chmod 775 package/Palourde.app'
-	#chown 'package'
 	sh 'cp -p /Library/Preferences/clamd.conf package/Library/Preferences/'
 	sh 'cp -p /Library/Preferences/freshclam.conf package/Library/Preferences/'
 	sh 'cp -p /Library/LaunchAgents/net.palourde.agent.plist package/Library/LaunchAgents/'
 	sh 'cp -p /Library/LaunchDaemons/net.palourde.clamd.plist package/Library/LaunchDaemons/'
 	sh 'cp -p /Library/LaunchDaemons/net.palourde.freshclam.plist package/Library/LaunchDaemons/'
+	sh 'find package -name ".DS_Store" -exec rm -f {} \;'
+	chown 'package'
 	#sh "#{packagemaker} --root ./package --id net.palourde --out Palourde.pkg --version 0.1 --title Palourde --domain system --root-volume-only --verbose --discard-forks --scripts pkg_scripts --install-to /"
 	#--scripts pkg_scripts
 	#--target 10.5
