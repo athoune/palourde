@@ -133,26 +133,35 @@ task :default => [:install]
 
 desc "Build a cute package"
 task :pkg => :install do
-	rm 'palourde.pkg' if File.exist? 'palourde.pkg'
-	sudo_rm 'package' if File.exist? 'package'
-	mkdir_p 'package/Library/Palourde'
-	mkdir_p 'package/Library/Preferences'
-	mkdir_p 'package/Library/LaunchAgents'
-	mkdir_p 'package/Library/LaunchDaemons'
-	sh 'sudo cp -r /Library/Palourde/Palourde.app package/Library/Palourde'
+  sh 'freeze Palourde.packproj'
+	#rm 'palourde.pkg' if File.exist? 'palourde.pkg'
+	#sudo_rm 'package' if File.exist? 'package'
+	#mkdir_p 'package/Library/Palourde'
+	#mkdir_p 'package/Library/Preferences'
+	#mkdir_p 'package/Library/LaunchAgents'
+	#mkdir_p 'package/Library/LaunchDaemons'
+	#sh 'sudo cp -r /Library/Palourde/Palourde.app package/Library/Palourde'
 	#sh 'sudo chmod 775 package/Palourde.app'
-	sh 'cp -p /Library/Preferences/clamd.conf package/Library/Preferences/'
-	sh 'cp -p /Library/Preferences/freshclam.conf package/Library/Preferences/'
-	sh 'cp -p /Library/LaunchAgents/net.palourde.agent.plist package/Library/LaunchAgents/'
-	sh 'cp -p /Library/LaunchDaemons/net.palourde.clamd.plist package/Library/LaunchDaemons/'
-	sh 'cp -p /Library/LaunchDaemons/net.palourde.freshclam.plist package/Library/LaunchDaemons/'
-	sh 'find package -name ".DS_Store" -exec rm -f {} \;'
-	chown 'package'
+	#sh 'cp -p /Library/Preferences/clamd.conf package/Library/Preferences/'
+	#sh 'cp -p /Library/Preferences/freshclam.conf package/Library/Preferences/'
+	#sh 'cp -p /Library/LaunchAgents/net.palourde.agent.plist package/Library/LaunchAgents/'
+	#sh 'cp -p /Library/LaunchDaemons/net.palourde.clamd.plist package/Library/LaunchDaemons/'
+	#sh 'cp -p /Library/LaunchDaemons/net.palourde.freshclam.plist package/Library/LaunchDaemons/'
+	#sh 'find package -name ".DS_Store" -exec rm -f {} \;'
+	#chown 'package'
 	#sh "#{packagemaker} --root ./package --id net.palourde --out Palourde.pkg --version 0.1 --title Palourde --domain system --root-volume-only --verbose --discard-forks --scripts pkg_scripts --install-to /"
 	#--scripts pkg_scripts
 	#--target 10.5
 end
 
+desc "Build an image file"
+task :dmg => :pkg do
+  rm_r 'dmg' if File.exist? 'dmg'
+  mkdir 'dmg'
+  cp_r 'build/Palourde.pkg', 'dmg'
+  sh 'hdiutil create -srcfolder dmg Palourde.dmg'
+end
+  
 task :start do
 	sh "sudo launchctl load -w /Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist"
 	
