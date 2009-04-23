@@ -26,9 +26,9 @@
 					<key>International</key>
 					<dict>
 						<key>Mode</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>Path</key>
-						<string></string>
+						<string>/Users/mlecarme/Developpement/Cocoa/palourde/palourde/gpl-3.0.txt</string>
 						<key>Path Type</key>
 						<integer>1</integer>
 					</dict>
