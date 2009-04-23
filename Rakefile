@@ -1,8 +1,30 @@
 packagemaker = '/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker'
+#Used clam AV version
+CLAMAV_VERSION = '0.95.1'
+#Needed macports
+PORTS = %w{zlib bzip2}
+#sf.net mirror
+SF_MIRROR = 'freefr'
+source = "clamav-#{CLAMAV_VERSION}"
+
+file "#{source}.tar.gz" do
+	sh "curl -O http://#{SF_MIRROR}.dl.sourceforge.net/sourceforge/clamav/#{source}.tar.gz"
+end
+
+file source => "#{source}.tar.gz" do
+	sh "tar -xvzf #{source}.tar.gz"
+end
 
 def sudo_rm(path)
 	if File.exist? path
 		sh "sudo rm -r #{path}"
+	end
+end
+
+task :ports do
+	installed = `port installed`
+	PORTS.each do |port|
+		sh "sudo port -d install #{port} +universal" if installed.index(port) == nil
 	end
 end
 
@@ -29,8 +51,8 @@ end
 
 namespace :clamav do
 
-	task :build do
-		if File.exist? 'clamav-src/clamd/clamd'
+	task :build => [source, :ports] do
+		if File.exist? "#{source}/clamd/clamd"
 			puts "[Info] deja fait"
 		else
 			export = { 
@@ -49,7 +71,7 @@ namespace :clamav do
 			'FFLAGS'=> '-O2',
 			'CC'=> '/usr/bin/gcc-4.0'
 			}
-			Dir.chdir 'clamav-src' do
+			Dir.chdir source do
 				sh './configure --enable-static --with-zlib=/opt/local --with-libbz2-prefix=/opt/local --with-iconv --prefix=/Library/Palourde/Palourde.app/Contents/Resources --disable-clamav --disable-dependency-tracking --sysconfdir=/Library/Preferences/ --with-dbdir=/Library/Palourde/Definitions/ --enable-id-check --enable-clamdtop '
 				sh 'make clean'
 				cmd = ''
@@ -62,18 +84,15 @@ namespace :clamav do
 	end
 	
 	task :install => :build do
-		Dir.chdir 'clamav-src' do
+		Dir.chdir source do
 			sh 'sudo make install'
 		end
 	end
 
 	task :clean do
-		Dir.chdir 'clamav-src' do
-			sh 'make clean'
-		end
+		rm_r source
 	end
 end
-
 
 def stop(name)
 	if `launchctl list`.include? name
@@ -106,7 +125,10 @@ task :uninstall do
 	sudo_rm '/Library/LaunchDaemons/com.macbouffon.palourde.freshclam.plist'
 end
 
-task :clean => ['palourde:clean', 'clamav:clean', :uninstall]
+task :clean => ['palourde:clean', 'clamav:clean', :uninstall] do
+	rm_r 'build' if File.exist? 'build'
+	rm 'Palourde.dmg' if File.exist? 'Palourde.dmg'
+end
 
 desc "compile applications"
 task :build => ['palourde:build', 'clamav:build']
@@ -129,7 +151,7 @@ task :conf do
 	copy_chown 'net.palourde.freshclam.plist', '/Library/LaunchDaemons/'
 end
 
-task :default => [:install]
+task :default => :dmg
 
 desc "Build a cute package"
 task :pkg => :install do
@@ -156,15 +178,16 @@ end
 
 desc "Build an image file"
 task :dmg => :pkg do
-  rm_r 'dmg' if File.exist? 'dmg'
-  mkdir 'dmg'
-  cp_r 'build/Palourde.pkg', 'dmg'
-  sh 'hdiutil create -srcfolder dmg Palourde.dmg'
+	rm_r 'dmg' if File.exist? 'dmg'
+	mkdir 'dmg'
+	cp_r 'build/Palourde.pkg', 'dmg'
+	rm 'Palourde.dmg' if File.exist? 'Palourde.dmg'
+	sh 'hdiutil create -srcfolder dmg Palourde.dmg'
+	rm_r 'dmg'
 end
   
 task :start do
 	sh "sudo launchctl load -w /Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist"
-	
 end
 
 desc 'Update virus definition'

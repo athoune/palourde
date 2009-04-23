@@ -15,7 +15,6 @@
 
 NSString * const PAOneVirus = @"PAOneVirusToken";
 NSString * const PAScanFinished = @"PAScanDone";
-NSString * const PAError = @"PAError";
 
 /*
  http://www.ecst.csuchico.edu/~beej/guide/ipc/usock.html
@@ -46,7 +45,6 @@ NSString * const PAError = @"PAError";
 }
 
 -(int) connect {
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 	int len;
     int sock = -1;
     struct sockaddr_un remote;
@@ -65,8 +63,7 @@ NSString * const PAError = @"PAError";
     len = strlen(remote.sun_path) + sizeof(remote.sun_family);
     if (connect(sock, (struct sockaddr *)&remote, sizeof(struct sockaddr_un)) == -1) {
 		NSString *msg = [NSString stringWithFormat:@"Connection trouble with %@", path];
-		[nc postNotificationName:PAError object:self userInfo:[NSDictionary dictionaryWithObject:msg forKey:@"message"]];
-		NSLog(msg);
+		@throw [NSException exceptionWithName:@"Socket" reason:msg userInfo:nil];
 		perror("connect");
 		exit(1);
     }
@@ -79,6 +76,7 @@ NSString * const PAError = @"PAError";
     int sock = [self connect];
     if (write(sock, [command cStringUsingEncoding:NSUTF8StringEncoding], [command lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
 		close(sock);
+		@throw [NSException exceptionWithName:@"Socket" reason:@"send" userInfo:nil];
 		perror("send");
 		exit(1);
     }
@@ -113,6 +111,7 @@ NSString * const PAError = @"PAError";
 	NSString *cmd = [[NSString alloc] initWithFormat:@"MULTISCAN %@/", thePath];
     if (write(sock, [cmd cStringUsingEncoding:NSUTF8StringEncoding], [cmd lengthOfBytesUsingEncoding:NSUTF8StringEncoding]) == -1) {
 		close(sock);
+		@throw [NSException exceptionWithName:@"Socket" reason:@"send" userInfo:nil];
 		perror("send");
 		exit(1);
     }

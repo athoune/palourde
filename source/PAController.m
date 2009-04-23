@@ -54,10 +54,6 @@
 	       selector:@selector(scanFinished:)
 		   name:PAScanFinished
 		 object:nil];
-	[center addObserver:self
-		selector:@selector(error:)
-		name:PAError
-		object:nil];
     UKKQueue* kqueue = [UKKQueue sharedFileWatcher];
     [kqueue addPathToQueue:[@"~/Downloads/" stringByExpandingTildeInPath]];
     [kqueue addPathToQueue:[@"~/Library/Mail Downloads/" stringByExpandingTildeInPath]];
