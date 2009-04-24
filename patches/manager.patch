@@ -1,0 +1,12 @@
+87a88,89
+> #include <Cocoa/Cocoa.h>
+> 
+1144a1147
+> 	NSDistributedNotificationCenter *globalCenter = [NSDistributedNotificationCenter defaultCenter];
+1148a1152,1157
+> 				NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
+> 				[userInfo setObject:[[NSString alloc] initWithUTF8String:srcfile] forKey:@"file"];
+> 				[userInfo setObject:[NSNumber numberWithFloat:totaldownloaded] forKey:@"downloaded" ];
+> 				[userInfo setObject:[NSNumber numberWithInt:totalsize] forKey:@"total" ];
+> 				NSLog(@"%@", userInfo);
+> 				[globalCenter postNotificationName:@"net.clamav.freshclam.download" object:nil userInfo: userInfo];
