@@ -7,14 +7,6 @@ PORTS = %w{zlib bzip2}
 SF_MIRROR = 'freefr'
 source = "clamav-#{CLAMAV_VERSION}"
 
-file "#{source}.tar.gz" do
-	sh "curl -O http://#{SF_MIRROR}.dl.sourceforge.net/sourceforge/clamav/#{source}.tar.gz"
-end
-
-file source => "#{source}.tar.gz" do
-	sh "tar -xvzf #{source}.tar.gz"
-end
-
 def sudo_rm(path)
 	if File.exist? path
 		sh "sudo rm -r #{path}"
@@ -50,8 +42,26 @@ namespace :palourde do
 end
 
 namespace :clamav do
+	file "#{source}.tar.gz" do
+		sh "curl -O http://#{SF_MIRROR}.dl.sourceforge.net/sourceforge/clamav/#{source}.tar.gz"
+	end
 
-	task :build => [source, :ports] do
+	file source => "#{source}.tar.gz" do
+		sh "tar -xvzf #{source}.tar.gz"
+	end
+	
+	task :patch => source do
+		Dir.chdir "#{source}/freshclam" do
+			%w{freshclam manager}.each do |f|
+				mv "#{f}.c", "#{f}.m" if File.exist? "#{f}.c"
+			end
+		end
+		Dir.chdir source do
+			sh "patch -p0 -N -i ../patches/freshclam.patch"
+		end
+	end
+
+	task :build => [:patch, :ports] do
 		if File.exist? "#{source}/clamd/clamd"
 			puts "[Info] deja fait"
 		else
