@@ -192,7 +192,7 @@ task :dmg => :pkg do
 	mkdir 'dmg'
 	cp_r 'build/Palourde.pkg', 'dmg'
 	rm 'Palourde.dmg' if File.exist? 'Palourde.dmg'
-	sh 'hdiutil create -srcfolder dmg Palourde.dmg'
+	sh 'hdiutil create -volname Palourde -srcfolder dmg Palourde.dmg'
 	rm_r 'dmg'
 end
   
