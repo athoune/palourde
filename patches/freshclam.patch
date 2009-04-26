@@ -1,9 +1,127 @@
-59a60
-> #include <Foundation/Foundation.h>
-195a197,198
-> 	NSApplicationLoad();
-> 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-536c539
-< 
----
-> 	[pool drain];
+diff -u freshclam/Makefile.am freshclam/Makefile.am
+--- freshclam/Makefile.am	2009-04-26 17:54:55.000000000 +0200
++++ freshclam/Makefile.am	2009-04-26 17:55:23.000000000 +0200
+@@ -32,8 +32,8 @@
+     $(top_srcdir)/shared/cdiff.h \
+     $(top_srcdir)/shared/tar.c \
+     $(top_srcdir)/shared/tar.h \
+-    freshclam.c \
+-    manager.c \
++    freshclam.m \
++    manager.m \
+     manager.h \
+     notify.c \
+     notify.h \
+@@ -48,7 +48,7 @@
+ 
+ DEFS = @DEFS@ -DCL_NOTHREADS
+ AM_CPPFLAGS = -I$(top_srcdir) -I$(top_srcdir)/shared -I$(top_srcdir)/libclamav
+-LIBS = $(top_builddir)/libclamav/libclamav.la @FRESHCLAM_LIBS@ @THREAD_LIBS@
++LIBS = $(top_builddir)/libclamav/libclamav.la @FRESHCLAM_LIBS@ @THREAD_LIBS@ -framework Cocoa
+ 
+ AM_INSTALLCHECK_STD_OPTIONS_EXEMPT=freshclam$(EXEEXT)
+ CLEANFILES=*.gcda *.gcno
+diff -u freshclam/Makefile.in freshclam/Makefile.in
+--- freshclam/Makefile.in	2009-04-26 17:54:55.000000000 +0200
++++ freshclam/Makefile.in	2009-04-26 20:01:17.000000000 +0200
+@@ -91,7 +91,7 @@
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+ 	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
+-	$(LDFLAGS) -o $@
++	$(LDFLAGS) -framework Cocoa -o $@
+ SOURCES = $(freshclam_SOURCES)
+ DIST_SOURCES = $(freshclam_SOURCES)
+ ETAGS = etags
+@@ -265,8 +265,8 @@
+     $(top_srcdir)/shared/cdiff.h \
+     $(top_srcdir)/shared/tar.c \
+     $(top_srcdir)/shared/tar.h \
+-    freshclam.c \
+-    manager.c \
++    freshclam.m \
++    manager.m \
+     manager.h \
+     notify.c \
+     notify.h \
+@@ -285,7 +285,7 @@
+ all: all-am
+ 
+ .SUFFIXES:
+-.SUFFIXES: .c .lo .o .obj
++.SUFFIXES: .c .m .lo .o .obj
+ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__configure_deps)
+ 	@for dep in $?; do \
+ 	  case '$(am__configure_deps)' in \
+@@ -390,6 +390,13 @@
+ @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+ @am__fastdepCC_FALSE@	$(COMPILE) -c $<
+ 
++.m.o:
++@am__fastdepCC_TRUE@	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
++@am__fastdepCC_TRUE@	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
++@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
++@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
++@am__fastdepCC_FALSE@	$(COMPILE) -c $<
++
+ .c.obj:
+ @am__fastdepCC_TRUE@	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+ @am__fastdepCC_TRUE@	mv -f $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+diff -u freshclam/freshclam.m freshclam/freshclam.m
+--- freshclam/freshclam.m	2009-04-26 17:54:55.000000000 +0200
++++ freshclam/freshclam.m	2009-04-26 17:55:23.000000000 +0200
+@@ -57,6 +57,7 @@
+ #include "execute.h"
+ #include "manager.h"
+ #include "mirman.h"
++#include <Foundation/Foundation.h>
+ 
+ static short terminate = 0;
+ extern int active_children;
+@@ -193,6 +194,8 @@
+ 
+ int main(int argc, char **argv)
+ {
++	NSApplicationLoad();
++	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+ 	int ret = 52;
+ 	const char *dbdir, *cfgfile, *arg = NULL, *pidfile = NULL;
+ 	char *pt;
+@@ -533,6 +536,6 @@
+ 	return 63;
+     }
+ #endif
+-
++	[pool drain];
+     return(ret);
+ }
+diff -u freshclam/manager.m freshclam/manager.m
+--- freshclam/manager.m	2009-04-26 17:54:55.000000000 +0200
++++ freshclam/manager.m	2009-04-26 17:55:23.000000000 +0200
+@@ -85,6 +85,8 @@
+ #include "libclamav/str.h"
+ #include "libclamav/cvd.h"
+ 
++#include <Cocoa/Cocoa.h>
++
+ #ifndef	O_BINARY
+ #define	O_BINARY	0
+ #endif
+@@ -1142,9 +1144,17 @@
+             percentage = (int) (100 * (float) totaldownloaded / totalsize);
+ 	}
+ 
++	NSDistributedNotificationCenter *globalCenter = [NSDistributedNotificationCenter defaultCenter];
++
+         if(!mprintf_quiet) {
+             if(totalsize > 0) {
+                 mprintf("Downloading %s [%3i%%]\r", srcfile, percentage);
++				NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
++				[userInfo setObject:[[NSString alloc] initWithUTF8String:srcfile] forKey:@"file"];
++				[userInfo setObject:[NSNumber numberWithFloat:totaldownloaded] forKey:@"downloaded" ];
++				[userInfo setObject:[NSNumber numberWithInt:totalsize] forKey:@"total" ];
++				NSLog(@"%@", userInfo);
++				[globalCenter postNotificationName:@"net.clamav.freshclam.download" object:nil userInfo: userInfo];
+             } else {
+                 mprintf("Downloading %s [%c]\r", srcfile, rotation[rot]);
+                 rot++;

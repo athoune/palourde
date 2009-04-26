@@ -1,0 +1,9 @@
+59a60
+> #include <Foundation/Foundation.h>
+195a197,198
+> 	NSApplicationLoad();
+> 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+536c539
+< 
+---
+> 	[pool drain];
