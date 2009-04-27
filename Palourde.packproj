@@ -28,9 +28,9 @@
 						<key>Mode</key>
 						<integer>1</integer>
 						<key>Path</key>
-						<string>/Users/mlecarme/Developpement/Cocoa/palourde/palourde/gpl-3.0.txt</string>
+						<string>gpl-3.0.txt</string>
 						<key>Path Type</key>
-						<integer>1</integer>
+						<integer>2</integer>
 					</dict>
 				</dict>
 				<key>ReadMe</key>
