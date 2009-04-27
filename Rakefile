@@ -51,13 +51,15 @@ namespace :clamav do
 	end
 	
 	task :patch => source do
-		Dir.chdir "#{source}/freshclam" do
-			%w{freshclam manager}.each do |f|
-				mv "#{f}.c", "#{f}.m" if File.exist? "#{f}.c"
+		if not File.exist? "#{source}/freshclam/freshclam.m"
+			Dir.chdir "#{source}/freshclam" do
+				%w{freshclam manager}.each do |f|
+					mv "#{f}.c", "#{f}.m" if File.exist? "#{f}.c"
+				end
 			end
-		end
-		Dir.chdir source do
-			sh "patch -p0 -N -i ../patches/freshclam.patch"
+			Dir.chdir source do
+				sh "patch -p0 -N -i ../patches/freshclam.patch"
+			end
 		end
 	end
 
