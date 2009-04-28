@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="6"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -38,11 +38,12 @@
 			<object class="NSWindowTemplate" id="474448030">
 				<int key="NSWindowStyleMask">8223</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 240}, {480, 270}}</string>
+				<string key="NSWindowRect">{{196, 351}, {327, 159}}</string>
 				<int key="NSWTFlags">603979776</int>
-				<string key="NSWindowTitle">Window</string>
+				<string key="NSWindowTitle">Palourde</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
+				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="748348589">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -61,7 +62,7 @@
 										<object class="NSOutlineView" id="1009022859">
 											<reference key="NSNextResponder" ref="911837010"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrameSize">{440, 204}</string>
+											<string key="NSFrameSize">{287, 95}</string>
 											<reference key="NSSuperview" ref="911837010"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="_NSCornerView" key="NSCornerView">
@@ -130,7 +131,7 @@
 													<reference key="NSTableView" ref="1009022859"/>
 												</object>
 												<object class="NSTableColumn" id="104236566">
-													<double key="NSWidth">3.330000e+02</double>
+													<double key="NSWidth">1.800000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -174,7 +175,7 @@
 											<bool key="NSAllowsTypeSelect">NO</bool>
 										</object>
 									</object>
-									<string key="NSFrameSize">{440, 204}</string>
+									<string key="NSFrameSize">{287, 95}</string>
 									<reference key="NSSuperview" ref="532407823"/>
 									<reference key="NSNextKeyView" ref="1009022859"/>
 									<reference key="NSDocView" ref="1009022859"/>
@@ -204,7 +205,7 @@
 									<double key="NSPercent">5.714286e-01</double>
 								</object>
 							</object>
-							<string key="NSFrame">{{20, 46}, {440, 204}}</string>
+							<string key="NSFrame">{{20, 44}, {287, 95}}</string>
 							<reference key="NSSuperview" ref="748348589"/>
 							<reference key="NSNextKeyView" ref="911837010"/>
 							<int key="NSsFlags">528</int>
@@ -217,16 +218,15 @@
 							<reference key="NSNextResponder" ref="748348589"/>
 							<int key="NSvFlags">1314</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
-							<string key="NSFrame">{{18, 16}, {444, 20}}</string>
+							<string key="NSFrame">{{18, 16}, {291, 20}}</string>
 							<reference key="NSSuperview" ref="748348589"/>
 							<bool key="NSViewIsLayerTreeHost">YES</bool>
 							<double key="NSViewAlphaValue">3.309859e-01</double>
-							<int key="NSpiFlags">16394</int>
-							<double key="NSMinValue">2.000000e+01</double>
+							<int key="NSpiFlags">24586</int>
 							<double key="NSMaxValue">1.000000e+02</double>
 						</object>
 					</object>
-					<string key="NSFrameSize">{480, 270}</string>
+					<string key="NSFrameSize">{327, 159}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
@@ -394,9 +394,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{711, 284}, {480, 270}}</string>
+					<string>{{790, 992}, {327, 159}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{711, 284}, {480, 270}}</string>
+					<string>{{790, 992}, {327, 159}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
