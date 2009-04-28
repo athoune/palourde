@@ -8,6 +8,8 @@
 
 #import "ActionController.h"
 
+NSArray*    _classNames;
+
 @implementation ActionController
 -(id)init {
     if (![super initWithWindowNibName:@"ActionPanel"])
@@ -18,4 +20,6 @@
     NSLog(@"Nib chargé");
 }
 
+-(void) awakeFromNib {
+}
 @end

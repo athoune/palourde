@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <Growl/GrowlApplicationBridge.h>
+#import <HMBlkAppKit/HMBlkAppKit.h>
 
 #define NOTHING 1
 #define SPRAYING 2

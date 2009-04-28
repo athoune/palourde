@@ -94,7 +94,7 @@ NSString * const PAScanFinished = @"PAScanDone";
     return rep;
 }
 
--(BOOL *) ping {
+-(BOOL) ping {
     return [[self talk:@"PING"] isEqualToString:@"PONG"];
 }
 

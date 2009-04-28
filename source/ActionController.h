@@ -7,11 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <HMBlkAppKit/HMBlkAppKit.h>
 
 @interface ActionController : NSWindowController {
-    IBOutlet HMBlkPanel *actionPanel;
-    IBOutlet HMBlkTableView *actionTable;
+    IBOutlet NSOutlineView *actionTable;
+    IBOutlet NSProgressIndicator *thermometre;
 }
 
 @end

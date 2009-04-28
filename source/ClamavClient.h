@@ -16,7 +16,7 @@ extern NSString * const PAScanFinished;
 }
 
 -(id) initWithPath: (NSString *)thePath;
--(BOOL *) ping;
+-(BOOL) ping;
 //Clamd version
 -(NSString *) version;
 -(void) contscan:(NSString *) thePath;

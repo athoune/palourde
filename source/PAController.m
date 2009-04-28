@@ -11,6 +11,7 @@
 #import "UKKQueue.h"
 #import <Growl/GrowlApplicationBridge.h>
 #import "ActionController.h"
+#import <HMBlkAppKit/HMBlkAppKit.h>
 
 @implementation PAController
 
@@ -93,7 +94,7 @@
 }
 
 - (void) error: (NSNotification *)notification {
-	[self doGrowl:NSLocalizedString(@"Error", @"Popup title") withMessage: [notification userInfo]];
+    [self doGrowl:NSLocalizedString(@"Error", @"Popup title") withMessage: [NSString stringWithFormat:@"%@",[notification userInfo]]];
 }
 
 - (void) oneVirus: (NSNotification *)notification {

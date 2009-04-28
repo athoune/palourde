@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="3"/>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -38,10 +38,10 @@
 			<object class="NSWindowTemplate" id="922009483">
 				<int key="NSWindowStyleMask">8219</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{1580, 807}, {275, 296}}</string>
+				<string key="NSWindowRect">{{1580, 832}, {275, 271}}</string>
 				<int key="NSWTFlags">-1275067392</int>
 				<string key="NSWindowTitle">Actions</string>
-				<string key="NSWindowClass">NSPanel</string>
+				<string key="NSWindowClass">HMBlkPanel</string>
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<string key="NSWindowContentMinSize">{275, 271}</string>
@@ -63,7 +63,7 @@
 										<object class="NSTableView" id="753731769">
 											<reference key="NSNextResponder" ref="716324621"/>
 											<int key="NSvFlags">256</int>
-											<string key="NSFrameSize">{242, 223}</string>
+											<string key="NSFrameSize">{260, 238}</string>
 											<reference key="NSSuperview" ref="716324621"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="_NSCornerView" key="NSCornerView">
@@ -101,7 +101,7 @@
 														</object>
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="740056726">
-														<int key="NSCellFlags">337772096</int>
+														<int key="NSCellFlags">67239488</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
 														<object class="NSFont" key="NSSupport" id="504225032">
@@ -110,6 +110,7 @@
 															<int key="NSfFlags">1044</int>
 														</object>
 														<reference key="NSControlView" ref="753731769"/>
+														<bool key="NSDrawsBackground">YES</bool>
 														<object class="NSColor" key="NSBackgroundColor" id="433065244">
 															<int key="NSColorSpace">6</int>
 															<string key="NSCatalogName">System</string>
@@ -128,11 +129,10 @@
 													</object>
 													<int key="NSResizingMask">3</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="753731769"/>
 												</object>
 												<object class="NSTableColumn" id="44563995">
-													<double key="NSWidth">1.350000e+02</double>
+													<double key="NSWidth">1.530000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -144,7 +144,7 @@
 														<reference key="NSTextColor" ref="274479806"/>
 													</object>
 													<object class="NSTextFieldCell" key="NSDataCell" id="539415096">
-														<int key="NSCellFlags">337772096</int>
+														<int key="NSCellFlags">67239488</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
 														<reference key="NSSupport" ref="504225032"/>
@@ -154,7 +154,6 @@
 													</object>
 													<int key="NSResizingMask">3</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="753731769"/>
 												</object>
 											</object>
@@ -181,17 +180,17 @@
 											<bool key="NSAllowsTypeSelect">YES</bool>
 										</object>
 									</object>
-									<string key="NSFrame">{{1, 1}, {242, 223}}</string>
+									<string key="NSFrameSize">{260, 238}</string>
 									<reference key="NSSuperview" ref="719401916"/>
 									<reference key="NSNextKeyView" ref="753731769"/>
 									<reference key="NSDocView" ref="753731769"/>
 									<reference key="NSBGColor" ref="433065244"/>
-									<int key="NScvFlags">4</int>
+									<int key="NScvFlags">2</int>
 								</object>
 								<object class="NSScroller" id="762664827">
 									<reference key="NSNextResponder" ref="719401916"/>
-									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{243, 1}, {15, 223}}</string>
+									<int key="NSvFlags">-2147483392</int>
+									<string key="NSFrame">{{244, 1}, {15, 236}}</string>
 									<reference key="NSSuperview" ref="719401916"/>
 									<reference key="NSTarget" ref="719401916"/>
 									<string key="NSAction">_doScroller:</string>
@@ -208,17 +207,27 @@
 									<double key="NSPercent">9.961832e-01</double>
 								</object>
 							</object>
-							<string key="NSFrame">{{7, 45}, {259, 225}}</string>
+							<string key="NSFrame">{{7, 31}, {260, 238}}</string>
 							<reference key="NSSuperview" ref="929079497"/>
 							<reference key="NSNextKeyView" ref="716324621"/>
-							<int key="NSsFlags">18</int>
+							<int key="NSsFlags">528</int>
 							<reference key="NSVScroller" ref="762664827"/>
 							<reference key="NSHScroller" ref="584425574"/>
 							<reference key="NSContentView" ref="716324621"/>
 							<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
 						</object>
+						<object class="NSProgressIndicator" id="579618294">
+							<reference key="NSNextResponder" ref="929079497"/>
+							<int key="NSvFlags">1314</int>
+							<object class="NSPSMatrix" key="NSDrawMatrix"/>
+							<string key="NSFrame">{{5, 3}, {264, 20}}</string>
+							<reference key="NSSuperview" ref="929079497"/>
+							<int key="NSpiFlags">16394</int>
+							<double key="NSMinValue">2.000000e+01</double>
+							<double key="NSMaxValue">1.000000e+02</double>
+						</object>
 					</object>
-					<string key="NSFrameSize">{275, 296}</string>
+					<string key="NSFrameSize">{275, 271}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
@@ -291,6 +300,7 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="719401916"/>
+							<reference ref="579618294"/>
 						</object>
 						<reference key="parent" ref="922009483"/>
 					</object>
@@ -353,6 +363,11 @@
 						<reference key="object" ref="539415096"/>
 						<reference key="parent" ref="44563995"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">16</int>
+						<reference key="object" ref="579618294"/>
+						<reference key="parent" ref="929079497"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -368,7 +383,10 @@
 					<string>1.windowTemplate.hasMinSize</string>
 					<string>1.windowTemplate.minSize</string>
 					<string>10.IBPluginDependency</string>
+					<string>16.CustomClassName</string>
+					<string>16.IBPluginDependency</string>
 					<string>2.IBPluginDependency</string>
+					<string>3.CustomClassName</string>
 					<string>3.IBPluginDependency</string>
 					<string>4.CustomClassName</string>
 					<string>4.IBPluginDependency</string>
@@ -383,13 +401,16 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{886, 785}, {275, 296}}</string>
-					<string>{{886, 785}, {275, 296}}</string>
+					<string>{{409, 714}, {275, 271}}</string>
+					<string>{{409, 714}, {275, 271}}</string>
 					<boolean value="YES" id="5"/>
 					<reference ref="5"/>
 					<string>{275, 271}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>HMBlkProgressIndicator</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>HMBlkScrollView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>HMBlkTableView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -420,7 +441,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">15</int>
+			<int key="maxID">16</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -466,6 +487,64 @@
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">other_sources/UKKQueue/UKMainThreadProxy.h</string>
 					</object>
+				</object>
+			</object>
+			<object class="NSMutableArray" key="referencedPartialClassDescriptionsV3.1+">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<object class="IBPartialClassDescription">
+					<string key="className">HMBlkPanel</string>
+					<string key="superclassName">NSPanel</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/HMBlkAppKit.framework/Versions/A/Headers/HMBlkPanel.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">HMBlkProgressIndicator</string>
+					<string key="superclassName">NSProgressIndicator</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/HMBlkAppKit.framework/Versions/A/Headers/HMBlkProgressIndicator.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">HMBlkScrollView</string>
+					<string key="superclassName">NSScrollView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/HMBlkAppKit.framework/Versions/A/Headers/HMBlkScrollView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">HMBlkTableView</string>
+					<string key="superclassName">NSTableView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/HMBlkAppKit.framework/Versions/A/Headers/HMBlkTableView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSApplication</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="432846627">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../frameworks/HMBlkAppKit.framework/Versions/A/Headers/HMAppKitEx.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSCell</string>
+					<reference key="sourceIdentifier" ref="432846627"/>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<reference key="sourceIdentifier" ref="432846627"/>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSScroller</string>
+					<reference key="sourceIdentifier" ref="432846627"/>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSTableView</string>
+					<reference key="sourceIdentifier" ref="432846627"/>
 				</object>
 			</object>
 		</object>
