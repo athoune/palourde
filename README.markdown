@@ -11,7 +11,6 @@ Frameworks
 ----------
 
  * [Growl](http://growl.info/) for unintrusive warnings
- * [HMBlkAppKit](http://shiira.jp/hmblkappkit/en.html) for nice HUD infos
  * [Sparkle](http://sparkle.andymatuschak.org/) for update
 
 Install
