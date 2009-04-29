@@ -1,6 +1,8 @@
 #!/bin/sh
 
 mkdir -p /Library/Palourde/Definitions
+su $USER -c '/Library/Palourde/Palourde.app/Contents/MacOS/Palourde -panel &'
+sleep 10
 cd /tmp && /Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam
 launchctl load -w /Library/LaunchDaemons/net.palourde.clamd.plist
 launchctl load -w /Library/LaunchDaemons/net.palourde.freshclam.plist
