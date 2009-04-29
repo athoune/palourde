@@ -22,6 +22,7 @@ NSArray*    _classNames;
 
 -(void) awakeFromNib {
     [thermometre setBezeled:false];
+    [thermometre setUsesThreadedAnimation:true];
     NSDistributedNotificationCenter *distributedCenter = [NSDistributedNotificationCenter defaultCenter];
     [distributedCenter addObserver:self
 			  selector:@selector(freshclamDownload:)
@@ -32,7 +33,6 @@ NSArray*    _classNames;
 
 -(void) reset {
     state = NOTHING;
-    value = 0;
     [thermometre setDoubleValue:0];
 }
 
@@ -44,11 +44,9 @@ NSArray*    _classNames;
 	max = [[[notification userInfo] objectForKey:@"total" ] doubleValue];
 	[thermometre displayIfNeeded];
     }
-    int percent = (int) (100 * [[[notification userInfo] objectForKey:@"downloaded"] doubleValue] / max);
-    NSLog(@"percent : %i", value);
-    if(percent > value) {
-	value = percent;
-	[thermometre setDoubleValue: (double)value];
+    double percent = (double) (100 * [[[notification userInfo] objectForKey:@"downloaded"] doubleValue] / max);
+    if(percent > [thermometre doubleValue]) {
+	[thermometre setDoubleValue: percent];
     }
     if([[[notification userInfo] objectForKey:@"total" ] doubleValue] == [[[notification userInfo] objectForKey:@"downloaded"] doubleValue]) {
 	[self reset];

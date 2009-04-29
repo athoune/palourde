@@ -11,6 +11,8 @@
 #import "UKKQueue.h"
 #import <Growl/GrowlApplicationBridge.h>
 #import "ActionController.h"
+#import <crt_externs.h>
+
 #import <HMBlkAppKit/HMBlkAppKit.h>
 
 @implementation PAController
@@ -20,7 +22,6 @@
     NSImage *img = [NSImage imageNamed:name];
     [img setScalesWhenResized:YES];
     [img setSize:NSMakeSize(22, 22)];
-    
     return img;
 }
 
@@ -70,7 +71,14 @@
 		       object:nil];
     folderDownloads = [[NSMutableSet alloc] initWithCapacity:16];
     folderMailDownloads = [[NSMutableSet alloc] initWithCapacity:16];
+    char **argv = *_NSGetArgv();
     
+    for (int i = 0; argv[i] != NULL; ++i) {
+	printf("%15s [%02d] = '%s'\n", "_NSGetArgv()", i, argv[i]);
+	if(strcmp("-panel", argv[i])){
+	    [self showActionPanel:nil];
+	}
+    }
     return self;
 }
 

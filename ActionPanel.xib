@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="2"/>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -160,8 +160,8 @@
 											<double key="NSIntercellSpacingWidth">3.000000e+00</double>
 											<double key="NSIntercellSpacingHeight">2.000000e+00</double>
 											<object class="NSColor" key="NSBackgroundColor">
-												<int key="NSColorSpace">1</int>
-												<bytes key="NSRGB">MC4wMjE3MzkxMjUgMC4wMjE3MzkxMjUgMC4wMjE3MzkxMjUgMC43NQA</bytes>
+												<int key="NSColorSpace">3</int>
+												<bytes key="NSWhite">MC4xIDAuODAwMDAwMDEAA</bytes>
 											</object>
 											<object class="NSColor" key="NSGridColor">
 												<int key="NSColorSpace">4</int>
@@ -216,7 +216,7 @@
 						</object>
 						<object class="NSProgressIndicator" id="176947695">
 							<reference key="NSNextResponder" ref="748348589"/>
-							<int key="NSvFlags">1314</int>
+							<int key="NSvFlags">5410</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
 							<string key="NSFrame">{{18, 16}, {291, 20}}</string>
 							<reference key="NSSuperview" ref="748348589"/>
@@ -394,9 +394,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{790, 992}, {327, 159}}</string>
+					<string>{{844, 165}, {327, 159}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{790, 992}, {327, 159}}</string>
+					<string>{{844, 165}, {327, 159}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

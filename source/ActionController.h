@@ -15,8 +15,8 @@
     IBOutlet NSOutlineView *actionTable;
     IBOutlet NSProgressIndicator *thermometre;
     int state;
-    int value;
     double max;
+    NSArray *infos;
 }
 
 -(void) reset;
