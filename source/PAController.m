@@ -96,9 +96,10 @@
 - (IBAction)showActionPanel: (id)sender {
     if(! actionController) {
 	actionController = [[ActionController alloc] init];
+		NSLog(@"affichage de %@", actionController);
+		[actionController showWindow:self];
     }
-    NSLog(@"affichage de %@", actionController);
-    [actionController showWindow:self];
+	[actionController showWindow:self];
 }
 
 - (void) error: (NSNotification *)notification {

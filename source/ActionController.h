@@ -20,4 +20,5 @@
 }
 
 -(void) reset;
+
 @end
