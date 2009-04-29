@@ -46,7 +46,7 @@
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="748348589">
 					<reference key="NSNextResponder"/>
-					<int key="NSvFlags">256</int>
+					<int key="NSvFlags">4352</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSScrollView" id="532407823">
@@ -125,9 +125,8 @@
 															<reference key="NSColor" ref="514399156"/>
 														</object>
 													</object>
-													<int key="NSResizingMask">3</int>
+													<int key="NSResizingMask">1</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="1009022859"/>
 												</object>
 												<object class="NSTableColumn" id="104236566">
@@ -151,9 +150,8 @@
 														<reference key="NSBackgroundColor" ref="646596260"/>
 														<reference key="NSTextColor" ref="533972090"/>
 													</object>
-													<int key="NSResizingMask">3</int>
+													<int key="NSResizingMask">1</int>
 													<bool key="NSIsResizeable">YES</bool>
-													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="1009022859"/>
 												</object>
 											</object>
@@ -220,8 +218,6 @@
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
 							<string key="NSFrame">{{18, 16}, {291, 20}}</string>
 							<reference key="NSSuperview" ref="748348589"/>
-							<bool key="NSViewIsLayerTreeHost">YES</bool>
-							<double key="NSViewAlphaValue">3.309859e-01</double>
 							<int key="NSpiFlags">24586</int>
 							<double key="NSMaxValue">1.000000e+02</double>
 						</object>
@@ -394,9 +390,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{844, 165}, {327, 159}}</string>
+					<string>{{726, 976}, {327, 159}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{844, 165}, {327, 159}}</string>
+					<string>{{726, 976}, {327, 159}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

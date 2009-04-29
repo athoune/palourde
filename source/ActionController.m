@@ -49,6 +49,7 @@ NSArray*    _classNames;
 	[thermometre setDoubleValue: percent];
     }
     if([[[notification userInfo] objectForKey:@"total" ] doubleValue] == [[[notification userInfo] objectForKey:@"downloaded"] doubleValue]) {
+    //if(percent == 100){
 	[self reset];
     }
 }

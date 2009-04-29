@@ -234,6 +234,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -290,11 +292,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>59</integer>
+									<integer>35</integer>
+									<integer>20</integer>
+									<integer>13</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 410}, {256, 720}}</string>
+							<string>{{0, 0}, {256, 720}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,8 +329,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -343,7 +346,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7D4C67C70FA8697700A43FA3</string>
+										<string>7DFD1B880FA89C97005951A7</string>
 										<key>history</key>
 										<array>
 											<string>7D1896280F2275BC00148E33</string>
@@ -366,11 +369,11 @@
 											<string>7D578A060FA7478A00934DDD</string>
 											<string>7DFA2D9B0FA756D100BB0FE7</string>
 											<string>7DFA2D9C0FA756D100BB0FE7</string>
-											<string>7D1B9F3E0FA7790B008FF1D6</string>
 											<string>7D1B9F4F0FA78C81008FF1D6</string>
-											<string>7D1B9F5C0FA78CDB008FF1D6</string>
 											<string>7D1B9F720FA79103008FF1D6</string>
-											<string>7D1B9FBF0FA7A9E2008FF1D6</string>
+											<string>7D4C67CE0FA87BC400A43FA3</string>
+											<string>7D4C67CF0FA87BC400A43FA3</string>
+											<string>7D4C67D70FA87BC400A43FA3</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -456,9 +459,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7D4C67AB0FA860ED00A43FA3</string>
+				<string>7DFD1B890FA89C97005951A7</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7D4C67AC0FA860ED00A43FA3</string>
+				<string>7DFD1B8A0FA89C97005951A7</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -592,11 +595,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7D4C67C50FA868D400A43FA3</string>
-		<string>7D4C67C60FA868D400A43FA3</string>
-		<string>7D246E890F155D8A00D6C68B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/mlecarme/Developpement/Cocoa/palourde/palourde/Palourde.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -797,13 +796,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>7D4C67AD0FA860ED00A43FA3</string>
+				<string>7DFD1B8B0FA89C97005951A7</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>7D4C67AE0FA860ED00A43FA3</string>
-				<string>7D4C67AF0FA860ED00A43FA3</string>
-				<string>7D4C67B00FA860ED00A43FA3</string>
-				<string>7D4C67B10FA860ED00A43FA3</string>
-				<string>7D4C67B20FA860ED00A43FA3</string>
+				<string>7DFD1B8C0FA89C97005951A7</string>
+				<string>7DFD1B8D0FA89C97005951A7</string>
+				<string>7DFD1B8E0FA89C97005951A7</string>
+				<string>7DFD1B8F0FA89C97005951A7</string>
+				<string>7DFD1B900FA89C97005951A7</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
