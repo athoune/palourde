@@ -198,11 +198,15 @@ task :dmg => :pkg do
 	rm_r 'dmg'
 end
   
-task :start do
-	sh "sudo launchctl load -w /Library/LaunchDaemons/com.macbouffon.palourde.clamd.plist"
-end
-
 desc 'Update virus definition'
 task :freshclam do
-	sh "sudo /Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam --config-file=/Library/Preferences/clamd.conf --daemon-notify"
+	sh "sudo /Library/Palourde/Palourde.app/Contents/Resources/bin/freshclam"
+end
+
+task :postinstall do
+	sh 'sudo ./pkg_scripts/postinstall'
+end
+
+task :purge do
+	sudo_rm '/Library/Palourde/Definitions'
 end

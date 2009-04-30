@@ -72,7 +72,7 @@
 -(id) outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item {
 	if(item == nil)
 		return [infos objectAtIndex:index];
-	if([item isEqualToString: @"Download"]) {
+	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Download"]) {
 		return [download objectAtIndex:index];
 	}
 	return nil;
@@ -80,7 +80,7 @@
 
 -(BOOL) outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
 	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Download"])
-		return true;
+		return [download count] > 0 ;
 	return false;
 }
 
@@ -96,7 +96,7 @@
 -(id) outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
 	if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"titleID"]) {
 		if([item isKindOfClass:[ActionCell class]])
-			return [item name];
+		    return [NSString stringWithFormat:@"  %@", [item name]];
 		return [item retain];
 	}
 	return nil;
