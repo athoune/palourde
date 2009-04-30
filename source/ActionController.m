@@ -20,8 +20,6 @@
 }
 
 -(void) awakeFromNib {
-    [thermometre setBezeled:false];
-    [thermometre setUsesThreadedAnimation:true];
     NSDistributedNotificationCenter *distributedCenter = [NSDistributedNotificationCenter defaultCenter];
     [distributedCenter addObserver:self
 						  selector:@selector(freshclamDownload:)
@@ -31,6 +29,10 @@
 	infos = [[NSArray alloc] initWithObjects:@"Scan", @"Download", @"Virus", @"Infected", nil ];
     virus = [NSMutableArray arrayWithCapacity:3];
 	files = [NSMutableArray arrayWithCapacity:3];
+	[thermometre setControlTint:NSGraphiteControlTint];
+	[thermometre setControlSize:NSMiniControlSize];
+    [thermometre setUsesThreadedAnimation:true];
+	[thermometre setBezeled:false];
 }
 
 -(void) reset {

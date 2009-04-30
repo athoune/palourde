@@ -251,6 +251,20 @@
 			7D2210A10FAA24F700FDEA46 /* PBXTextBookmark */ = 7D2210A10FAA24F700FDEA46 /* PBXTextBookmark */;
 			7D2210A20FAA24F700FDEA46 /* PBXTextBookmark */ = 7D2210A20FAA24F700FDEA46 /* PBXTextBookmark */;
 			7D2210A30FAA24F700FDEA46 /* PBXTextBookmark */ = 7D2210A30FAA24F700FDEA46 /* PBXTextBookmark */;
+			7D2210A70FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210A70FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210A80FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210A80FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210A90FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210A90FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210AA0FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210AA0FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210AB0FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210AB0FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210AC0FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210AC0FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210AD0FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210AD0FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210AE0FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210AE0FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210AF0FAA265A00FDEA46 /* PBXTextBookmark */ = 7D2210AF0FAA265A00FDEA46 /* PBXTextBookmark */;
+			7D2210B30FAA26D900FDEA46 /* PBXTextBookmark */ = 7D2210B30FAA26D900FDEA46 /* PBXTextBookmark */;
+			7D2210B50FAA26F600FDEA46 /* PBXTextBookmark */ = 7D2210B50FAA26F600FDEA46 /* PBXTextBookmark */;
+			7D2210B70FAA271D00FDEA46 /* PBXTextBookmark */ = 7D2210B70FAA271D00FDEA46 /* PBXTextBookmark */;
+			7D2210C10FAA284500FDEA46 /* PBXTextBookmark */ = 7D2210C10FAA284500FDEA46 /* PBXTextBookmark */;
+			7D2210C70FAA28A200FDEA46 /* PBXTextBookmark */ = 7D2210C70FAA28A200FDEA46 /* PBXTextBookmark */;
 			7D3B25D00F7A289B00D2F98F = 7D3B25D00F7A289B00D2F98F /* PBXBookmark */;
 			7D3B25D10F7A289B00D2F98F = 7D3B25D10F7A289B00D2F98F /* PBXBookmark */;
 			7D460C400F93E41A003A867D = 7D460C400F93E41A003A867D /* PBXBookmark */;
@@ -403,7 +417,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 79";
 		rLen = 0;
-		rLoc = 2349;
+		rLoc = 2448;
 		rType = 0;
 		vrLen = 984;
 		vrLoc = 2208;
@@ -413,7 +427,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 287;
@@ -433,7 +447,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 31";
 		rLen = 7;
-		rLoc = 770;
+		rLoc = 685;
 		rType = 0;
 		vrLen = 1284;
 		vrLoc = 287;
@@ -453,7 +467,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 287;
@@ -473,7 +487,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 287;
@@ -523,7 +537,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 287;
@@ -543,7 +557,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 287;
@@ -573,7 +587,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 50";
 		rLen = 0;
-		rLoc = 1492;
+		rLoc = 1591;
 		rType = 0;
 		vrLen = 1629;
 		vrLoc = 481;
@@ -583,7 +597,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 48";
 		rLen = 0;
-		rLoc = 1422;
+		rLoc = 1521;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 481;
@@ -613,7 +627,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 96";
 		rLen = 39;
-		rLoc = 3074;
+		rLoc = 3173;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 1947;
@@ -633,7 +647,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 48";
 		rLen = 0;
-		rLoc = 1422;
+		rLoc = 1521;
 		rType = 0;
 		vrLen = 1609;
 		vrLoc = 481;
@@ -683,7 +697,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 96";
 		rLen = 39;
-		rLoc = 3074;
+		rLoc = 3173;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 1947;
@@ -853,7 +867,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 96";
 		rLen = 39;
-		rLoc = 3074;
+		rLoc = 3173;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 1947;
@@ -883,7 +897,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 74";
 		rLen = 0;
-		rLoc = 2379;
+		rLoc = 2478;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 1854;
@@ -893,7 +907,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 89";
 		rLen = 0;
-		rLoc = 2782;
+		rLoc = 2881;
 		rType = 0;
 		vrLen = 1268;
 		vrLoc = 1854;
@@ -903,7 +917,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 64";
 		rLen = 0;
-		rLoc = 1962;
+		rLoc = 2061;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 1090;
@@ -933,7 +947,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 64";
 		rLen = 0;
-		rLoc = 1962;
+		rLoc = 2061;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 1090;
@@ -973,7 +987,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 64";
 		rLen = 0;
-		rLoc = 1962;
+		rLoc = 2061;
 		rType = 0;
 		vrLen = 1443;
 		vrLoc = 1090;
@@ -993,7 +1007,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 80";
 		rLen = 0;
-		rLoc = 2522;
+		rLoc = 2621;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 1900;
@@ -1003,7 +1017,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 89";
 		rLen = 40;
-		rLoc = 2741;
+		rLoc = 2840;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 1854;
@@ -1033,7 +1047,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 89";
 		rLen = 15;
-		rLoc = 2788;
+		rLoc = 2887;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 1900;
@@ -1063,7 +1077,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 89";
 		rLen = 40;
-		rLoc = 2741;
+		rLoc = 2840;
 		rType = 0;
 		vrLen = 1312;
 		vrLoc = 1854;
@@ -1113,7 +1127,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 89";
 		rLen = 40;
-		rLoc = 2741;
+		rLoc = 2840;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 1941;
@@ -1133,7 +1147,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 42";
 		rLen = 0;
-		rLoc = 1096;
+		rLoc = 1195;
 		rType = 0;
 		vrLen = 1361;
 		vrLoc = 1026;
@@ -1173,7 +1187,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 42";
 		rLen = 18;
-		rLoc = 1111;
+		rLoc = 1210;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 1026;
@@ -1193,7 +1207,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 42";
 		rLen = 18;
-		rLoc = 1111;
+		rLoc = 1210;
 		rType = 0;
 		vrLen = 1361;
 		vrLoc = 1026;
@@ -1253,7 +1267,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 42";
 		rLen = 18;
-		rLoc = 1111;
+		rLoc = 1210;
 		rType = 0;
 		vrLen = 1360;
 		vrLoc = 1026;
@@ -1283,7 +1297,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 48";
 		rLen = 0;
-		rLoc = 1416;
+		rLoc = 1515;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 1962;
@@ -1321,7 +1335,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 45";
 		rLen = 14;
-		rLoc = 1241;
+		rLoc = 1340;
 		rType = 0;
 		vrLen = 1438;
 		vrLoc = 1026;
@@ -1351,7 +1365,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 48";
 		rLen = 0;
-		rLoc = 1416;
+		rLoc = 1515;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 1962;
@@ -1364,6 +1378,146 @@
 		rLoc = 333;
 		rType = 0;
 		vrLen = 435;
+		vrLoc = 0;
+	};
+	7D2210A70FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D6A989A0FA8EAF90076189A /* ActionCell.h */;
+		name = "ActionCell.h: 18";
+		rLen = 0;
+		rLoc = 333;
+		rType = 0;
+		vrLen = 435;
+		vrLoc = 0;
+	};
+	7D2210A80FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC76F0F2132AE0046069E /* ActionController.h */;
+		name = "ActionController.h: 16";
+		rLen = 19;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 0;
+	};
+	7D2210A90FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 48";
+		rLen = 0;
+		rLoc = 1515;
+		rType = 0;
+		vrLen = 1028;
+		vrLoc = 0;
+	};
+	7D2210AA0FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D6A989A0FA8EAF90076189A /* ActionCell.h */;
+		name = "ActionCell.h: 18";
+		rLen = 0;
+		rLoc = 333;
+		rType = 0;
+		vrLen = 435;
+		vrLoc = 0;
+	};
+	7D2210AB0FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 48";
+		rLen = 0;
+		rLoc = 1515;
+		rType = 0;
+		vrLen = 1057;
+		vrLoc = 2129;
+	};
+	7D2210AC0FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC76F0F2132AE0046069E /* ActionController.h */;
+		name = "ActionController.h: 19";
+		rLen = 0;
+		rLoc = 386;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 0;
+	};
+	7D2210AD0FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 48";
+		rLen = 0;
+		rLoc = 1515;
+		rType = 0;
+		vrLen = 1028;
+		vrLoc = 0;
+	};
+	7D2210AE0FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC76F0F2132AE0046069E /* ActionController.h */;
+		name = "ActionController.h: 16";
+		rLen = 19;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 871;
+		vrLoc = 0;
+	};
+	7D2210AF0FAA265A00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 34";
+		rLen = 0;
+		rLoc = 1048;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 0;
+	};
+	7D2210B30FAA26D900FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 35";
+		rLen = 0;
+		rLoc = 1048;
+		rType = 0;
+		vrLen = 1091;
+		vrLoc = 0;
+	};
+	7D2210B50FAA26F600FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 35";
+		rLen = 0;
+		rLoc = 964;
+		rType = 0;
+		vrLen = 1090;
+		vrLoc = 0;
+	};
+	7D2210B70FAA271D00FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 34";
+		rLen = 0;
+		rLoc = 915;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 0;
+	};
+	7D2210C10FAA284500FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 35";
+		rLen = 0;
+		rLoc = 1016;
+		rType = 0;
+		vrLen = 1127;
+		vrLoc = 0;
+	};
+	7D2210C70FAA28A200FDEA46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
+		name = "ActionController.m: 35";
+		rLen = 0;
+		rLoc = 1042;
+		rType = 0;
+		vrLen = 1052;
 		vrLoc = 0;
 	};
 	7D246E4C0F155C6000D6C68B /* Palourde */ = {
@@ -1501,7 +1655,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 51";
 		rLen = 0;
-		rLoc = 1966;
+		rLoc = 2065;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 163;
@@ -1561,7 +1715,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 51";
 		rLen = 0;
-		rLoc = 1966;
+		rLoc = 2065;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 189;
@@ -1581,7 +1735,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 51";
 		rLen = 0;
-		rLoc = 1966;
+		rLoc = 2065;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 189;
@@ -1611,7 +1765,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 51";
 		rLen = 0;
-		rLoc = 1966;
+		rLoc = 2065;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 189;
@@ -1661,7 +1815,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 51";
 		rLen = 0;
-		rLoc = 1966;
+		rLoc = 2065;
 		rType = 0;
 		vrLen = 992;
 		vrLoc = 164;
@@ -1681,7 +1835,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 865;
 		vrLoc = 133;
@@ -1711,7 +1865,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 32";
 		rLen = 0;
-		rLoc = 853;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 910;
 		vrLoc = 133;
@@ -1731,7 +1885,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 58";
 		rLen = 0;
-		rLoc = 2152;
+		rLoc = 2251;
 		rType = 0;
 		vrLen = 1109;
 		vrLoc = 963;
@@ -1751,7 +1905,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 35";
 		rLen = 0;
-		rLoc = 950;
+		rLoc = 1049;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 320;
@@ -1791,7 +1945,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 49";
 		rLen = 0;
-		rLoc = 1555;
+		rLoc = 1654;
 		rType = 0;
 		vrLen = 1227;
 		vrLoc = 718;
@@ -1811,7 +1965,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 49";
 		rLen = 0;
-		rLoc = 1555;
+		rLoc = 1654;
 		rType = 0;
 		vrLen = 1239;
 		vrLoc = 718;
@@ -1841,7 +1995,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 48";
 		rLen = 0;
-		rLoc = 1225;
+		rLoc = 1324;
 		rType = 0;
 		vrLen = 1172;
 		vrLoc = 373;
@@ -1872,17 +2026,30 @@
 		symbolName = objc_exception_throw;
 	};
 	7D6A989A0FA8EAF90076189A /* ActionCell.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ActionCell.h;
+		path = /Users/mlecarme/Developpement/palourde/ActionCell.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1096, 546}}";
+			sepNavIntBoundsRect = "{{0, 0}, {439, 336}}";
 			sepNavSelRange = "{333, 0}";
-			sepNavVisRange = "{0, 435}";
+			sepNavVisRange = "{177, 258}";
 		};
 	};
 	7D6A989B0FA8EAF90076189A /* ActionCell.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ActionCell.m;
+		path = /Users/mlecarme/Developpement/palourde/ActionCell.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1096, 700}}";
 			sepNavSelRange = "{591, 0}";
 			sepNavVisRange = "{33, 848}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
 		};
 	};
 	7D6A989E0FA8FFCE0076189A /* PBXTextBookmark */ = {
@@ -1930,7 +2097,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 100";
 		rLen = 0;
-		rLoc = 3159;
+		rLoc = 3258;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 1978;
@@ -1940,7 +2107,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 100";
 		rLen = 0;
-		rLoc = 3159;
+		rLoc = 3258;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 1978;
@@ -2050,7 +2217,7 @@
 		fRef = 7D8FC7700F2132AE0046069E /* ActionController.m */;
 		name = "ActionController.m: 79";
 		rLen = 0;
-		rLoc = 2349;
+		rLoc = 2448;
 		rType = 0;
 		vrLen = 986;
 		vrLoc = 2208;
@@ -2146,16 +2313,16 @@
 	};
 	7D8FC76F0F2132AE0046069E /* ActionController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1106, 569}}";
-			sepNavSelRange = "{386, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1096, 546}}";
+			sepNavSelRange = "{315, 19}";
 			sepNavVisRange = "{0, 871}";
 		};
 	};
 	7D8FC7700F2132AE0046069E /* ActionController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1096, 1496}}";
-			sepNavSelRange = "{1416, 0}";
-			sepNavVisRange = "{2151, 1035}";
+			sepNavIntBoundsRect = "{{0, 0}, {1096, 1596}}";
+			sepNavSelRange = "{1042, 0}";
+			sepNavVisRange = "{0, 1052}";
 			sepNavWindowFrame = "{{15, 495}, {1162, 678}}";
 		};
 	};
