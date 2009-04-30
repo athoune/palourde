@@ -49,10 +49,6 @@
 		     selector:@selector(mediaMounted:)
 			 name:@"NSWorkspaceDidMountNotification"
 		       object:nil];
-    [distributedCenter addObserver:self
-		     selector:@selector(freshclamDownload:)
-			 name:@"net.clamav.freshclam.download"
-		       object:nil];
     
     [center addObserver:self
 	       selector:@selector(oneVirus:)
@@ -128,10 +124,6 @@
 - (void) mediaMounted: (NSNotification *)notification {
     NSLog(@"I'm going to scan %@", [[notification userInfo] objectForKey:@"NSDevicePath"]);
     [self asyncScan:[[notification userInfo] objectForKey:@"NSDevicePath"]];
-}
-
-- (void) freshclamDownload: (NSNotification *)notification {
-    NSLog(@"FreshClam Download %@", [notification userInfo] );
 }
 
 - (void) somethingNewInFolder: (NSNotification *)notification {

@@ -37,6 +37,7 @@
 		7D1AE5F70F209D5300444F92 /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5F60F209D5300444F92 /* palourde.m */; };
 		7D1B40CD0F2CECF80009759E /* pshit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B40CC0F2CECF80009759E /* pshit.icns */; };
 		7D460C330F93BF36003A867D /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D460C320F93BF36003A867D /* Sneeze.wav */; };
+		7D6A989C0FA8EAF90076189A /* ActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6A989B0FA8EAF90076189A /* ActionCell.m */; };
 		7D6EA8030F9B78BE00A0354C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6EA8020F9B78BE00A0354C /* Sparkle.framework */; };
 		7D6EA80D0F9B79A500A0354C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EA80C0F9B79A500A0354C /* dsa_pub.pem */; };
 		7D6EA83C0F9BA8C500A0354C /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D6EA8020F9B78BE00A0354C /* Sparkle.framework */; };
@@ -112,6 +113,8 @@
 		7D1AE5F60F209D5300444F92 /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = palourde.m; path = source/palourde.m; sourceTree = "<group>"; };
 		7D1B40CC0F2CECF80009759E /* pshit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = pshit.icns; path = resource/pshit.icns; sourceTree = "<group>"; };
 		7D460C320F93BF36003A867D /* Sneeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Sneeze.wav; path = resource/sound/Sneeze.wav; sourceTree = "<group>"; };
+		7D6A989A0FA8EAF90076189A /* ActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionCell.h; sourceTree = "<group>"; };
+		7D6A989B0FA8EAF90076189A /* ActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionCell.m; sourceTree = "<group>"; };
 		7D6EA8020F9B78BE00A0354C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		7D6EA80C0F9B79A500A0354C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +309,8 @@
 		7DB23B290F1D0449006C2ACF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7D6A989A0FA8EAF90076189A /* ActionCell.h */,
+				7D6A989B0FA8EAF90076189A /* ActionCell.m */,
 				7D1AE5E40F209C1C00444F92 /* PAController.h */,
 				7D1AE5E50F209C1C00444F92 /* PAController.m */,
 				7D8FC76F0F2132AE0046069E /* ActionController.h */,
@@ -426,6 +431,7 @@
 				7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */,
 				7DA3EB070F20A08E008496B9 /* main.m in Sources */,
 				7D8FC7710F2132AE0046069E /* ActionController.m in Sources */,
+				7D6A989C0FA8EAF90076189A /* ActionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

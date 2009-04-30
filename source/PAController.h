@@ -27,7 +27,6 @@
 
 - (void)showInStatusBar: (id)sender;
 - (void) mediaMounted: (NSNotification *)notification;
-- (void) freshclamDownload: (NSNotification *)notification;
 - (void) somethingNewInFolder: (NSNotification *)notification;
 - (IBAction)runWebPage: (id)sender;
 - (IBAction)scanHome: (id)sender;
