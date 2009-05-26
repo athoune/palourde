@@ -24,6 +24,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		7D00AD730F209E1F00F53434 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
+		7D04FC2C0FCC75B8005C873A /* Contamination.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04FC2B0FCC75B8005C873A /* Contamination.m */; };
 		7D18960E0F225E6300148E33 /* aero.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D18960D0F225E6300148E33 /* aero.icns */; };
 		7D1896260F2275AA00148E33 /* aero3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1896250F2275AA00148E33 /* aero3.icns */; };
 		7D1AE5DF0F209BF900444F92 /* UKFileWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5D70F209BF900444F92 /* UKFileWatcher.m */; };
@@ -38,6 +39,7 @@
 		7D1B40CD0F2CECF80009759E /* pshit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B40CC0F2CECF80009759E /* pshit.icns */; };
 		7D2210C40FAA288C00FDEA46 /* ActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2210C30FAA288C00FDEA46 /* ActionCell.m */; };
 		7D460C330F93BF36003A867D /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D460C320F93BF36003A867D /* Sneeze.wav */; };
+		7D566E650FAB00A70059DF38 /* Contaminated.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D566E640FAB00A70059DF38 /* Contaminated.xib */; };
 		7D6EA8030F9B78BE00A0354C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6EA8020F9B78BE00A0354C /* Sparkle.framework */; };
 		7D6EA80D0F9B79A500A0354C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EA80C0F9B79A500A0354C /* dsa_pub.pem */; };
 		7D6EA83C0F9BA8C500A0354C /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D6EA8020F9B78BE00A0354C /* Sparkle.framework */; };
@@ -95,6 +97,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
 		7D00AD720F209E1F00F53434 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = frameworks/Growl.framework; sourceTree = "<group>"; };
+		7D04FC2A0FCC75B8005C873A /* Contamination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contamination.h; path = source/Contamination.h; sourceTree = "<group>"; };
+		7D04FC2B0FCC75B8005C873A /* Contamination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contamination.m; path = source/Contamination.m; sourceTree = "<group>"; };
 		7D18960D0F225E6300148E33 /* aero.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero.icns; path = resource/aero.icns; sourceTree = "<group>"; };
 		7D1896250F2275AA00148E33 /* aero3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero3.icns; path = resource/aero3.icns; sourceTree = "<group>"; };
 		7D1AE5D60F209BF900444F92 /* UKFileWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKFileWatcher.h; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		7D2210C20FAA288C00FDEA46 /* ActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionCell.h; path = source/ActionCell.h; sourceTree = "<group>"; };
 		7D2210C30FAA288C00FDEA46 /* ActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionCell.m; path = source/ActionCell.m; sourceTree = "<group>"; };
 		7D460C320F93BF36003A867D /* Sneeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Sneeze.wav; path = resource/sound/Sneeze.wav; sourceTree = "<group>"; };
+		7D566E640FAB00A70059DF38 /* Contaminated.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Contaminated.xib; sourceTree = "<group>"; };
 		7D6EA8020F9B78BE00A0354C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = frameworks/Sparkle.framework; sourceTree = "<group>"; };
 		7D6EA80C0F9B79A500A0354C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		7D7139860F1CF00400B7C34B /* palourde */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = palourde; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +240,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				7DFA2D960FA7545700BB0FE7 /* ActionPanel.xib */,
+				7D566E640FAB00A70059DF38 /* Contaminated.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -315,6 +321,8 @@
 				7D1AE5E50F209C1C00444F92 /* PAController.m */,
 				7D8FC76F0F2132AE0046069E /* ActionController.h */,
 				7D8FC7700F2132AE0046069E /* ActionController.m */,
+				7D04FC2A0FCC75B8005C873A /* Contamination.h */,
+				7D04FC2B0FCC75B8005C873A /* Contamination.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -404,6 +412,7 @@
 				7D460C330F93BF36003A867D /* Sneeze.wav in Resources */,
 				7D6EA80D0F9B79A500A0354C /* dsa_pub.pem in Resources */,
 				7DFA2D970FA7545700BB0FE7 /* ActionPanel.xib in Resources */,
+				7D566E650FAB00A70059DF38 /* Contaminated.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +441,7 @@
 				7DA3EB070F20A08E008496B9 /* main.m in Sources */,
 				7D8FC7710F2132AE0046069E /* ActionController.m in Sources */,
 				7D2210C40FAA288C00FDEA46 /* ActionCell.m in Sources */,
+				7D04FC2C0FCC75B8005C873A /* Contamination.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

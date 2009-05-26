@@ -23,6 +23,9 @@
     NSSet *folderDownloads;
     NSSet *folderMailDownloads;
     ActionController *actionController;
+    NSMutableSet *virii;
+    NSMutableArray *contaminations;
+    NSSound *sneeze;
 }
 
 - (void)showInStatusBar: (id)sender;

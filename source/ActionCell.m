@@ -11,21 +11,21 @@
 @implementation ActionCell
 
 - (id) init {
-    [self dealloc];
-    @throw [NSException exceptionWithName:@"BadInitCode" reason:@"Il faut l'initialiser avec un chemin" userInfo:nil];
-    return nil;
+	[self dealloc];
+	@throw [NSException exceptionWithName:@"BadInitCode" reason:@"Il faut l'initialiser avec un chemin" userInfo:nil];
+	return nil;
 }
 
 -(id) initWithName: (NSString *)theName type:(NSString *)theType {
-    if(![super init])
+	if(![super init])
 		return nil;
-    if(theName == nil)
+	if(theName == nil)
 		return nil;
 	if(theType == nil)
 		return nil;
-    name = [theName copy];
+	name = [theName copy];
 	type = [theType copy];
-    return self;
+	return self;
 }
 
 -(NSString*) name {
