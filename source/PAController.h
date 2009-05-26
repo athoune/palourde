@@ -12,6 +12,8 @@
 
 #define NOTHING 1
 #define SPRAYING 2
+extern NSString * const PAVirusAdded;
+
 @class ActionController;
 
 @interface PAController : NSObject <GrowlApplicationBridgeDelegate> {
@@ -26,15 +28,17 @@
     NSMutableSet *virii;
     NSMutableArray *contaminations;
     NSSound *sneeze;
+    NSNotificationCenter *center;
 }
 
 - (void)showInStatusBar: (id)sender;
 - (void) mediaMounted: (NSNotification *)notification;
 - (void) somethingNewInFolder: (NSNotification *)notification;
-- (IBAction)runWebPage: (id)sender;
-- (IBAction)scanHome: (id)sender;
-- (IBAction)showActionPanel: (id)sender;
+- (IBAction) runWebPage: (id)sender;
+- (IBAction) scanHome: (id)sender;
+- (IBAction) showActionPanel: (id)sender;
 - (void) asyncScan: (NSString*)thePath;
-- (void)doGrowl: (NSString *)title withMessage: (NSString *)message;
+- (void) doGrowl: (NSString *)title withMessage: (NSString *)message;
+- (NSArray *) contaminations;
 
 @end

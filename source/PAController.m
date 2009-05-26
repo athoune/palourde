@@ -16,6 +16,8 @@
 
 #import <HMBlkAppKit/HMBlkAppKit.h>
 
+NSString * const PAVirusAdded = @"PAVirusAdded";
+
 @implementation PAController
 
 // Helper: Load a named image, and scale it to be suitable for menu bar use.
@@ -37,15 +39,16 @@
 	virus = 0;
 	scanWorking = 0;
 	frame = 0;
+    contaminations = [[NSMutableArray alloc]init];
 	animSpraying = [[NSArray arrayWithObjects:
 	[self prepareImageForMenubar:@"bombe__s01"],
 		[self prepareImageForMenubar:@"bombe__s02"],
 		[self prepareImageForMenubar:@"bombe__s03"],
 		[self prepareImageForMenubar:@"bombe__s04"],
 		nil]retain];
-	NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+	center = [NSNotificationCenter defaultCenter];
 	NSNotificationCenter *globalCenter = [[NSWorkspace sharedWorkspace] notificationCenter];
-	NSDistributedNotificationCenter *distributedCenter = [NSDistributedNotificationCenter defaultCenter];
+	//NSDistributedNotificationCenter *distributedCenter = [NSDistributedNotificationCenter defaultCenter];
 	[globalCenter addObserver:self
 		selector:@selector(mediaMounted:)
 		name:@"NSWorkspaceDidMountNotification"
@@ -109,7 +112,9 @@
 	virus ++;
 	[paItem setTitle: [NSString stringWithFormat: @"%i", virus]]; 
 	NSLog(@"Virus token n°%i : %@", virus, [notification userInfo]);
+	[virii addObject:[[notification userInfo] objectForKey:@"virus"]];
         [contaminations addObject:[[Contamination alloc] initWithPath:[[notification userInfo] objectForKey:@"file"] andVirus:[[notification userInfo] objectForKey:@"virus"]]];
+	[center postNotificationName: PAVirusAdded object:nil];
 	if(sneeze == nil) {
 	    sneeze = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sneeze" ofType:@"wav"] byReference:NO];
 	    [sneeze play];
@@ -167,7 +172,7 @@
 - (IBAction)scanHome:(id)sender {
 	[self 
 		performSelectorOnMainThread:@selector(asyncScan:)
-		withObject:[@"~/" stringByExpandingTildeInPath]
+		withObject:[@"~/Developpement/Cocoa/palourde/palourde" stringByExpandingTildeInPath]
 		waitUntilDone:false];
 		//@"/tmp/"
 		//[client asyncScan:[@"~/" stringByExpandingTildeInPath]];
@@ -222,6 +227,10 @@
 }
 - (NSString *) applicationNameForGrowl {
 	return @"Palourde";
+}
+
+- (NSArray *) contaminations {
+    return [contaminations retain];
 }
 
 

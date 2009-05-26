@@ -13,6 +13,9 @@
 -(id) initWithPath:(NSString *)_path andVirus:(NSString *)_virus {
     path = _path;
     virus = _virus;
+    return self;
 }
-
+-(NSString *) virus {
+    return virus;
+}
 @end

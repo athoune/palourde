@@ -14,4 +14,5 @@
 }
 
 -(id) initWithPath:(NSString *)path andVirus:(NSString *)virus;
+-(NSString *) virus;
 @end

@@ -10,6 +10,7 @@
 
 #import "ActionController.h"
 #import "ActionCell.h"
+#import "Contamination.h"
 
 @implementation ActionController
 -(id)init {
@@ -31,10 +32,15 @@
 
 -(void) awakeFromNib {
 	NSDistributedNotificationCenter *distributedCenter = [NSDistributedNotificationCenter defaultCenter];
+	NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
 	[distributedCenter addObserver:self
 		selector:@selector(freshclamDownload:)
 		name:@"net.clamav.freshclam.download"
 		object:nil];
+	[center addObserver:self
+		selector:@selector(contaminationAdded:)
+		name:PAVirusAdded
+		     object:nil];
 	[self reset];
 	infos = [[NSArray alloc] initWithObjects:@"Scan", @"Download", @"Virus", @"Infected", nil ];
 	virus = [NSMutableArray arrayWithCapacity:3];
@@ -51,6 +57,11 @@
 	[thermometre setDoubleValue:0];
 }
 
+-(void) contaminationAdded: (NSNotification *)notification {
+    [actionTable expandItem:@"Infected"];
+    [actionTable reloadData];
+}
+   
 
 - (void) freshclamDownload: (NSNotification *)notification {
 		//NSLog(@"Thermo FreshClam Download %@", [notification userInfo] );
@@ -89,12 +100,17 @@
 	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Download"]) {
 		return [download objectAtIndex:index];
 	}
+	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Infected"]) {
+	    return [[mainController contaminations] objectAtIndex:index];
+	}
 	return nil;
 }
 
 -(BOOL) outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item {
 	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Download"])
 		return [download count] > 0 ;
+	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Infected"])
+	    return [[mainController contaminations] count] > 0;
 	return false;
 }
 
@@ -105,12 +121,17 @@
 	if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Download"]) {
 		return [download count];
 	}
+    if([item isKindOfClass:[NSString class]] && [item isEqualToString: @"Infected"]) {
+		return [[mainController contaminations] count];
+    }
 	return  0;
 }
 -(id) outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
 	if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"titleID"]) {
 		if([item isKindOfClass:[ActionCell class]])
 			return [NSString stringWithFormat:@"  %@", [item name]];
+		if([item isKindOfClass:[Contamination class]])
+			return [NSString stringWithFormat:@"  %@", [item virus]];
 		return [item retain];
 	}
     if( [[tableColumn identifier] isEqualToString: @"valueID"]) {
