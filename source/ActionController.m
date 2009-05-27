@@ -126,19 +126,51 @@
     }
 	return  0;
 }
+
 -(id) outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
 	if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"titleID"]) {
 		if([item isKindOfClass:[ActionCell class]])
 			return [NSString stringWithFormat:@"  %@", [item name]];
 		if([item isKindOfClass:[Contamination class]])
-			return [NSString stringWithFormat:@"  %@", [item virus]];
+			return [item virus];
 		return [item retain];
 	}
     if( [[tableColumn identifier] isEqualToString: @"valueID"]) {
 	
     }
+    /*
+    if( [[tableColumn identifier] isEqualToString: @"actionID"]) {
+	if([item isKindOfClass:[Contamination class]])
+	    return [item retain];
+    }
+     */
 	return nil;
 }
 
+/*
+- (void)outlineView:(NSOutlineView *)outlineView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item {
+    
+    if( [[tableColumn identifier] isEqualToString: @"actionID"]) {
+	if([item isKindOfClass:[Contamination class]]) {
+	    [[tableColumn dataCell] setIcon:[item icon]];
+	}
+    }
+}
+*/
+
+/*
+- (NSCell *)outlineView:(NSOutlineView *)outlineView dataCellForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
+    if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"titleID"]) {
+	if([item isKindOfClass:[ActionCell class]])
+	    return [[NSCell alloc] initTextCell: [item name]];
+	if([item isKindOfClass:[Contamination class]])
+	    return [[[NSCell alloc] initImageCell:[item icon]] autorelease];
+	return [[NSCell alloc] initTextCell:item];
+    }
+    if( [[tableColumn identifier] isEqualToString: @"valueID"]) {
+	
+    }
+    return nil;
+}*/
 
 @end

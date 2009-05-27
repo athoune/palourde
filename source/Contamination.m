@@ -18,4 +18,16 @@
 -(NSString *) virus {
     return virus;
 }
+
+-(NSImage *) icon {
+    return [[NSWorkspace sharedWorkspace] iconForFile:path];
+}
+
+- (void)dealloc {
+    [path release];
+    path = nil;
+    [virus release];
+    virus = nil;
+    [super dealloc];
+}
 @end

@@ -39,7 +39,8 @@ NSString * const PAVirusAdded = @"PAVirusAdded";
 	virus = 0;
 	scanWorking = 0;
 	frame = 0;
-    contaminations = [[NSMutableArray alloc]init];
+	moreVirus = 0;
+	contaminations = [[NSMutableArray alloc]init];
 	animSpraying = [[NSArray arrayWithObjects:
 	[self prepareImageForMenubar:@"bombe__s01"],
 		[self prepareImageForMenubar:@"bombe__s02"],
@@ -110,21 +111,24 @@ NSString * const PAVirusAdded = @"PAVirusAdded";
 
 - (void) oneVirus: (NSNotification *)notification {
 	virus ++;
-	[paItem setTitle: [NSString stringWithFormat: @"%i", virus]]; 
 	NSLog(@"Virus token n°%i : %@", virus, [notification userInfo]);
 	[virii addObject:[[notification userInfo] objectForKey:@"virus"]];
         [contaminations addObject:[[Contamination alloc] initWithPath:[[notification userInfo] objectForKey:@"file"] andVirus:[[notification userInfo] objectForKey:@"virus"]]];
 	[center postNotificationName: PAVirusAdded object:nil];
+	[paItem setTitle: [NSString stringWithFormat: @"%i", virus]]; 
 	if(sneeze == nil) {
 	    sneeze = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sneeze" ofType:@"wav"] byReference:NO];
 	    [sneeze play];
 	    [sneeze release];
 	    sneeze = nil;
 	}
-	[self doGrowl:NSLocalizedString(@"Un virus!", @"Popup title") withMessage:
-	[[NSString alloc] initWithFormat:NSLocalizedString(@"Le virus %@ a été trouvé dans le fichier %@",""), 
-		[[notification userInfo] objectForKey:@"virus"],
-		[[notification userInfo] objectForKey:@"file"]]];
+	if(lastVirus == nil || [lastVirus timeIntervalSinceNow] > 30) {
+	    lastVirus = [NSDate date];
+	    [self doGrowl:NSLocalizedString(@"Un virus!", @"Popup title") withMessage:
+	     [[NSString alloc] initWithFormat:NSLocalizedString(@"Le virus %@ a été trouvé dans le fichier %@",""), 
+		    [[notification userInfo] objectForKey:@"virus"],
+		    [[notification userInfo] objectForKey:@"file"]]];
+	}
 }
 
 - (void) scanFinished: (NSNotification *)notification{
