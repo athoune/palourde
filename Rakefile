@@ -1,6 +1,6 @@
 packagemaker = '/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker'
 #Used clam AV version
-CLAMAV_VERSION = '0.95.1'
+CLAMAV_VERSION = '0.95.2'
 #Needed macports
 PORTS = %w{zlib bzip2}
 #sf.net mirror
