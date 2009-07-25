@@ -62,10 +62,12 @@
    
 
 - (void) freshclamDownload: (NSNotification *)notification {
-		//NSLog(@"Thermo FreshClam Download %@", [notification userInfo] );
-	NSString *filename = [[notification userInfo] objectForKey:@"file"];
+    //NSLog(@"Thermo FreshClam Download %@", [notification userInfo] );
+    NSString *filename = [[notification userInfo] objectForKey:@"file"];
+    NSLog(@"the value: %@", [infos objectForKey:filename]);
     if([infos objectForKey:filename] == nil) {
-	[self add: 
+	NSLog(@"New download file : %@ with size : %@", filename, [[notification userInfo] objectForKey:@"total" ]);
+	[self add:
 	    [[ThermoActionCell alloc] initWithName:filename andMax: [[[notification userInfo] objectForKey:@"total" ] doubleValue]]
 	];
     }

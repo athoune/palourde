@@ -13,6 +13,9 @@
 @implementation ThermoActionCell
 
 -(id) initWithName: (NSString *) theName andMax:(double) theMax{
+    if(theName == nil)
+	return nil;
+    name = [theName copy];
     progressIndicator = [[NSProgressIndicator alloc] init];
     [progressIndicator setMaxValue:theMax];
     cell = [[ProgressCell alloc] initProgressCell:progressIndicator];
