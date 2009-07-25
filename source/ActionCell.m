@@ -16,15 +16,12 @@
 	return nil;
 }
 
--(id) initWithName: (NSString *)theName type:(NSString *)theType {
+-(id) initWithName: (NSString *)theName {
 	if(![super init])
 		return nil;
 	if(theName == nil)
 		return nil;
-	if(theType == nil)
-		return nil;
 	name = [theName copy];
-	type = [theType copy];
 	return self;
 }
 
@@ -32,18 +29,26 @@
 	return name;
 }
 
--(NSString*) type {
-	return type;
-}
-
 - (NSString *)description {
-	return [NSString stringWithFormat:@"<ActionCell: [%@] %@>", type, name];
+	return [NSString stringWithFormat:@"<ActionCell: %@>", name];
 }
 
 - (BOOL)isEqual:(id)item {
 	if(! [item isKindOfClass:[ActionCell class]])
 		return FALSE;
-	return [[self name] isEqualToString:[item name]] && [[self type] isEqualToString:[item type]];
+	return [[self name] isEqualToString:[item name]];
+}
+
+-(NSCell*) displayIcon {
+    return nil;
+}
+
+-(NSCell*) displayTitle {
+    return [[NSCell alloc] initTextCell:name];
+}
+
+-(NSCell*) displayDetail {
+    return [[NSCell alloc] initTextCell:[NSString stringWithFormat:@"%@", value]];
 }
 
 @end

@@ -12,12 +12,13 @@
 @interface ActionCell : NSObject {
 	NSString *name;
 	NSNumber *value;
-	NSString *type;
 }
 
--(id) initWithName: (NSString *)theName type:(NSString *)theType;
-- (BOOL)isEqual:(id)anObject;
-- (NSString *)description;
+-(id) initWithName: (NSString *) theName ;
+-(BOOL) isEqual:(id)anObject;
+-(NSString *) description;
 -(NSString*) name;
--(NSString*) type;
+-(NSCell*) displayIcon;
+-(NSCell*) displayTitle;
+-(NSCell*) displayDetail;
 @end

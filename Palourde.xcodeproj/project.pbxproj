@@ -23,7 +23,6 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		7D00AD730F209E1F00F53434 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
 		7D04FC2C0FCC75B8005C873A /* Contamination.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04FC2B0FCC75B8005C873A /* Contamination.m */; };
 		7D18960E0F225E6300148E33 /* aero.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D18960D0F225E6300148E33 /* aero.icns */; };
 		7D1896260F2275AA00148E33 /* aero3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1896250F2275AA00148E33 /* aero3.icns */; };
@@ -44,7 +43,6 @@
 		7D6EA80D0F9B79A500A0354C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 7D6EA80C0F9B79A500A0354C /* dsa_pub.pem */; };
 		7D6EA83C0F9BA8C500A0354C /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D6EA8020F9B78BE00A0354C /* Sparkle.framework */; };
 		7D8FC7710F2132AE0046069E /* ActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC7700F2132AE0046069E /* ActionController.m */; };
-		7DA3EAE10F209E7C008496B9 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D00AD720F209E1F00F53434 /* Growl.framework */; };
 		7DA3EAF50F209FC3008496B9 /* bombe__s04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF10F209FC3008496B9 /* bombe__s04.png */; };
 		7DA3EAF60F209FC3008496B9 /* bombe__s01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF20F209FC3008496B9 /* bombe__s01.png */; };
 		7DA3EAF70F209FC3008496B9 /* bombe__s02.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EAF30F209FC3008496B9 /* bombe__s02.png */; };
@@ -52,6 +50,12 @@
 		7DA3EB040F20A05F008496B9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DA3EB030F20A05F008496B9 /* Info.plist */; };
 		7DA3EB070F20A08E008496B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA3EB060F20A08E008496B9 /* main.m */; };
 		7DAD3BBB0F1F920800983762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DAD3BBA0F1F920800983762 /* Localizable.strings */; };
+		7DBEECB2101B50FC00E3841A /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBEECB1101B50FC00E3841A /* Growl.framework */; };
+		7DBEECBA101B510400E3841A /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DBEECB1101B50FC00E3841A /* Growl.framework */; };
+		7DBEECD4101B52FA00E3841A /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */; };
+		7DBEED05101B530100E3841A /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */; };
+		7DBEED12101B537B00E3841A /* ProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBEED11101B537B00E3841A /* ProgressCell.m */; };
+		7DBEED15101B538900E3841A /* ThermoActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBEED14101B538900E3841A /* ThermoActionCell.m */; };
 		7DD489F90F2BC220001B6D4A /* aero2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7DD489F80F2BC220001B6D4A /* aero2.icns */; };
 		7DFA2D970FA7545700BB0FE7 /* ActionPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DFA2D960FA7545700BB0FE7 /* ActionPanel.xib */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -81,8 +85,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7DBEED05101B530100E3841A /* BWToolkitFramework.framework in CopyFiles */,
+				7DBEECBA101B510400E3841A /* Growl.framework in CopyFiles */,
 				7D6EA83C0F9BA8C500A0354C /* Sparkle.framework in CopyFiles */,
-				7DA3EAE10F209E7C008496B9 /* Growl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +101,6 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Palourde_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palourde_Prefix.pch; sourceTree = "<group>"; };
-		7D00AD720F209E1F00F53434 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = frameworks/Growl.framework; sourceTree = "<group>"; };
 		7D04FC2A0FCC75B8005C873A /* Contamination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contamination.h; path = source/Contamination.h; sourceTree = "<group>"; };
 		7D04FC2B0FCC75B8005C873A /* Contamination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contamination.m; path = source/Contamination.m; sourceTree = "<group>"; };
 		7D18960D0F225E6300148E33 /* aero.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero.icns; path = resource/aero.icns; sourceTree = "<group>"; };
@@ -135,6 +139,12 @@
 		7DAD3BAE0F1F8E5E00983762 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7DAD3BB60F1F91D600983762 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7DAD3BBC0F1F921200983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7DBEECB1101B50FC00E3841A /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = frameworks/Growl.framework; sourceTree = "<group>"; };
+		7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = frameworks/BWToolkitFramework.framework; sourceTree = "<group>"; };
+		7DBEED10101B537B00E3841A /* ProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressCell.h; path = source/ProgressCell.h; sourceTree = "<group>"; };
+		7DBEED11101B537B00E3841A /* ProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressCell.m; path = source/ProgressCell.m; sourceTree = "<group>"; };
+		7DBEED13101B538900E3841A /* ThermoActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThermoActionCell.h; path = source/ThermoActionCell.h; sourceTree = "<group>"; };
+		7DBEED14101B538900E3841A /* ThermoActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThermoActionCell.m; path = source/ThermoActionCell.m; sourceTree = "<group>"; };
 		7DD489F80F2BC220001B6D4A /* aero2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero2.icns; path = resource/aero2.icns; sourceTree = "<group>"; };
 		7DFA2D960FA7545700BB0FE7 /* ActionPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionPanel.xib; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Palourde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palourde.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				7D00AD730F209E1F00F53434 /* Growl.framework in Frameworks */,
 				7D6EA8030F9B78BE00A0354C /* Sparkle.framework in Frameworks */,
+				7DBEECB2101B50FC00E3841A /* Growl.framework in Frameworks */,
+				7DBEECD4101B52FA00E3841A /* BWToolkitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +184,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -181,8 +193,8 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7DBEECB1101B50FC00E3841A /* Growl.framework */,
 				7D6EA8020F9B78BE00A0354C /* Sparkle.framework */,
-				7D00AD720F209E1F00F53434 /* Growl.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -317,6 +329,10 @@
 			children = (
 				7D2210C20FAA288C00FDEA46 /* ActionCell.h */,
 				7D2210C30FAA288C00FDEA46 /* ActionCell.m */,
+				7DBEED10101B537B00E3841A /* ProgressCell.h */,
+				7DBEED11101B537B00E3841A /* ProgressCell.m */,
+				7DBEED13101B538900E3841A /* ThermoActionCell.h */,
+				7DBEED14101B538900E3841A /* ThermoActionCell.m */,
 				7D1AE5E40F209C1C00444F92 /* PAController.h */,
 				7D1AE5E50F209C1C00444F92 /* PAController.m */,
 				7D8FC76F0F2132AE0046069E /* ActionController.h */,
@@ -350,10 +366,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Palourde" */;
 			buildPhases = (
+				7DF1BCD60F195B7400D807B1 /* CopyFiles */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				7DF1BCD60F195B7400D807B1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -442,6 +458,8 @@
 				7D8FC7710F2132AE0046069E /* ActionController.m in Sources */,
 				7D2210C40FAA288C00FDEA46 /* ActionCell.m in Sources */,
 				7D04FC2C0FCC75B8005C873A /* Contamination.m in Sources */,
+				7DBEED12101B537B00E3841A /* ProgressCell.m in Sources */,
+				7DBEED15101B538900E3841A /* ThermoActionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,21 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <BWToolkitFramework/BWToolkitFramework.h>
 #import "PAController.h"
+#import "ActionCell.h"
 
 #define NOTHING 1
 #define GROWING 2
 #define FULL 3
 @interface ActionController : NSWindowController {
-    IBOutlet NSOutlineView *actionTable;
-    IBOutlet NSProgressIndicator *thermometre;
-    int state;
-    double max;
-    NSArray *infos;
-    NSMutableArray *download;
-    NSMutableArray *virus;
-    NSMutableArray *files;
-    NSMutableDictionary *thermometres;
+    IBOutlet BWTransparentTableView *actionTable;
+    NSMutableDictionary *infos;
     PAController *mainController;
 }
 
@@ -31,4 +26,6 @@
 -(BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item;
 -(NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item;
 -(id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item;
+-(void)add:(ActionCell *)action;
+-(void)remove:(ActionCell *)action;
 @end
