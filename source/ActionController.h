@@ -21,11 +21,11 @@
 }
 
 -(id)initWithMainController:(PAController *)mainController;
--(void) reset;
--(id)outlineView:(NSOutlineView *)outlineView child:(NSInteger)index ofItem:(id)item;
--(BOOL)outlineView:(NSOutlineView *)outlineView isItemExpandable:(id)item;
--(NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item;
--(id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item;
 -(void)add:(ActionCell *)action;
 -(void)remove:(ActionCell *)action;
+
+//NSTableDataSource
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView;
+- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row;
+
 @end

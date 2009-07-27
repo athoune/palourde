@@ -42,7 +42,6 @@
 		selector:@selector(contaminationAdded:)
 		name:PAVirusAdded
 		     object:nil];
-	[self reset];
     infos = [[NSMutableDictionary alloc] initWithCapacity:3];
 }
 
@@ -56,73 +55,49 @@
     [infos removeObjectForKey:[action name]];
 }
 
-
 -(void) contaminationAdded: (NSNotification *)notification {
 }
-   
 
 - (void) freshclamDownload: (NSNotification *)notification {
-    //NSLog(@"Thermo FreshClam Download %@", [notification userInfo] );
+    NSLog(@"Thermo FreshClam Download %@", [notification userInfo] );
     NSString *filename = [[notification userInfo] objectForKey:@"file"];
-    NSLog(@"the value: %@", [infos objectForKey:filename]);
     if([infos objectForKey:filename] == nil) {
 	NSLog(@"New download file : %@ with size : %@", filename, [[notification userInfo] objectForKey:@"total" ]);
 	[self add:
-	    [[ThermoActionCell alloc] initWithName:filename andMax: [[[notification userInfo] objectForKey:@"total" ] doubleValue]]
+	 [[
+	   [ThermoActionCell alloc]
+		initWithName: filename 
+		andMax: [[[notification userInfo] objectForKey:@"total" ] doubleValue]
+		andIcon: [[NSWorkspace sharedWorkspace] iconForFileType:@"cvd"]
+	   ] autorelease]
 	];
+	NSLog(@"icon : %@", [[NSWorkspace sharedWorkspace] iconForFileType:@"cvd"]);
     }
-	[[[infos objectForKey:filename] thermometre] setDoubleValue:[[[notification userInfo] objectForKey:@"downloaded"] doubleValue]];
+    NSLog(@"downloaded : %@ = %f", [[notification userInfo] objectForKey:@"downloaded"], [[[notification userInfo] objectForKey:@"downloaded"] doubleValue]);
+    [[infos objectForKey:filename] setDoubleValue:[[[notification userInfo] objectForKey:@"downloaded"] doubleValue]];
+    [actionTable reloadData];
 }
 
-
--(NSInteger) outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
-	    return [infos count];
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
+    return [infos count];
 }
 
--(id) outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
-	if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"titleID"]) {
-		if([item isKindOfClass:[ActionCell class]])
-			return [NSString stringWithFormat:@"  %@", [item name]];
-		if([item isKindOfClass:[Contamination class]])
-			return [item virus];
-		return [item retain];
-	}
-    if( [[tableColumn identifier] isEqualToString: @"valueID"]) {
-	
+- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    ActionCell *action = [infos objectForKey:[[infos allKeys] objectAtIndex:row]];
+    NSLog(@"index: %i, key: %@ => %@", row, [[infos allKeys] objectAtIndex:row], action);
+    NSLog(@"column: %@", [tableColumn identifier]);
+    if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"Title"]) {
+	return [action displayTitle];
     }
-    /*
-    if( [[tableColumn identifier] isEqualToString: @"actionID"]) {
-	if([item isKindOfClass:[Contamination class]])
-	    return [item retain];
+    if([[tableColumn identifier] isEqualToString: @"Details"]) {
+	NSLog(@"details: %@", [action displayDetail]);
+	return [action displayDetail];
     }
-     */
-	return nil;
-}
-
-/*
-- (void)outlineView:(NSOutlineView *)outlineView willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tableColumn item:(id)item {
-    
-    if( [[tableColumn identifier] isEqualToString: @"actionID"]) {
-	if([item isKindOfClass:[Contamination class]]) {
-	    [[tableColumn dataCell] setIcon:[item icon]];
-	}
-    }
-}
-*/
-
-/*
-- (NSCell *)outlineView:(NSOutlineView *)outlineView dataCellForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
-    if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"titleID"]) {
-	if([item isKindOfClass:[ActionCell class]])
-	    return [[NSCell alloc] initTextCell: [item name]];
-	if([item isKindOfClass:[Contamination class]])
-	    return [[[NSCell alloc] initImageCell:[item icon]] autorelease];
-	return [[NSCell alloc] initTextCell:item];
-    }
-    if( [[tableColumn identifier] isEqualToString: @"valueID"]) {
-	
+    if([[tableColumn identifier] isEqualToString: @"Icon"]) {
+	NSLog(@"icon: %@", [action displayIcon]);
+	return [action displayIcon];
     }
     return nil;
-}*/
+}
 
 @end
