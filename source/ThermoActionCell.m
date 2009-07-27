@@ -12,22 +12,33 @@
 
 @implementation ThermoActionCell
 
--(id) initWithName: (NSString *) theName andMax:(double) theMax{
+-(id) initWithName: (NSString *) theName andMax:(double) theMax andIcon:(NSImage *) theIcon {
     if(theName == nil)
 	return nil;
     name = [theName copy];
-    progressIndicator = [[NSProgressIndicator alloc] init];
-    [progressIndicator setMaxValue:theMax];
-    cell = [[ProgressCell alloc] initProgressCell:progressIndicator];
+    progressIndicator = [[[NSProgressIndicator alloc] init] autorelease];
+    [progressIndicator setMaxValue: theMax];
+    [progressIndicator setIndeterminate: FALSE];
+    cell = [[[ProgressCell alloc] initProgressCell: progressIndicator] autorelease];
+    icon = [theIcon copy];
     return self;
 }
 
 -(NSCell*) displayDetail {
-    return [cell autorelease];
+    return cell;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<ThermoActionCell: %@ %f/%f>", name, [progressIndicator doubleValue], [progressIndicator maxValue]];
 }
 
 -(NSProgressIndicator*) thermometre {
-    return progressIndicator;
+    return [progressIndicator retain];
+}
+
+-(void) setDoubleValue:(double) theValue {
+    NSLog(@"set value: %f", theValue);
+    [progressIndicator setDoubleValue:theValue];
 }
 
 @end

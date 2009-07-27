@@ -15,5 +15,6 @@
     NSProgressIndicator *progressIndicator;
 }
 -(NSProgressIndicator*) thermometre;
--(id) initWithName: (NSString *) theName andMax:(double) theMax;
+-(id) initWithName: (NSString *) theName andMax:(double) theMax andIcon:(NSImage*) theIcon;
+-(void) setDoubleValue: (double) value;
 @end
