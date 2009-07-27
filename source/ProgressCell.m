@@ -9,34 +9,27 @@
 
 #import "ProgressCell.h"
 
-
 @implementation ProgressCell
 
-- (id)initProgressCell : (NSProgressIndicator *)aProgressIndicator
-{
-    if( self = [ super initImageCell:nil ] )
-    {
+- (id)initProgressCell : (NSProgressIndicator *)aProgressIndicator {
+    if( self = [ super initImageCell:nil ] ) {
         progressIndicator = [ aProgressIndicator retain ];
     }
-    
     return self;
 }
 
-- copyWithZone : (NSZone *)zone
-{
+- copyWithZone : (NSZone *)zone {
     ProgressCell *cell = (ProgressCell *)[ super copyWithZone:zone ];
     cell->progressIndicator = [ progressIndicator retain ];
     return cell;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [ progressIndicator release ];
     [ super dealloc ];
 }
 
-- (void)setProgressIndicator : (NSProgressIndicator *)aProgressIndicator
-{
+- (void)setProgressIndicator : (NSProgressIndicator *)aProgressIndicator {
     if( aProgressIndicator )
     {
         [ progressIndicator release ];
@@ -47,13 +40,19 @@
 ///////////////////////////////////////////////////////////////////////
 //  If you need, you can add - (NSProgressIndicator*) progressIndicator;
 ///////////////////////////////////////////////////////////////////////
+- (NSProgressIndicator*) progressIndicator {
+    return progressIndicator;
+}
 
-- (void)drawInteriorWithFrame : (NSRect)cellFrame inView : (NSView *)controlView
-{
-    if( [ progressIndicator superview ] == nil )
-    {
+- (void)drawInteriorWithFrame : (NSRect)cellFrame inView : (NSView *)controlView {
+    if( [ progressIndicator superview ] == nil ) {
         [ controlView addSubview:progressIndicator ];
     }
     [ progressIndicator setFrame:cellFrame ];
 }
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<ProgressCell: %f/%f>", [progressIndicator doubleValue], [progressIndicator maxValue]];
+}
+
 @end

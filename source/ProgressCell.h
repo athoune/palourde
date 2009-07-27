@@ -17,5 +17,5 @@
 }
 
 - (id)initProgressCell : (NSProgressIndicator *)aProgressIndicator;
-
+- (NSProgressIndicator*) progressIndicator;
 @end
