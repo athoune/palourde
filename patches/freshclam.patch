@@ -118,7 +118,7 @@ diff -u freshclam/manager.m freshclam/manager.m
                  mprintf("Downloading %s [%3i%%]\r", srcfile, percentage);
 +				NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithCapacity:3];
 +				[userInfo setObject:[[NSString alloc] initWithUTF8String:srcfile] forKey:@"file"];
-+				[userInfo setObject:[NSNumber numberWithFloat:totaldownloaded] forKey:@"downloaded" ];
++				[userInfo setObject:[NSNumber numberWithInt:totaldownloaded] forKey:@"downloaded" ];
 +				[userInfo setObject:[NSNumber numberWithInt:totalsize] forKey:@"total" ];
 +				NSLog(@"%@", userInfo);
 +				[globalCenter postNotificationName:@"net.clamav.freshclam.download" object:nil userInfo: userInfo];
