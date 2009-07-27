@@ -40,15 +40,23 @@
 }
 
 -(NSCell*) displayIcon {
-    return nil;
+    if(icon == nil)
+	return nil;
+    return [[NSCell alloc] initImageCell:icon];
 }
 
--(NSCell*) displayTitle {
-    return [[NSCell alloc] initTextCell:name];
+-(id) displayTitle {
+    return [name retain];
 }
 
--(NSCell*) displayDetail {
-    return [[NSCell alloc] initTextCell:[NSString stringWithFormat:@"%@", value]];
+-(id) displayDetail {
+    return [NSString stringWithFormat:@"%@", value];
 }
 
+-(void) icon:(NSImage *) theIcon {
+    if(theIcon != icon){
+	[icon release];
+	icon = [theIcon retain];
+    }
+}
 @end

@@ -10,15 +10,17 @@
 
 
 @interface ActionCell : NSObject {
-	NSString *name;
-	NSNumber *value;
+    NSString *name;
+    NSNumber *value;
+    NSImage *icon;
 }
 
 -(id) initWithName: (NSString *) theName ;
 -(BOOL) isEqual:(id)anObject;
+-(void) icon:(NSImage *) theIcon;
 -(NSString *) description;
 -(NSString*) name;
 -(NSCell*) displayIcon;
--(NSCell*) displayTitle;
--(NSCell*) displayDetail;
+-(id) displayTitle;
+-(id) displayDetail;
 @end
