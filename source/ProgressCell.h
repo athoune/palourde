@@ -16,6 +16,8 @@
     NSProgressIndicator *progressIndicator;
 }
 
+-(id)init;
 - (id)initProgressCell : (NSProgressIndicator *)aProgressIndicator;
 - (NSProgressIndicator*) progressIndicator;
+- (void)setObjectValue:(id < NSCopying >)object;
 @end

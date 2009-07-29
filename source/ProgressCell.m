@@ -11,6 +11,10 @@
 
 @implementation ProgressCell
 
+-(id)init {
+    return self;
+}
+
 - (id)initProgressCell : (NSProgressIndicator *)aProgressIndicator {
     if( self = [ super initImageCell:nil ] ) {
         progressIndicator = [ aProgressIndicator retain ];
@@ -53,6 +57,10 @@
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"<ProgressCell: %f/%f>", [progressIndicator doubleValue], [progressIndicator maxValue]];
+}
+
+- (void)setObjectValue:(id < NSCopying >)object {
+    progressIndicator = [object copy];
 }
 
 @end

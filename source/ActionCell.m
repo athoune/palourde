@@ -45,12 +45,12 @@
     return [[NSCell alloc] initImageCell:icon];
 }
 
--(id) displayTitle {
-    return [name retain];
+-(NSCell*) displayTitle {
+    return [[NSCell alloc] initTextCell:name];
 }
 
--(id) displayDetail {
-    return [NSString stringWithFormat:@"%@", value];
+-(NSCell*) displayDetail {
+    return [[NSCell alloc] initTextCell:[NSString stringWithFormat:@"%@", value]];
 }
 
 -(void) icon:(NSImage *) theIcon {
@@ -59,4 +59,15 @@
 	icon = [theIcon retain];
     }
 }
+
+-(id)detail {
+    return [NSString stringWithFormat:@"%@", value];
+}
+-(NSImage*)icon {
+    return [icon retain];
+}
+
+/*- (id)copyWithZone:(NSZone *)zone {
+    return NSCopyObject(self, 0, zone);
+}*/
 @end

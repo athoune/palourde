@@ -25,6 +25,7 @@
 }
 
 -(NSCell*) displayDetail {
+    //return [NSString stringWithFormat:@"%f", 100 * [progressIndicator doubleValue] / [progressIndicator maxValue]];
     return cell;
 }
 

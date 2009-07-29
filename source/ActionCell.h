@@ -21,6 +21,9 @@
 -(NSString *) description;
 -(NSString*) name;
 -(NSCell*) displayIcon;
--(id) displayTitle;
--(id) displayDetail;
+-(NSCell*) displayTitle;
+-(NSCell*) displayDetail;
+-(id)detail;
+-(NSImage*)icon;
+-(id)copyWithZone:(NSZone *)zone;
 @end

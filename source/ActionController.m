@@ -43,6 +43,8 @@
 		name:PAVirusAdded
 		     object:nil];
     infos = [[NSMutableDictionary alloc] initWithCapacity:3];
+    [[actionTable tableColumnWithIdentifier:@"Icon"] setDataCell:[[[NSImageCell alloc] initImageCell:nil] autorelease]];
+    //[[actionTable tableColumnWithIdentifier:@"Details"] setDataCell:[[[ProgressCell alloc] init] autorelease]];
 }
 
 -(void) reset {
@@ -82,22 +84,51 @@
     return [infos count];
 }
 
-- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)row{
+    //NSLog(@"beuha : %@:%@", aTableColumn, rowIndex);
+    NSParameterAssert(row >= 0 && row < [infos count]);
+    ActionCell *action = [infos objectForKey:[[infos allKeys] objectAtIndex:row]];
+    id data = nil;
+    if(aTableColumn == nil || [[aTableColumn identifier] isEqualToString: @"Title"]) {
+	data = [action name];
+    }
+    if([[aTableColumn identifier] isEqualToString: @"Details"]) {
+	data = [action detail];
+    }
+    if([[aTableColumn identifier] isEqualToString: @"Icon"]) {
+	data = [action icon];
+    }
+    NSLog(@"Data: %@", data);
+    return data;
+}
+
+/*
+- (NSCell *)tableView:(NSTableView *)tableView dataCellForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    if(tableColumn == nil) {
+	return nil;
+    }
+    if([[tableColumn identifier] isEqualToString: @"Icon"]){
+	return [[NSCell alloc] initImageCell:nil];
+    }
+    return [[NSCell alloc] init];*/
+    /*
+    NSLog(@"deja cell:", [tableColumn dataCell]);
     ActionCell *action = [infos objectForKey:[[infos allKeys] objectAtIndex:row]];
     NSLog(@"index: %i, key: %@ => %@", row, [[infos allKeys] objectAtIndex:row], action);
-    NSLog(@"column: %@", [tableColumn identifier]);
+    NSLog(@"column: %@", tableColumn);
     if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"Title"]) {
 	return [action displayTitle];
     }
     if([[tableColumn identifier] isEqualToString: @"Details"]) {
 	NSLog(@"details: %@", [action displayDetail]);
-	return [action displayDetail];
+	return nil;//[action displayDetail];
     }
     if([[tableColumn identifier] isEqualToString: @"Icon"]) {
 	NSLog(@"icon: %@", [action displayIcon]);
 	return [action displayIcon];
     }
     return nil;
-}
+     */
+//}
 
 @end
