@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <BWToolkitFramework/BWToolkitFramework.h>
 #import "PAController.h"
-#import "ActionCell.h"
+#import "PAAction.h"
 
 #define NOTHING 1
 #define GROWING 2
@@ -21,8 +21,8 @@
 }
 
 -(id)initWithMainController:(PAController *)mainController;
--(void)add:(ActionCell *)action;
--(void)remove:(ActionCell *)action;
+-(void)add:(PAAction *)action;
+-(void)remove:(PAAction *)action;
 
 //NSTableDataSource
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView;

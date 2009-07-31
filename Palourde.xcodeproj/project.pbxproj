@@ -36,7 +36,6 @@
 		7D1AE5EC0F209C4100444F92 /* ClamavClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5EA0F209C4100444F92 /* ClamavClient.m */; };
 		7D1AE5F70F209D5300444F92 /* palourde.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1AE5F60F209D5300444F92 /* palourde.m */; };
 		7D1B40CD0F2CECF80009759E /* pshit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B40CC0F2CECF80009759E /* pshit.icns */; };
-		7D2210C40FAA288C00FDEA46 /* ActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2210C30FAA288C00FDEA46 /* ActionCell.m */; };
 		7D460C330F93BF36003A867D /* Sneeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D460C320F93BF36003A867D /* Sneeze.wav */; };
 		7D566E650FAB00A70059DF38 /* Contaminated.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D566E640FAB00A70059DF38 /* Contaminated.xib */; };
 		7D6EA8030F9B78BE00A0354C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6EA8020F9B78BE00A0354C /* Sparkle.framework */; };
@@ -54,7 +53,7 @@
 		7DBEECBA101B510400E3841A /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DBEECB1101B50FC00E3841A /* Growl.framework */; };
 		7DBEECD4101B52FA00E3841A /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */; };
 		7DBEED05101B530100E3841A /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */; };
-		7DBEED15101B538900E3841A /* ThermoActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBEED14101B538900E3841A /* ThermoActionCell.m */; };
+		7DD19B4A10235C8F0025E480 /* PAAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD19B4910235C8F0025E480 /* PAAction.m */; };
 		7DD489F90F2BC220001B6D4A /* aero2.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7DD489F80F2BC220001B6D4A /* aero2.icns */; };
 		7DF7F95D10221DA700571DF6 /* aero256.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF7F95C10221DA700571DF6 /* aero256.png */; };
 		7DFA2D970FA7545700BB0FE7 /* ActionPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DFA2D960FA7545700BB0FE7 /* ActionPanel.xib */; };
@@ -120,8 +119,6 @@
 		7D1AE5EA0F209C4100444F92 /* ClamavClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClamavClient.m; path = source/ClamavClient.m; sourceTree = "<group>"; };
 		7D1AE5F60F209D5300444F92 /* palourde.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = palourde.m; path = source/palourde.m; sourceTree = "<group>"; };
 		7D1B40CC0F2CECF80009759E /* pshit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = pshit.icns; path = resource/pshit.icns; sourceTree = "<group>"; };
-		7D2210C20FAA288C00FDEA46 /* ActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionCell.h; path = source/ActionCell.h; sourceTree = "<group>"; };
-		7D2210C30FAA288C00FDEA46 /* ActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionCell.m; path = source/ActionCell.m; sourceTree = "<group>"; };
 		7D460C320F93BF36003A867D /* Sneeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Sneeze.wav; path = resource/sound/Sneeze.wav; sourceTree = "<group>"; };
 		7D566E640FAB00A70059DF38 /* Contaminated.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Contaminated.xib; sourceTree = "<group>"; };
 		7D6EA8020F9B78BE00A0354C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = frameworks/Sparkle.framework; sourceTree = "<group>"; };
@@ -141,8 +138,8 @@
 		7DAD3BBC0F1F921200983762 /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7DBEECB1101B50FC00E3841A /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = frameworks/Growl.framework; sourceTree = "<group>"; };
 		7DBEECD3101B52FA00E3841A /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = frameworks/BWToolkitFramework.framework; sourceTree = "<group>"; };
-		7DBEED13101B538900E3841A /* ThermoActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThermoActionCell.h; path = source/ThermoActionCell.h; sourceTree = "<group>"; };
-		7DBEED14101B538900E3841A /* ThermoActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThermoActionCell.m; path = source/ThermoActionCell.m; sourceTree = "<group>"; };
+		7DD19B4810235C8F0025E480 /* PAAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAAction.h; path = source/PAAction.h; sourceTree = "<group>"; };
+		7DD19B4910235C8F0025E480 /* PAAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAAction.m; path = source/PAAction.m; sourceTree = "<group>"; };
 		7DD489F80F2BC220001B6D4A /* aero2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = aero2.icns; path = resource/aero2.icns; sourceTree = "<group>"; };
 		7DF7F95C10221DA700571DF6 /* aero256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aero256.png; path = resource/aero256.png; sourceTree = "<group>"; };
 		7DFA2D960FA7545700BB0FE7 /* ActionPanel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionPanel.xib; sourceTree = "<group>"; };
@@ -327,10 +324,8 @@
 		7DB23B290F1D0449006C2ACF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7D2210C20FAA288C00FDEA46 /* ActionCell.h */,
-				7D2210C30FAA288C00FDEA46 /* ActionCell.m */,
-				7DBEED13101B538900E3841A /* ThermoActionCell.h */,
-				7DBEED14101B538900E3841A /* ThermoActionCell.m */,
+				7DD19B4810235C8F0025E480 /* PAAction.h */,
+				7DD19B4910235C8F0025E480 /* PAAction.m */,
 				7D1AE5E40F209C1C00444F92 /* PAController.h */,
 				7D1AE5E50F209C1C00444F92 /* PAController.m */,
 				7D8FC76F0F2132AE0046069E /* ActionController.h */,
@@ -455,9 +450,8 @@
 				7D1AE5EB0F209C4100444F92 /* ClamavClient.m in Sources */,
 				7DA3EB070F20A08E008496B9 /* main.m in Sources */,
 				7D8FC7710F2132AE0046069E /* ActionController.m in Sources */,
-				7D2210C40FAA288C00FDEA46 /* ActionCell.m in Sources */,
 				7D04FC2C0FCC75B8005C873A /* Contamination.m in Sources */,
-				7DBEED15101B538900E3841A /* ThermoActionCell.m in Sources */,
+				7DD19B4A10235C8F0025E480 /* PAAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

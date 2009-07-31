@@ -9,9 +9,8 @@
 //
 
 #import "ActionController.h"
-#import "ActionCell.h"
+#import "PAAction.h"
 #import "Contamination.h"
-#import "ThermoActionCell.h"
 
 @implementation ActionController
 -(id)init {
@@ -50,10 +49,10 @@
 -(void) reset {
 }
 
--(void)add:(ActionCell *)action {
+-(void)add:(PAAction *)action {
     [infos setObject:action forKey:[action name]];
 }
--(void)remove:(ActionCell *)action {
+-(void)remove:(PAAction *)action {
     [infos removeObjectForKey:[action name]];
 }
 
@@ -67,7 +66,7 @@
 	NSLog(@"New download file : %@ with size : %@", filename, [[notification userInfo] objectForKey:@"total" ]);
 	[self add:
 	 [[
-	   [ThermoActionCell alloc]
+	   [PAAction alloc]
 		initWithName: filename 
 		andMax: [[[notification userInfo] objectForKey:@"total" ] doubleValue]
 		andIcon: [[NSWorkspace sharedWorkspace] iconForFileType:@"cvd"]
@@ -87,7 +86,7 @@
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)row{
     //NSLog(@"beuha : %@:%@", aTableColumn, rowIndex);
     NSParameterAssert(row >= 0 && row < [infos count]);
-    ActionCell *action = [infos objectForKey:[[infos allKeys] objectAtIndex:row]];
+    PAAction *action = [infos objectForKey:[[infos allKeys] objectAtIndex:row]];
     id data = nil;
     if(aTableColumn == nil || [[aTableColumn identifier] isEqualToString: @"Title"]) {
 	data = [action name];
