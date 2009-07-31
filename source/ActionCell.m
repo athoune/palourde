@@ -39,20 +39,6 @@
 	return [[self name] isEqualToString:[item name]];
 }
 
--(NSCell*) displayIcon {
-    if(icon == nil)
-	return nil;
-    return [[NSCell alloc] initImageCell:icon];
-}
-
--(NSCell*) displayTitle {
-    return [[NSCell alloc] initTextCell:name];
-}
-
--(NSCell*) displayDetail {
-    return [[NSCell alloc] initTextCell:[NSString stringWithFormat:@"%@", value]];
-}
-
 -(void) icon:(NSImage *) theIcon {
     if(theIcon != icon){
 	[icon release];
@@ -63,6 +49,7 @@
 -(id)detail {
     return [NSString stringWithFormat:@"%@", value];
 }
+
 -(NSImage*)icon {
     return [icon retain];
 }

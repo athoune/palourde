@@ -7,14 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ProgressCell.h"
 
 @interface ThermoActionCell : ActionCell {
-    NSProgressIndicator *thermometre;
-    ProgressCell *cell;
-    NSProgressIndicator *progressIndicator;
+    double max;
+    double doubleValue;
 }
--(NSProgressIndicator*) thermometre;
 -(id) initWithName: (NSString *) theName andMax:(double) theMax andIcon:(NSImage*) theIcon;
 -(void) setDoubleValue: (double) value;
 @end

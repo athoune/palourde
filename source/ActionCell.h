@@ -20,10 +20,7 @@
 -(void) icon:(NSImage *) theIcon;
 -(NSString *) description;
 -(NSString*) name;
--(NSCell*) displayIcon;
--(NSCell*) displayTitle;
--(NSCell*) displayDetail;
--(id)detail;
+-(id) detail;
 -(NSImage*)icon;
 -(id)copyWithZone:(NSZone *)zone;
 @end

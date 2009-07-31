@@ -43,7 +43,7 @@
 		name:PAVirusAdded
 		     object:nil];
     infos = [[NSMutableDictionary alloc] initWithCapacity:3];
-    [[actionTable tableColumnWithIdentifier:@"Icon"] setDataCell:[[[NSImageCell alloc] initImageCell:nil] autorelease]];
+    //[[actionTable tableColumnWithIdentifier:@"Icon"] setDataCell:[[[NSImageCell alloc] initImageCell:nil] autorelease]];
     //[[actionTable tableColumnWithIdentifier:@"Details"] setDataCell:[[[ProgressCell alloc] init] autorelease]];
 }
 
@@ -93,6 +93,7 @@
 	data = [action name];
     }
     if([[aTableColumn identifier] isEqualToString: @"Details"]) {
+	NSLog(@"thermo value: %f", [action detail]);
 	data = [action detail];
     }
     if([[aTableColumn identifier] isEqualToString: @"Icon"]) {

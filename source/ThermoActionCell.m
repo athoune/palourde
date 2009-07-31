@@ -8,38 +8,30 @@
 
 #import "ActionCell.h"
 #import "ThermoActionCell.h"
-#import "ProgressCell.h"
 
 @implementation ThermoActionCell
 
 -(id) initWithName: (NSString *) theName andMax:(double) theMax andIcon:(NSImage *) theIcon {
     if(theName == nil)
 	return nil;
+    max = theMax;
     name = [theName copy];
-    progressIndicator = [[[NSProgressIndicator alloc] init] autorelease];
-    [progressIndicator setMaxValue: theMax];
-    [progressIndicator setIndeterminate: FALSE];
-    cell = [[[ProgressCell alloc] initProgressCell: progressIndicator] autorelease];
     icon = [theIcon copy];
     return self;
 }
 
--(NSCell*) displayDetail {
-    //return [NSString stringWithFormat:@"%f", 100 * [progressIndicator doubleValue] / [progressIndicator maxValue]];
-    return cell;
+-(NSNumber*) detail {
+    //return [NSNumber numberWithInt:50];
+    return [NSNumber numberWithDouble: 100 * doubleValue / max];
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"<ThermoActionCell: %@ %f/%f>", name, [progressIndicator doubleValue], [progressIndicator maxValue]];
-}
-
--(NSProgressIndicator*) thermometre {
-    return [progressIndicator retain];
+    return [NSString stringWithFormat:@"<ThermoActionCell: %@ %f/%f>", name, doubleValue, max];
 }
 
 -(void) setDoubleValue:(double) theValue {
     NSLog(@"set value: %f", theValue);
-    [progressIndicator setDoubleValue:theValue];
+    doubleValue = theValue;
 }
 
 @end
