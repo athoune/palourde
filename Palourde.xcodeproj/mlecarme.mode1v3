@@ -349,7 +349,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7DD19B7C102387AF0025E480</string>
+										<string>7DD19BB310239C250025E480</string>
 										<key>history</key>
 										<array>
 											<string>7D1896280F2275BC00148E33</string>
@@ -365,14 +365,14 @@
 											<string>7D04FC3D0FCC7F70005C873A</string>
 											<string>7DAB28E710203F2C00137DE4</string>
 											<string>7DF7F961102247CA00571DF6</string>
-											<string>7DD19B3910235AAB0025E480</string>
 											<string>7DD19B4010235B4B0025E480</string>
-											<string>7DD19B5A102387AF0025E480</string>
-											<string>7DD19B5B102387AF0025E480</string>
 											<string>7DD19B5C102387AF0025E480</string>
-											<string>7DD19B5D102387AF0025E480</string>
 											<string>7DD19B5E102387AF0025E480</string>
-											<string>7DD19B5F102387AF0025E480</string>
+											<string>7DD19B83102392960025E480</string>
+											<string>7DD19B9B10239A6C0025E480</string>
+											<string>7DD19B9C10239A6C0025E480</string>
+											<string>7DD19BB010239BF50025E480</string>
+											<string>7DD19BA810239ABB0025E480</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -429,6 +429,24 @@
 											<string>7DD19B79102387AF0025E480</string>
 											<string>7DD19B7A102387AF0025E480</string>
 											<string>7DD19B7B102387AF0025E480</string>
+											<string>7DD19B85102392960025E480</string>
+											<string>7DD19B86102392960025E480</string>
+											<string>7DD19B87102392960025E480</string>
+											<string>7DD19B88102392960025E480</string>
+											<string>7DD19B89102392960025E480</string>
+											<string>7DD19B8A102392960025E480</string>
+											<string>7DD19B8B102392960025E480</string>
+											<string>7DD19B8C102392960025E480</string>
+											<string>7DD19B98102398860025E480</string>
+											<string>7DD19B9F10239A6C0025E480</string>
+											<string>7DD19BA010239A6C0025E480</string>
+											<string>7DD19BA110239A6C0025E480</string>
+											<string>7DD19BA210239A6C0025E480</string>
+											<string>7DD19BA310239A6C0025E480</string>
+											<string>7DD19BA410239A6C0025E480</string>
+											<string>7DD19BA510239A6C0025E480</string>
+											<string>7DD19BAA10239ABB0025E480</string>
+											<string>7DD19BB110239BF50025E480</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -623,9 +641,9 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>7D246E890F155D8A00D6C68B</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/mlecarme/Developpement/Cocoa/palourde/palourde/Palourde.xcodeproj</string>
-		<string>7D246E890F155D8A00D6C68B</string>
 	</array>
 	<key>WindowString</key>
 	<string>45 237 1462 941 0 0 1920 1178 </string>
@@ -718,7 +736,7 @@
 			<key>WindowToolGUID</key>
 			<string>7D246E890F155D8A00D6C68B</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

@@ -13,6 +13,8 @@
     NSImage *icon;
     double max;
     double doubleValue;
+    double old;
+    double step;
 }
 -(id) initWithName: (NSString *) theName andMax:(double) theMax andIcon:(NSImage*) theIcon;
 -(void) setDoubleValue: (double) value;
@@ -21,7 +23,7 @@
 -(NSString*) name;
 -(id) detail;
 -(NSImage*)icon;
-
+-(BOOL) isNew;
 -(BOOL) isEqual:(id)anObject;
 //-(id)copyWithZone:(NSZone *)zone;
 @end

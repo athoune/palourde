@@ -76,6 +76,20 @@
     }
     NSLog(@"downloaded : %@ = %f", [[notification userInfo] objectForKey:@"downloaded"], [[[notification userInfo] objectForKey:@"downloaded"] doubleValue]);
     [[infos objectForKey:filename] setDoubleValue:[[[notification userInfo] objectForKey:@"downloaded"] doubleValue]];
+    if([[infos objectForKey:filename] isNew]) {
+	[actionTable reloadData];
+    }
+    if([[[notification userInfo] objectForKey:@"downloaded"] doubleValue] == [[[notification userInfo] objectForKey:@"total"] doubleValue]) {
+	[NSTimer scheduledTimerWithTimeInterval:5
+					 target:self
+				       selector:@selector(closeAction:)
+				       userInfo:filename
+					repeats:NO];
+    }
+}
+
+-(void) closeAction: (NSTimer *) timer {
+    [infos removeObjectForKey:[timer userInfo]];
     [actionTable reloadData];
 }
 
@@ -101,34 +115,5 @@
     NSLog(@"Data: %@", data);
     return data;
 }
-
-/*
-- (NSCell *)tableView:(NSTableView *)tableView dataCellForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    if(tableColumn == nil) {
-	return nil;
-    }
-    if([[tableColumn identifier] isEqualToString: @"Icon"]){
-	return [[NSCell alloc] initImageCell:nil];
-    }
-    return [[NSCell alloc] init];*/
-    /*
-    NSLog(@"deja cell:", [tableColumn dataCell]);
-    ActionCell *action = [infos objectForKey:[[infos allKeys] objectAtIndex:row]];
-    NSLog(@"index: %i, key: %@ => %@", row, [[infos allKeys] objectAtIndex:row], action);
-    NSLog(@"column: %@", tableColumn);
-    if(tableColumn == nil || [[tableColumn identifier] isEqualToString: @"Title"]) {
-	return [action displayTitle];
-    }
-    if([[tableColumn identifier] isEqualToString: @"Details"]) {
-	NSLog(@"details: %@", [action displayDetail]);
-	return nil;//[action displayDetail];
-    }
-    if([[tableColumn identifier] isEqualToString: @"Icon"]) {
-	NSLog(@"icon: %@", [action displayIcon]);
-	return [action displayIcon];
-    }
-    return nil;
-     */
-//}
 
 @end

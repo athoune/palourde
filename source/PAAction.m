@@ -16,6 +16,9 @@
     max = theMax;
     name = [theName copy];
     icon = [theIcon copy];
+    doubleValue = 0;
+    old = 0;
+    step = theMax / 50;
     return self;
 }
 
@@ -48,6 +51,15 @@
 	return [[self name] isEqualToString:[item name]];
 }
 
+-(BOOL)isNew {
+    if(old == 0)
+	return TRUE;
+    if(old -doubleValue > step) {
+	old = doubleValue;
+	return TRUE;
+    }
+    return FALSE;
+}
 
 -(NSImage*)icon {
     return [icon retain];

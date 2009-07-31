@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="39"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -64,7 +64,7 @@
 										<object class="BWTransparentTableView" id="265327185">
 											<reference key="NSNextResponder" ref="718923640"/>
 											<int key="NSvFlags">4352</int>
-											<string key="NSFrameSize">{285, 135}</string>
+											<string key="NSFrameSize">{293, 135}</string>
 											<reference key="NSSuperview" ref="718923640"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="_NSCornerView" key="NSCornerView">
@@ -163,7 +163,7 @@
 												</object>
 												<object class="NSTableColumn" id="976494019">
 													<string key="NSIdentifier">Details</string>
-													<double key="NSWidth">9.200000e+01</double>
+													<double key="NSWidth">1.000000e+02</double>
 													<double key="NSMinWidth">1.000000e+01</double>
 													<double key="NSMaxWidth">3.402823e+38</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -237,6 +237,7 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {225, 15}}</string>
 									<reference key="NSSuperview" ref="347318842"/>
+									<bool key="NSEnabled">YES</bool>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="347318842"/>
 									<string key="NSAction">_doScroller:</string>
@@ -246,7 +247,7 @@
 							<string key="NSFrame">{{21, 20}, {285, 135}}</string>
 							<reference key="NSSuperview" ref="748348589"/>
 							<reference key="NSNextKeyView" ref="718923640"/>
-							<int key="NSsFlags">528</int>
+							<int key="NSsFlags">656</int>
 							<reference key="NSVScroller" ref="930757487"/>
 							<reference key="NSHScroller" ref="2266750"/>
 							<reference key="NSContentView" ref="718923640"/>
@@ -447,9 +448,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{913, 720}, {327, 159}}</string>
+					<string>{{894, 723}, {327, 159}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{913, 720}, {327, 159}}</string>
+					<string>{{894, 723}, {327, 159}}</string>
 					<boolean value="YES" id="5"/>
 					<reference ref="5"/>
 					<string>{327, 159}</string>
