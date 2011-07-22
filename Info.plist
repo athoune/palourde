@@ -20,15 +20,17 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>0.1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
 	<key>SUFeedURL</key>
 	<string>http://palourde.net/appcast</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 </dict>
 </plist>
